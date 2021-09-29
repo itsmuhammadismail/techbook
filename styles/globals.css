@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Helvetica-Light";
+
+  src: url("/Fonts/Helvetica-Light.woff") format("woff"),
+    /* Modern Browsers */ url("/Fonts/Helvetica-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Compressed";
+
+  src: url("/Fonts/Helvetica-Compressed.woff") format("woff"),
+    /* Modern Browsers */ url("/Fonts/Helvetica-Compressed.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Condensed-Oblique";
+
+  src: url("/Fonts/Helvetica-Condensed-Oblique.woff") format("woff"),
+    /* Modern Browsers */ url("/Fonts/Helvetica-Condensed-Oblique.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Condensed-Bold";
+
+  src: url("/Fonts/Helvetica-Condensed-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("/Fonts/Helvetica-Condensed-Bold.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Condensed";
+
+  src: url("/Fonts/Helvetica-Condensed.woff") format("woff"),
+    /* Modern Browsers */ url("/Fonts/Helvetica-Condensed.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Narrow-Bold";
+
+  src: url("/Fonts/Helvetica-Narrow-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("/Fonts/Helvetica-Narrow-Bold.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ececec;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 8px;
+  background-color: #cc1219;
+  /* border-radius: 6px; */
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  height: 8px;
+  background-color: #ea1a22;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  height: 8px;
+  background-color: #cc1219;
+  /* border-radius: 6px; */
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  height: 8px;
+  background-color: #ea1a22;
+}
+::-moz-vertical-scrollbar {
+  width: 8px;
+  height: 15px;
+}
+::-moz-vertical-scrollbar-track-piece {
+  background-color: #ccc;
+}
+::-moz-vertical-scrollbar-thumb:vertical {
+  height: 8px;
+  background-color: #951f0b;
+}
+::-moz-vertical-scrollbar-thumb:horizontal {
+  height: 8px;
+  background-color: #951f0b;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Sans-Serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+}
+
+.ho {
+  font-family: "Playfair Display", serif;
+}
+
+.top-timeline {
+  @apply flex  bg-red-600 rounded-full	text-white	w-44 justify-center p-2;
+}
+.line-timeline {
+  @apply flex justify-center bg-red-600 w-3;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.redImage {
+  background-image: url(/CLS2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s ease;
+}
+.redImage:hover {
+  background-image: url(/CLS.png);
+}
+
+.blueImage {
+  background-image: url(/leadHover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s ease;
+}
+.blueImage:hover {
+  background-image: url(/lead.png);
+}
+.grayImage {
+  background-image: url(/teams.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s ease;
+}
+.grayImage:hover {
+  background-image: url(/teamsHover.png);
+}

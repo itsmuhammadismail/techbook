@@ -1,0 +1,12 @@
+<svg id="Scroll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="56" viewBox="0 0 37 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="37" height="56" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_18" data-name="Group 18" clip-path="url(#clip-path)">
+    <path id="Path_180" data-name="Path 180" d="M18.6,0A18.656,18.656,0,0,0,0,18.6V37.2a18.6,18.6,0,0,0,37.2,0V18.6A18.656,18.656,0,0,0,18.6,0" fill="#ed1818"/>
+    <path id="Path_181" data-name="Path 181" d="M29.9,34.553a13.951,13.951,0,0,1-27.9,0v-18.6a13.951,13.951,0,0,1,27.9,0Z" transform="translate(2.65 2.65)" fill="#ed1818"/>
+    <path id="Path_182" data-name="Path 182" d="M9.325,5.5A2.2,2.2,0,0,0,7,7.825V14.8a2.2,2.2,0,0,0,2.325,2.325A2.2,2.2,0,0,0,11.65,14.8V7.825A2.2,2.2,0,0,0,9.325,5.5" transform="translate(9.276 7.289)" fill="#fff"/>
+  </g>
+</svg>
