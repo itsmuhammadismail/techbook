@@ -127,7 +127,7 @@ export async function getServerSideProps({ query }) {
   const sheets = google.sheets({ version: "v4", auth });
 
   const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.SHEET_ID,
+    spreadsheetId: "1SHsVkzhnx5qCPc9UXubvsa7NnFOaazf_Zc_vHdVc61A",
     range: `Task_Table!A1:N1000`,
   });
 
