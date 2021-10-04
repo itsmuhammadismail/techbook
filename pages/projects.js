@@ -14,7 +14,7 @@ const Projects = () => {
         <Hero />
         <div className="flex justify-center items-center">
           <iframe
-            className="w-[65rem] 2xl:w-[75rem] h-[197rem] 2xl:h-[227rem]"
+            className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
             src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
             frameBorder={0}
             style={{ border: 0 }}

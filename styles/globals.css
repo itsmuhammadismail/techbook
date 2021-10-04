@@ -183,3 +183,7 @@ a {
 .grayImage:hover {
   background-image: url(/teamsHover.png);
 }
+
+.sop {
+  @apply text-[2.25rem] font-bold mt-6 mb-[-1rem];
+}
