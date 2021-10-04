@@ -118,7 +118,7 @@ export default function Timeline({ data }) {
 export async function getServerSideProps({ query }) {
   const scopes = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
   const auth = new google.auth.JWT(
-    process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+    GOOGLE_SHEETS_CLIENT_EMAIL,
     null,
     PRIVATE_KEY.replace(/\\n/g, "\n"),
     scopes
