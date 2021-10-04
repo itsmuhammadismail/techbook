@@ -7,12 +7,15 @@ import Zoom from "react-reveal/Zoom";
 import { google } from "googleapis";
 import { useEffect, useState } from "react";
 
+// import { getData } from "../lib/api";
+
 // Config variables
 const SPREADSHEET_ID = "1SHsVkzhnx5qCPc9UXubvsa7NnFOaazf_Zc_vHdVc61A";
 const SHEET_ID = "1602677078";
-const CLIENT_EMAIL = "timline@timeline-326009.iam.gserviceaccount.com";
+const GOOGLE_SHEETS_CLIENT_EMAIL =
+  "timline@timeline-326009.iam.gserviceaccount.com";
 const PRIVATE_KEY =
-  "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCRrnLubIGQHZur\nOeyZO3Uh4ukIVzMDGo6ySKiZT7CMKf+nDCdtftZagcVBEyIGSiqpDXsCt6d9oOPB\n1ABC1fmzmDstJbtZ33SU9H4tBf6o6hlS9WPXC58YpIEx4PhZfZcHC/cKEy9kbsvm\njwdntDOKsPFrKVPjvxX5xmtACUlVlQut2hzffixvii8zuWnQNksBnIwu1ooy8nyW\nrDCDdTrWDTocgryk5We+9OI6r8+znVRJVhKbeh9MpzWDvKYEYC+/M4WVlt0uckS7\nWkt1xXH73QG9PGPjsZlJKm3pPfYyy/95oi7Y7OEUTnkHrB5glbwHfnUD6fYrPvMV\nlE5OFSydAgMBAAECggEAAei2Hz0cC6XIH5S1J5hW5T6Wx3IBv9++9+dJ5oii8NLT\nEdfakaMP5KSQiGp36IkGcF2gxiz7GPw15Er778fVbvsxdcVNR+aiFoxj/MgbzR4i\nqRjkK6BT413AuKiGMJ3NgcRwO5zClN3CC8TwcKcYZexl8mE+PBlQ6Sftu11JH1AZ\np0WD/rAkjBJxDpBrXRgyhb8TOdIGL74ig4yhHgDC+N21Qnvdr7zgX9wLgTEBNqIW\nxpgW5CD9iIOliNvVrvtHvuB5PtJ/cwQ1jzy6qIDH3r9ltDsU5waf8tfsroGpXqWu\n4rZS5nmAA7Y5eiGI5FO3cGTqnK/PE1vV3cRyFYf+kQKBgQDJwIjFTS5cGqHM3idb\nK4goYxuouvPppQ6YzjoOJcGklQDtuOuHV1Ie6MD0nlcqq1ADjzxzfAmbG5RZ0RY9\nrMGOBz9EfM/oT/cqidhHcg95sknDy68lK9iMRGNDS1dkVzlKecyMm1g0RE3ptvBr\nPzjL6GNbbNQBFY7dnn3/SODycQKBgQC42lSZfvpRBnjxg6x1pS8GC1WqaH3c6YGc\nFmcnmeCBn4NhXzTBUNGowDfPiF8dc8FsT9Jy9yqqaXEKIb5VSUfi8eAQUiDKZ10l\niWY5qt2UNDtYWjplCChzCEbl7Y/UbgjfbOOV5ZdxowK7HHcABTgk5DwteS8/8i8R\nlZCV9Kla7QKBgQCzHPqP55ib7ozs++GG4FvuNybMIsX/DSmrYZNLEhwbiKmdY0m/\nCzf99vevdI/Acv0DW/v4Lwu8J70KDEWplaD0/dweaoyOG8g8fMqFi27PxQgWCtPA\ntW94ABL8IHxCuelEBGQkBJpHNMjTEDXbkPJUnUjwVurU15XRjS8hIEuNEQKBgBmY\nygwzRBBCOC8hT5k+1WMd4K/nJj6X6wWlKIWYTjlE0FmEaHa4bT/T1iabuKgIZmlM\nKFUZGsRcM3X2tDd1HUo0uhUoejfs1j4jZ49mtKYYEXuritiAp7E+HSsrmTYOQpZF\nqsIP98eZjgBA8c2D64FYRWj6leth6tihgFLzfRwFAoGAE1MO8+/UUAGL8XHd1sFJ\nCX0gxnYEHE5npxAEO/b+UNP+Tk1r7eD8at0y0/EIaY42vu+JZe9Z7/bnObEMGe8J\n+kvLwSfAFD8g3MAeHbR48oncN0GthiyPDO78+t2q5Xbv6NDu0Jg7jb29TRLCpMrZ\ntuUyTIGdmorJRYM+F+MdnS8=";
+  "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkwxVn7nJQYHZA\ntl+lEOFDCf2PVzyHzyoMuYkYziWvFTKFylBPhDSHYIsCbO383CFFlrs+x65+2Xwv\n+OV6KqfM8JLOs7A/Ydkcp9Jz0v1QrQn2KgU8LBOuXWhwVSgBzS8Jipfu/q+1M2zR\nSC/zZaEiziuqutE/8X+3LvpPfILOzOjSzC5LeJlFGmTWKkuHPVz7YGkBGZGY3S+6\nfJa6peor5dm3yOOksoQnhTgVqHuriCYa5UtmbqDppsNXQbDb/gDNHkAY/KUAwMAu\nRJeDG/S77dFTq1jvNbvuSk1CQcXQShy8o8Ig+oizZEr7Fhh19IMTQ7+UgDt1hfYb\nh4jbRTsTAgMBAAECggEACpm0kF3ChBJYuVwidjPKUm5bnnPN5Kz69xueyvZEbWnP\nONVl6l/Go2keOHc6rpiZGWmTvXvKacXjXBDG7t+8sQ5PW7Yq4kEQ32uaujH6c0zW\nxbw5XwA0+fRvij6oVslVO+drVAiV1HItD5/12dKRlfQu0gq3+MW4YlhG6YNIxTZG\nVlsw9Ld89FPglAHLXese4pDT2PyrneZPRgWvDs/Q0PHTAOy3Tr96i/i6pFKgj+Vo\nvipmLUqGsJ6sYmAfOSiU4sZeYFs47yqgC/C2Y2s/JqvLIaWX7tqWfl++2AdNitP3\nPZn/0m5l1rBwGlG+w2fh42BkaueIZMWnMWd7etg9/QKBgQDWxtISqxoyZ02GUMQ2\nd340zLWYZiVfUqscLLgVH2nh4yCm2mRo+H98QWRGLyFUijK7CZJPV4+3sTuY7jIH\nf8QPwMC6wQl/nUZTiDheE4jhAyalFTxya6OPSAOaO595YSrpwdanpP/lu1Bvkejo\npE9MLZJSnzTtdC2LLQK5ldUpBwKBgQDEYsQF9Qmih2onec9l62E+mtDrBu6yCtJp\nQviAue7bdiz9/4+h9OrLN+yC+R7StMduMJ0QqK1PFuHr9pW2Nu30m9jaFiFFXHZQ\nM0Chfc3As1j1dAem1AvDX74UdHyfDsS7N67ATE4pmMU3Ay+7VIkdzoOCEY85tVQr\ne3STYzRWlQKBgQCR0kuvARy4PAsWtp+Bm3/EuXhSEIgvQCGM74/MR5fMFjmFD6I8\n4vsrkfpS7IzkqS/obYc492pMfbjJDHBLRyQGzggMxCN+0Xl+HW6n8PtuSoVicBiq\nVwqlrW9EuFZ+QsqwCzuCdzSG9baXCanoyiZMwmQmVJHK5qZFaDoBZwli4QKBgCUK\nX+CjxAp0sg/6CKU3jSLqvmbl6tWH9wHFkOtupl+cXYYW0reAY1yrEp/tbuPdFxRw\ndN90gSO+tCP2YWx51c3iKzePHv1fIC2mTRVojgs/iJLbLKpJqmJSR57CDdNOTMrn\nCL3aZo+v8dqbbkBOBIKrteAtga8nxVViNq2p83A1AoGAMHxJAOytw79VWSXDQRmf\n3V1iYyijUr/GiZ6MWVsWBtWyvoQNLkWXI9Ypc0Db/0Xd1NxagfsMit5fm42PZLd+\nhwsk8nwEJNKDzuqm0AVBC7LCq7tNGwB89i3AvYMJEAPxh8pGg0n2t8WrdLb9htTH\npaEZ5ZV9CQVFvY39bvV4wCo=\n-----END PRIVATE KEY-----\n";
 
 var months = [
   "January",
@@ -113,9 +116,13 @@ export default function Timeline({ data }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const auth = await google.auth.getClient({
-    scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
-  });
+  const scopes = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
+  const auth = new google.auth.JWT(
+    process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+    null,
+    PRIVATE_KEY.replace(/\\n/g, "\n"),
+    scopes
+  );
 
   const sheets = google.sheets({ version: "v4", auth });
 
@@ -130,3 +137,56 @@ export async function getServerSideProps({ query }) {
     },
   };
 }
+
+// export async function getServerSideProps({ query }) {
+//   // const auth = await google.auth.getClient({
+//   //   scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+//   // });
+
+//   // const sheets = google.sheets({ version: "v4", auth });
+
+//   // const response = await sheets.spreadsheets.values.get({
+//   //   spreadsheetId: process.env.SHEET_ID,
+//   //   range: `Task_Table!A1:N1000`,
+//   // });
+
+//   const response = await getData();
+
+//   return {
+//     props: {
+//       // data: response.data.values,
+//       data: response,
+//     },
+//     revalidate: 1,
+//   };
+// }
+
+// export async function getStaticProps(context) {
+//   const scopes = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
+//     const jwt = new google.auth.JWT(
+//       process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+//       null,
+//       // we need to replace the escaped newline characters
+//       // https://stackoverflow.com/questions/50299329/node-js-firebase-service-account-private-key-wont-parse
+//       process.env.GOOGLE_SHEETS_PRIVATE_KEY.replace(/\\n/g, "\n"),
+//       scopes
+//     );
+
+//     const sheets = google.sheets({ version: "v4", auth: jwt });
+//     const response = await sheets.spreadsheets.values.get({
+//       spreadsheetId: process.env.SPREADSHEET_ID,
+//       range: `Task_Table!A1:N1000`,
+//     });
+
+//     const rows = response.data.values;
+
+//   return {
+//     props: {
+//       data: rows,
+//     },
+//     // Next.js will attempt to re-generate the page:
+//     // - When a request comes in
+//     // - At most once every second
+//     revalidate: 1, // In seconds
+//   };
+// }
