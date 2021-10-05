@@ -35,24 +35,91 @@ var date = new Date();
 
 export default function Timeline({ data }) {
   const [nir, setNir] = useState([]);
+  const [nir2, setNir2] = useState([]);
+  const [nir3, setNir3] = useState([]);
   const [project, setProject] = useState([]);
+  const [project2, setProject2] = useState([]);
+  const [project3, setProject3] = useState([]);
+
   useEffect(() => {
     let newNir = [];
+    let newNir2 = [];
+    let newNir3 = [];
     let newProjects = [];
+    let newProjects2 = [];
+    let newProjects3 = [];
     data.map((d) => {
       let tdate = d[13];
       let tmonth = "";
       if (tdate !== undefined) tmonth = tdate.split("/");
-      console.log(typeof tmonth);
-      if (typeof tmonth !== "string" && +tmonth[1] === date.getMonth() + 1)
+      if (typeof tmonth !== "string" && +tmonth[1] === date.getMonth() + 1) {
         if (d[2] === "NIR") {
           newNir.push(d);
         } else if (d[2] === "Project") {
           newProjects.push(d);
         }
+      } else {
+        if (typeof tmonth !== "string") {
+          if (date.getMonth() + 1 !== 12) {
+            if (+tmonth[1] === date.getMonth() + 2) {
+              console.log("hello", tmonth[1]);
+              if (d[2] === "NIR") {
+                newNir2.push(d);
+              } else if (d[2] === "Project") {
+                newProjects2.push(d);
+              }
+            } else if (
+              date.getMonth() + 1 !== 11 &&
+              +tmonth[1] === date.getMonth() + 3
+            ) {
+              console.log("hello", tmonth[1]);
+              if (d[2] === "NIR") {
+                newNir3.push(d);
+              } else if (d[2] === "Project") {
+                newProjects3.push(d);
+              }
+            } else if (
+              date.getMonth() + 1 === 11 &&
+              +tmonth[1] === 1 &&
+              +tmonth[2] === date.getFullYear() + 1
+            ) {
+              console.log("hello", tmonth[1]);
+              if (d[2] === "NIR") {
+                newNir3.push(d);
+              } else if (d[2] === "Project") {
+                newProjects3.push(d);
+              }
+            }
+          } else if (
+            date.getMonth() + 1 === 12 &&
+            +tmonth[1] === 1 &&
+            +tmonth[2] === date.getFullYear() + 1
+          ) {
+            if (d[2] === "NIR") {
+              newNir2.push(d);
+            } else if (d[2] === "Project") {
+              newProjects2.push(d);
+            }
+          } else if (
+            date.getMonth() + 1 === 12 &&
+            +tmonth[1] === 2 &&
+            +tmonth[2] === date.getFullYear() + 1
+          ) {
+            if (d[2] === "NIR") {
+              newNir3.push(d);
+            } else if (d[2] === "Project") {
+              newProjects3.push(d);
+            }
+          }
+        }
+      }
     });
     setProject(newProjects);
+    setProject2(newProjects2);
+    setProject3(newProjects3);
     setNir(newNir);
+    setNir2(newNir2);
+    setNir3(newNir3);
   }, [data]);
 
   return (
@@ -97,6 +164,80 @@ export default function Timeline({ data }) {
               <div className=" flex flex-col">
                 <div className="">
                   {nir.map((n, index) => (
+                    <Box
+                      key={index}
+                      text={n[5]}
+                      date={`${n[13]} (${n[4]})`}
+                      color="#B2EBF2"
+                      anim="right"
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <Zoom delay={500}>
+              <div className="top-timeline">
+                {date.getMonth() === 11
+                  ? months[0]
+                  : months[date.getMonth() + 1]}{" "}
+                {date.getMonth() === 11
+                  ? date.getFullYear() + 1
+                  : date.getFullYear()}
+              </div>
+            </Zoom>
+            <div className="flex justify-center items-center gap-4">
+              <div className="">
+                {project2.map((n, index) => (
+                  <Box
+                    key={index}
+                    text={n[5]}
+                    date={`${n[13]} (${n[4]})`}
+                    color="#E0E0E0"
+                    anim="left"
+                  />
+                ))}
+              </div>
+              <div className="line-timeline self-stretch"></div>
+              <div className=" flex flex-col">
+                <div className="">
+                  {nir2.map((n, index) => (
+                    <Box
+                      key={index}
+                      text={n[5]}
+                      date={`${n[13]} (${n[4]})`}
+                      color="#B2EBF2"
+                      anim="right"
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <Zoom delay={500}>
+              <div className="top-timeline">
+                {date.getMonth() + 1 === 11
+                  ? months[0]
+                  : months[date.getMonth() + 2]}{" "}
+                {date.getMonth() + 1 === 11
+                  ? date.getFullYear() + 1
+                  : date.getFullYear()}
+              </div>
+            </Zoom>
+            <div className="flex justify-center items-center gap-4">
+              <div className="">
+                {project3.map((n, index) => (
+                  <Box
+                    key={index}
+                    text={n[5]}
+                    date={`${n[13]} (${n[4]})`}
+                    color="#E0E0E0"
+                    anim="left"
+                  />
+                ))}
+              </div>
+              <div className="line-timeline self-stretch"></div>
+              <div className=" flex flex-col">
+                <div className="">
+                  {nir3.map((n, index) => (
                     <Box
                       key={index}
                       text={n[5]}
