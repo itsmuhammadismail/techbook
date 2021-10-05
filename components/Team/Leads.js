@@ -11,9 +11,9 @@ const Leads = () => {
       </Fade>
       <Zoom delay={800}>
         <p className="text-sm text-[#707070]  w-[43rem] my-[1rem] text-center mb-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry’s standard dummy text ever
-          since the 1500s, when an unknown printer took a galley
+          Our team leads manage individual teams in key areas. Each Team lead
+          has engineers assigned to them and is responsible for completing
+          projects assigned to them.
         </p>
       </Zoom>
       <div className="flex flex-wrap justify-center items-center gap-8">
@@ -59,7 +59,6 @@ const Leads = () => {
             <p className="text-center text-sm">AM Middleware & Integrations</p>
           </div>
         </Zoom>
-       
       </div>
     </div>
   );

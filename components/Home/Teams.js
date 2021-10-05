@@ -12,12 +12,11 @@ const Teams = () => {
               Teams
             </h1>
             <p className="text-[#707070] text-sm w-[26rem] my-[1rem]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s, when an unknown printer took a galley. of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              TCS Technology Team is based out of the TCS Head Office in Karachi
+              and come from all across Pakistan. We’re friendly, knowledgeable,
+              and open and we take pride in sharing our expertise, helping TCS
+              Management and Stakeholders find the right solutions in the
+              rapidly changing world of technology
             </p>
             <Link href="/team">
               <a>

@@ -29,71 +29,101 @@ const KeyFigures = () => {
         </Fade>
         <Zoom delay={500}>
           <p className="text-sm text-[#707070] text-center w-[45rem] mt-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley.
+            A quick snapshot of our achievements in the last two years.
           </p>
         </Zoom>
         <div className="flex flex-wrap gap-[3rem] 2xl:gap-[5rem] justify-center items-center mt-[6rem] max-w-[70rem]">
           <Zoom delay={500}>
-          <div className="flex flex-col justify-center items-center w-[12rem]">
-            <img src="/home/key/projects.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">Number of Projects delivered</p>
-          </div>
+            <div className="flex flex-col justify-center items-center w-[12rem]">
+              <img
+                src="/home/key/projects.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">
+                Number of Projects delivered
+              </p>
+            </div>
           </Zoom>
           <Zoom delay={1000}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img
-              src="/home/key/nirServed.svg"
-              alt=""
-              className="h-[4rem] ml-[1.2rem]"
-            />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">Number of NIRs served</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/nirServed.svg"
+                alt=""
+                className="h-[4rem] ml-[1.2rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">Number of NIRs served</p>
+            </div>
           </Zoom>
           <Zoom delay={1500}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img src="/home/key/nirDev.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">NIRs in development</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/nirDev.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">NIRs in development</p>
+            </div>
           </Zoom>
           <Zoom delay={2000}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img src="/home/key/nirUat.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">NIRs in UAT</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/nirUat.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">NIRs in UAT</p>
+            </div>
           </Zoom>
           <Zoom delay={2500}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img src="/home/key/projectsDev.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">Projects in development</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/projectsDev.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">Projects in development</p>
+            </div>
           </Zoom>
           <Zoom delay={3000}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img src="/home/key/projectsUat.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">Projects in UAT</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/projectsUat.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">Projects in UAT</p>
+            </div>
           </Zoom>
           <Zoom delay={3500}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img src="/home/key/supportDesk.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">Support Desk issues resolved</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/supportDesk.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">
+                Support Desk issues resolved
+              </p>
+            </div>
           </Zoom>
           <Zoom delay={4000}>
-          <div className="flex flex-col justify-center items-center  w-[12rem]">
-            <img src="/home/key/products.svg" alt="" className="h-[3.5rem] 2xl:h-[4rem]" />
-            <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-            <p className="text-xs 2xl:text-sm">Products in Portfolio</p>
-          </div>
+            <div className="flex flex-col justify-center items-center  w-[12rem]">
+              <img
+                src="/home/key/products.svg"
+                alt=""
+                className="h-[3.5rem] 2xl:h-[4rem]"
+              />
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <p className="text-xs 2xl:text-sm">Products in Portfolio</p>
+            </div>
           </Zoom>
         </div>
       </div>
