@@ -46,10 +46,8 @@ const Upcoming = () => {
             </Fade>
             <Fade left delay={500}>
               <p className="text-sm text-[#707070] w-[40rem] mt-4 ml-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                galley.
+                View upcoming delivery and go live dates for the technology
+                portfolio:
               </p>
             </Fade>
           </div>

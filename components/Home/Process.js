@@ -46,9 +46,10 @@ const Process = () => {
         <Fade left delay={500}>
           {" "}
           <p className="text-sm text-[#707070] text-center w-[45rem] mt-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley.
+            Refined over many years, TCS Tech uses a process that delivers
+            results. Working through five development phases, we collaborate
+            continuously with our customer and stakeholders, regularly checking
+            against the project goals and ensuring user’s needs are met.
           </p>
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}

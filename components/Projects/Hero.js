@@ -47,11 +47,8 @@ const Hero = () => {
         </div>
         <Zoom delay={500}>
           <p className="text-sm text-[#707070]  text-center max-w-[45rem] mt-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries.
+            View projects we are working. You can filter by projects and NIRs
+            and also sort results based on selected columns.
           </p>
         </Zoom>
         <Zoom delay={1000}>
@@ -64,11 +61,7 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               className="h-[30rem]"
             >
-              <img
-                src="/Projects.svg"
-                alt=""
-                className="w-[40rem] mt-[4rem]"
-              />
+              <img src="/Projects.svg" alt="" className="w-[40rem] mt-[4rem]" />
             </animated.div>
           </div>
         </Zoom>

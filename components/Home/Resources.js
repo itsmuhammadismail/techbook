@@ -22,9 +22,11 @@ const Resources = () => {
         </Fade>
         <Fade left delay={500}>
           <p className="text-sm text-[#707070]  text-center w-[45rem] mt-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley.
+            Download documents and resources to start your next Project or NIR.
+            Read Responsibilities of and SOPs followed by different teams in the
+            Technology Department. While our documents are primarily used for
+            technology projects, they provide a good subset for non-software
+            related projects as well.
           </p>
         </Fade>
         <div

@@ -11,9 +11,10 @@ const Head = () => {
       </Fade>
       <Zoom delay={500}>
         <p className="text-sm text-[#707070]  w-[43rem] my-[1rem] text-center mb-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry’s standard dummy text ever
-          since the 1500s, when an unknown printer took a galley
+          Our Head of Departments report to the Director Technology and are
+          responsible for managing key areas in the Software Development and IT
+          Support Process. Technology Heads are responsible for the overall
+          progress of Projects and NIRs in their respective key areas.
         </p>
       </Zoom>
 
@@ -22,28 +23,36 @@ const Head = () => {
           <div className="flex flex-col  items-center w-[18rem] h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
             <h2 className="text-xl mt-4 ">Sabir Hafeez</h2>
-            <p className="text-center text-sm">Head Software Enterprise Application Development</p>
+            <p className="text-center text-sm">
+              Head Software Enterprise Application Development
+            </p>
           </div>
         </Zoom>
         <Zoom delay={1500}>
           <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
             <h2 className="text-xl mt-4 ">Atif Amin</h2>
-            <p className="text-center text-sm">Head Service Desk & Hardware Support</p>
+            <p className="text-center text-sm">
+              Head Service Desk & Hardware Support
+            </p>
           </div>
         </Zoom>
         <Zoom delay={2000}>
           <div className="flex flex-col  items-center w-[18rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
             <h2 className="text-xl mt-4 ">Syed Ghayur Abbas Rizvi</h2>
-            <p className="text-center text-sm">Head Technical - Network & Messaging</p>
+            <p className="text-center text-sm">
+              Head Technical - Network & Messaging
+            </p>
           </div>
         </Zoom>
         <Zoom delay={2500}>
           <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
             <h2 className="text-xl mt-4 ">Shakeel Rasheed</h2>
-            <p className="text-center text-sm">Head Business Systems - Oracle</p>
+            <p className="text-center text-sm">
+              Head Business Systems - Oracle
+            </p>
           </div>
         </Zoom>
         <Zoom delay={3000}>
@@ -67,7 +76,6 @@ const Head = () => {
             <p className="text-center text-sm">Head of EPMO & IT Governance</p>
           </div>
         </Zoom>
-      
       </div>
     </div>
   );

@@ -130,12 +130,12 @@ const Hero = () => {
             </h1>
             <Fade up delay={1000}>
               <p className="w-[32rem] text-[#707070] text-sm pt-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                Welcome to TCS Techbook. Your single point reference for
+                everything related to the TCS Technology (IT). This website
+                describes IT functions, teams and department structure and
+                standard operating process followed by each team. We also
+                present coming an easy view of completion deadlines and a
+                detailed project dashboard for management and key stakeholders.
               </p>
             </Fade>
           </div>
