@@ -26,7 +26,7 @@ const Project = () => {
           </div>
         </Fade>
         <Zoom delay={1000} duration={3000}>
-          <img src="/home/projectDashboard.svg" alt="" className="" />
+          <img src="/home/dashboard.png" alt="" className="" />
         </Zoom>
         {/* Bottom Circle */}
         <Fade delay={4000}>

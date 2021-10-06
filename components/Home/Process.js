@@ -53,7 +53,7 @@ const Process = () => {
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
         <Fade>
-          <div className="w-[50rem] ml-[-5rem]">
+          <div className="w-[50rem] ">
             <ProcessSvg />
           </div>
         </Fade>
