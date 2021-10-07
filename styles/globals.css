@@ -153,35 +153,41 @@ a {
 }
 
 .redImage {
-  background-image: url(/CLS2.png);
+  /* background-image: url(/CLS2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
+  background-color: #ED1818;
   transition: all 0.5s ease;
 }
 .redImage:hover {
-  background-image: url(/CLS.png);
+  /* background-image: url(/CLS.png); */
+  background-color: #be0101;
 }
 
 .blueImage {
-  background-image: url(/leadHover.png);
+  /* background-image: url(/leadHover.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
+  background-color: #009AAB;
   transition: all 0.5s ease;
 }
 .blueImage:hover {
-  background-image: url(/lead.png);
+  /* background-image: url(/lead.png); */
+  background-color: #007986;
 }
 .grayImage {
-  background-image: url(/teams.png);
+  /* background-image: url(/teams.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
+  background-color: #2D2D2D;
   transition: all 0.5s ease;
 }
 .grayImage:hover {
-  background-image: url(/teamsHover.png);
+  /* background-image: url(/teamsHover.png); */
+  background-color: #1f1f1f;
 }
 
 .sop {

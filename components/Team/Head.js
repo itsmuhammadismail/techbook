@@ -3,7 +3,7 @@ import Zoom from "react-reveal/Zoom";
 
 const Head = () => {
   return (
-    <div className="lg:container mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
+    <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
       <Fade left>
         <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
           Heads
@@ -20,8 +20,10 @@ const Head = () => {
 
       <div className="flex flex-wrap justify-center items-center gap-8">
         <Zoom delay={1000}>
-          <div className="flex flex-col  items-center w-[18rem] h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col  items-center w-[16rem] h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Sabir Hafeez</h2>
             <p className="text-center text-sm">
               Head Software Enterprise Application Development
@@ -29,8 +31,10 @@ const Head = () => {
           </div>
         </Zoom>
         <Zoom delay={1500}>
-          <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Atif Amin</h2>
             <p className="text-center text-sm">
               Head Service Desk & Hardware Support
@@ -38,8 +42,10 @@ const Head = () => {
           </div>
         </Zoom>
         <Zoom delay={2000}>
-          <div className="flex flex-col  items-center w-[18rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col  items-center w-[16rem]  h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Syed Ghayur Abbas Rizvi</h2>
             <p className="text-center text-sm">
               Head Technical - Network & Messaging
@@ -47,8 +53,10 @@ const Head = () => {
           </div>
         </Zoom>
         <Zoom delay={2500}>
-          <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Shakeel Rasheed</h2>
             <p className="text-center text-sm">
               Head Business Systems - Oracle
@@ -56,22 +64,28 @@ const Head = () => {
           </div>
         </Zoom>
         <Zoom delay={3000}>
-          <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Sadan-ul-Haq Syed</h2>
             <p className="text-center text-sm">DBA Head</p>
           </div>
         </Zoom>
         <Zoom delay={3500}>
-          <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Asif Iqbal Siddiqui</h2>
             <p className="text-center text-sm">Head of Production Support</p>
           </div>
         </Zoom>
         <Zoom delay={4000}>
-          <div className="flex flex-col items-center w-[18rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem]"></div>
+          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <img src="/heads.png" alt="" className="h-[100%] " />
+            </div>
             <h2 className="text-xl mt-4 ">Atif Tanveer Lodhi</h2>
             <p className="text-center text-sm">Head of EPMO & IT Governance</p>
           </div>

@@ -1,6 +1,8 @@
 import { useSpring, animated } from "react-spring";
 import MailboxSvg from "./MailboxSvg";
 import Fade from "react-reveal/Fade";
+import Modal from "./Modal";
+import { useState } from "react";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
@@ -10,9 +12,11 @@ const Newsletter = () => {
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
   }));
+  const [show, setShow] = useState(false);
+
   return (
-    <div className="border-t">
-      <div className="max-w-[75rem] mx-auto my-[5rem]  flex flex-col justify-center items-center">
+    <div className="">
+      <div className="max-w-[70rem] mx-auto my-[5rem]  flex flex-col justify-center items-center">
         <div className="flex mx-auto items-end justify-center max-w-[70rem] ">
           <Fade left>
             <div className="">
@@ -43,6 +47,7 @@ const Newsletter = () => {
                 />
                 <button
                   type="submit"
+                  onClick={() => setShow(true)}
                   className="bg-[#ED1818] text-white rounded-full h-[2.5rem] ml-[-1rem] w-[9rem] p-5 flex justify-center items-center"
                 >
                   Subscribe
@@ -62,6 +67,7 @@ const Newsletter = () => {
           </div>
         </Fade>
       </div>
+      <Modal show={show} onClose={() => setShow(false)} />
     </div>
   );
 };

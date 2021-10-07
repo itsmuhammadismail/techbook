@@ -57,7 +57,7 @@ const Hero = () => {
           >
             <animated.div
               style={{ transform: props.xy.interpolate(trans1) }}
-              className="h-[30rem]"
+              className="h-[20rem]"
             >
               <img
                 src="/resourcesHero.svg"

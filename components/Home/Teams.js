@@ -5,7 +5,7 @@ import Link from "next/link";
 const Teams = () => {
   return (
     <div className="bg-[#FAFAFA]">
-      <div className="max-w-[65rem] 2xl:max-w-[75rem] mx-auto flex justify-between items-center min-h-[100vh] gap-8">
+      <div className="max-w-[65rem] 2xl:max-w-[70rem] mx-auto flex justify-between items-center min-h-[100vh] gap-8">
         <Fade left>
           <div className="">
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header
       id="top"
-      className="max-w-[75rem] mx-auto flex justify-between items-center p-[1.5rem]"
+      className="max-w-[70rem] mx-auto flex justify-between items-center p-[1.5rem]"
     >
       <div className="">
         <Link href="/">

@@ -30,7 +30,7 @@ const Upcoming = () => {
         className="absolute right-0 bottom-[3rem] h-[30rem]"
         ref={imgRef}
       />
-      <div className="max-w-[65rem] 2xl:max-w-[75rem]  mx-auto flex flex-col justify-center  py-[5rem] min-h-[100vh]">
+      <div className="max-w-[65rem] 2xl:max-w-[70rem]  mx-auto flex flex-col justify-center  py-[5rem] min-h-[100vh]">
         <div className="flex items-center">
           <Zoom delay={1000}>
             <img
@@ -55,12 +55,12 @@ const Upcoming = () => {
         <div className="flex gap-4 mt-[4rem]">
           {/* Card */}
           <Zoom delay={1500}>
-            <div className="bg-white p-6 w-[20rem] 2xl:w-[24rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
+            <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/cls.svg" alt="" />
                 <h2 className="ho font-bold text-[2.5rem]">CLS</h2>
               </div>
-              <div className="my-2 text-xl">Courier & Logistics System</div>
+              <div className="my-2 text-[1rem] font-semibold">Courier & Logistics System</div>
               <p className="text-[#707070] text-sm">
                 Cloud based real-time Logistics and Supply Chain System for
                 Delivery Orchestration and Operational Visibility
@@ -76,12 +76,12 @@ const Upcoming = () => {
           </Zoom>
           {/* Card */}
           <Zoom delay={2000}>
-            <div className="bg-white p-6 w-[20rem] mt-[4rem] 2xl:w-[24rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
+            <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] mt-[4rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/crm.svg" alt="" />
                 <h2 className="ho font-bold text-[2.5rem]">CRM</h2>
               </div>
-              <div className="my-2 text-xl">Sales CRM System</div>
+              <div className="my-2 text-[1rem] font-semibold">Sales CRM System</div>
               <p className="text-[#707070] text-sm">
                 Enterprise Customer Relationship Management System
               </p>
@@ -96,12 +96,12 @@ const Upcoming = () => {
           </Zoom>
           {/* Card */}
           <Zoom delay={2500}>
-            <div className="bg-white p-6 mt-[8rem] w-[20rem] 2xl:w-[24rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
+            <div className="bg-white p-6 mt-[8rem] w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/gwms.svg" alt="" />
                 <h2 className="ho font-bold text-[2.5rem]">GWMS</h2>
               </div>
-              <div className="my-2 text-xl">Realtime Warehouse Management</div>
+              <div className="my-2 text-[1rem] font-semibold">Realtime Warehouse Management</div>
               <p className="text-[#707070] text-sm">
                 GWMS is designed to onboard and serve customers in real time
               </p>

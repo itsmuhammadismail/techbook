@@ -84,12 +84,12 @@ const Hero = () => {
   }, [blink]);
 
   return (
-    <div className="max-w-[75rem] mx-auto p-[1.5rem] h-[78vh] w-[100vw] flex items-center">
+    <div className="max-w-[70rem] mx-auto p-[1.5rem] h-[78vh] w-[100vw] flex items-center">
       <div className="flex items-center justify-between w-full relative">
         <img
           src="/home/dots.svg"
           alt=""
-          className="absolute bottom-4 h-[5rem]"
+          className="absolute bottom-4 h-[5rem] pl-[1.5rem]"
         />
 
         <img

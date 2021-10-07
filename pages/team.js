@@ -14,10 +14,12 @@ const Team = () => {
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
       <Layout>
+        <div className="border-b">
         <Hero />
         <Heads />
         <Leads />
         <Teams />
+        </div>
       </Layout>
     </div>
   );

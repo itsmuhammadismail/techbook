@@ -25,11 +25,11 @@ const Process = () => {
   }, []);
 
   return (
-    <div className="relative max-w-[75rem] mx-auto">
+    <div className="relative max-w-[70rem] mx-auto">
       <img
         src="/home/dots.svg"
         alt=""
-        className="absolute left-[2rem] top-[20rem]"
+        className="absolute left-[2rem] top-[20rem] "
       />
       <img
         src="/home/dots.svg"
@@ -56,7 +56,7 @@ const Process = () => {
           </p>
         </Zoom>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
-        <div className="w-[40rem] ml-[-5rem]">
+        <div className="w-[40rem] ml-[2rem]">
           <ProcessSvg />
         </div>
       </div>

@@ -49,7 +49,8 @@ const Process = () => {
             Refined over many years, TCS Tech uses a process that delivers
             results. Working through five development phases, we collaborate
             continuously with our customer and stakeholders, regularly checking
-            against the project goals and ensuring user’s needs are met.
+            against the project goals <br />
+            and ensuring user’s needs are met.
           </p>
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}

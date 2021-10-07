@@ -130,16 +130,16 @@ export default function Timeline({ data }) {
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
       <Layout>
-        <img
+        {/* <img
           className="absolute mt-[135rem] w-32 "
           src="/home/keyFigures.svg"
-        />
+        /> */}
         <img
           className="absolute right-0  w-32 mt-[60rem]"
           src="/home/keyFigures.svg"
           style={{ transform: "scaleX(-1)" }}
         />
-        <div className="lg:container mx-auto">
+        <div className="border-b">
           <Hero />
 
           <div className="flex flex-col justify-center items-center mb-[6rem]">
