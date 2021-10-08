@@ -57,7 +57,7 @@ export default function Home() {
             <div className="mx-auto mt-[4rem] flex flex-wrap gap-[3rem] justify-center items-center">
               <Link href="/processes/it-process">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img src="/process/it.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       IT Process
@@ -67,7 +67,7 @@ export default function Home() {
               </Link>
               <Link href="/processes/sqa-manual">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img src="/process/sqa.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       SQA (Manual Process)
@@ -77,7 +77,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img src="/process/sqa.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       SQA (Automation Process)
@@ -87,7 +87,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img src="/process/pmo.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       PMO Process
@@ -97,7 +97,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img
                       src="/process/oracle.svg"
                       alt=""
@@ -111,7 +111,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/dba.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       DBA Process
@@ -121,7 +121,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img
                       src="/process/production.svg"
                       alt=""
@@ -135,7 +135,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/erp.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       ERP Process
@@ -145,7 +145,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/web.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       Web/App Development Process
@@ -155,7 +155,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/mis.svg" alt="" className="h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       MIS/BI Process
@@ -165,7 +165,7 @@ export default function Home() {
               </Link>
               <Link href="">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2">
+                  <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img
                       src="/process/helpdesk.svg"
                       alt=""

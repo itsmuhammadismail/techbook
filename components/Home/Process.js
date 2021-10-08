@@ -38,13 +38,11 @@ const Process = () => {
       />
       <div className="lg:container mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
         <Fade left>
-          {" "}
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
             Process
           </h1>
         </Fade>
         <Fade left delay={500}>
-          {" "}
           <p className="text-sm text-[#707070] text-center w-[45rem] mt-4">
             Refined over many years, TCS Tech uses a process that delivers
             results. Working through five development phases, we collaborate
@@ -61,7 +59,7 @@ const Process = () => {
         </Fade>
         <Link href="/processes">
           <a>
-            <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[1rem]">
+            <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
               View All
             </button>
           </a>

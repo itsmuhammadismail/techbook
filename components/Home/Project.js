@@ -4,6 +4,7 @@ import Zoom from "react-reveal/Zoom";
 import { gsap } from "gsap";
 import TopCircleSvg from "./TopCircleSvg";
 import BottomCircleSvg from "./BottomCircleSvg";
+import Link from "next/link";
 
 const Project = () => {
   return (
@@ -37,9 +38,13 @@ const Project = () => {
           </div>
         </Fade>
       </div>
-      <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
-        View All
-      </button>
+      <Link href="/projects">
+        <a>
+          <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
+            View All
+          </button>
+        </a>
+      </Link>
     </div>
   );
 };
