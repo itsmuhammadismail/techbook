@@ -40,7 +40,7 @@ const Projects = () => {
             }`}
             onClick={() => handleSelected("tab 3")}
           >
-            TAB 3
+            HOLD
           </div>
           <div
             className={`flex-1 flex justify-center items-center h-[4rem] hover:bg-[#65cdd8] ${
@@ -66,7 +66,7 @@ const Projects = () => {
           <div className="flex justify-center items-center border-b">
             <iframe
               className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
-              src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
+              src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_lqbwj8z4nc"
               frameBorder={0}
               style={{ border: 0 }}
               allowFullScreen
@@ -77,7 +77,7 @@ const Projects = () => {
           <div className="flex justify-center items-center border-b">
             <iframe
               className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
-              src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
+              src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_f7jayqnboc"
               frameBorder={0}
               style={{ border: 0 }}
               allowFullScreen
@@ -88,7 +88,7 @@ const Projects = () => {
           <div className="flex justify-center items-center border-b">
             <iframe
               className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
-              src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
+              src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_cqvwrsnboc"
               frameBorder={0}
               style={{ border: 0 }}
               allowFullScreen
