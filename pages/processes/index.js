@@ -54,7 +54,7 @@ export default function Home() {
                 galley.
               </p>
             </Zoom>
-            <div className="mx-auto mt-[4rem] flex flex-wrap gap-[3rem] justify-center items-center">
+            <div className="mx-auto mt-[4rem] flex flex-wrap gap-[3rem] justify-center">
               <Link href="/processes/it-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
