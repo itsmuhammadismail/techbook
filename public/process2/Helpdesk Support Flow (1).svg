@@ -15,27 +15,29 @@
 	<style type="text/css">
 	<![CDATA[
 		.st1 {fill:#418ab3;fill-opacity:0;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
-		.st2 {fill:#418ab3;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st2 {fill:#65cdd8;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
 		.st3 {fill:#ffffff;font-family:Segoe UI;font-size:1.33333em}
 		.st4 {fill:#418ab3;fill-opacity:0}
-		.st5 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
+		.st5 {stroke:#2e2e2e;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
 		.st6 {fill:#418ab3;fill-opacity:0;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st7 {fill:#418ab3;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st7 {fill:#65cdd8;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st8 {fill:#ffffff;font-family:Segoe UI;font-size:1.00001em}
 		.st9 {font-size:1em}
 		.st10 {fill:#418ab3;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
-		.st11 {fill:#418ab3;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st12 {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em}
-		.st13 {fill:#a6b727;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st14 {marker-end:url(#mrkr4-54);stroke:#9dad24;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st15 {fill:#9dad24;fill-opacity:1;stroke:#9dad24;stroke-opacity:1;stroke-width:0.16556291390728}
+		.st11 {fill:#2e2e2e;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st12 {fill:#2e2e2e;font-family:Segoe UI;font-size:0.666664em}
+		.st12a {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em}
+		.st13 {fill:#65cdd8;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st14 {marker-end:url(#mrkr4-54);stroke:#2e2e2e;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st15 {fill:#2e2e2e;fill-opacity:1;stroke:#9dad24;stroke-opacity:1;stroke-width:0.16556291390728}
 		.st16 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st17 {fill:#79861a;font-family:Segoe UI;font-size:0.666664em}
+		.st17 {fill:#2e2e2e;#79861a;font-family:Segoe UI;font-size:0.666664em}
 		.st18 {visibility:visible}
-		.st19 {fill:#a6b727;fill-opacity:0.098;stroke:#a6b727;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.098}
+		.st19 {fill:#2e2e2e;fill-opacity:0.098;stroke:#a6b727;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.098}
 		.st20 {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
+		.st20a {fill:#2e2e2e;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
 		.st21 {fill:#ffffff;stroke:none;stroke-linecap:butt}
-		.st22 {fill:#838383;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st22 {fill:#2e2e2e;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st23 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -576,7 +578,7 @@
 			<v:textRect cx="36" cy="1634.28" width="72" height="27"/>
 			<path d="M13.5 1647.78 L58.5 1647.78 A13.5 13.5 -180 0 0 58.5 1620.78 L13.5 1620.78 A13.5 13.5 -180 1 0 13.5 1647.78 Z"
 					class="st11"/>
-			<text x="27.74" y="1636.68" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Start</text>		</g>
+			<text x="27.74" y="1636.68" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Start</text>		</g>
 		<g id="shape57-45" v:mID="57" v:groupContext="shape" v:layerMember="0" transform="translate(111.75,-1485)">
 			<title>Process</title>
 			<desc>User logs the issue on ServiceDesk portal</desc>
@@ -691,7 +693,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1620.78" width="60" height="40.5"/>
 			<path d="M0 1620.78 L36 1593.78 L72 1620.78 L36 1647.78 L0 1620.78 Z" class="st11"/>
-			<text x="9.12" y="1618.38" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Is this technical <tspan
+			<text x="9.12" y="1618.38" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Is this technical <tspan
 						x="27.28" dy="1.2em" class="st9">issue</tspan></text>		</g>
 		<g id="shape228-68" v:mID="228" v:groupContext="shape" v:layerMember="1" transform="translate(170.128,-1485)">
 			<title>Dynamic connector.228</title>
@@ -819,7 +821,7 @@
 			<v:textRect cx="36" cy="1634.28" width="72" height="27"/>
 			<path d="M13.5 1647.78 L58.5 1647.78 A13.5 13.5 -180 0 0 58.5 1620.78 L13.5 1620.78 A13.5 13.5 -180 1 0 13.5 1647.78 Z"
 					class="st11"/>
-			<text x="29.36" y="1636.68" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>End</text>		</g>
+			<text x="29.36" y="1636.68" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>End</text>		</g>
 		<g id="shape281-96" v:mID="281" v:groupContext="shape" v:layerMember="0" transform="translate(624.5,-1332)">
 			<title>Process.281</title>
 			<desc>Technician fixes the issue</desc>
@@ -898,7 +900,7 @@
 			</g>
 			<path d="M0 1641.78 L0 1593.78 L72 1593.78 L72 1641.78 A30 30 -180 0 0 36 1641.78 A30 30 0 0 1 -0 1641.78 Z"
 					class="st13"/>
-			<text x="8.3" y="1612.38" class="st20" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Notification to <tspan
+			<text x="8.3" y="1612.38" class="st20a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Notification to <tspan
 						x="3.79" dy="1.2em" class="st9">user is generated</tspan></text>		</g>
 		<g id="shape435-110" v:mID="435" v:groupContext="shape" v:layerMember="1" transform="translate(404.004,-1368)">
 			<title>Dynamic connector.435</title>
@@ -1025,7 +1027,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1620.78" width="60" height="40.5"/>
 			<path d="M0 1620.78 L36 1593.78 L72 1620.78 L36 1647.78 L0 1620.78 Z" class="st11"/>
-			<text x="17.99" y="1618.38" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Request is <tspan
+			<text x="17.99" y="1618.38" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Request is <tspan
 						x="19.16" dy="1.2em" class="st9">approved</tspan></text>		</g>
 		<g id="shape443-139" v:mID="443" v:groupContext="shape" v:layerMember="1" transform="translate(273.505,-1243.17)">
 			<title>Dynamic connector.443</title>
@@ -1161,7 +1163,7 @@
 			</g>
 			<path d="M0 1641.78 L0 1593.78 L72 1593.78 L72 1641.78 A30 30 -180 0 0 36 1641.78 A30 30 0 0 1 -0 1641.78 Z"
 					class="st13"/>
-			<text x="8.3" y="1612.38" class="st20" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Notification to <tspan
+			<text x="8.3" y="1612.38" class="st20a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Notification to <tspan
 						x="3.79" dy="1.2em" class="st9">user is generated</tspan></text>		</g>
 		<g id="shape450-171" v:mID="450" v:groupContext="shape" v:layerMember="1;0" transform="translate(388.749,-1184.67)">
 			<title>On-page reference.450</title>
@@ -1247,7 +1249,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1620.78" width="60" height="40.5"/>
 			<path d="M0 1620.78 L36 1593.78 L72 1620.78 L36 1647.78 L0 1620.78 Z" class="st11"/>
-			<text x="9.67" y="1623.18" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PR is approved</text>		</g>
+			<text x="9.67" y="1623.18" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PR is approved</text>		</g>
 		<g id="shape461-194" v:mID="461" v:groupContext="shape" v:layerMember="1" transform="translate(402.249,-1258.33)">
 			<title>Dynamic connector.461</title>
 			<v:userDefs>
@@ -1439,7 +1441,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1620.78" width="60" height="40.5"/>
 			<path d="M0 1620.78 L36 1593.78 L72 1620.78 L36 1647.78 L0 1620.78 Z" class="st11"/>
-			<text x="9.05" y="1623.18" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PO is approved</text>		</g>
+			<text x="9.05" y="1623.18" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PO is approved</text>		</g>
 		<g id="shape474-254" v:mID="474" v:groupContext="shape" v:layerMember="0" transform="translate(353.25,-816.795)">
 			<title>Process.474</title>
 			<desc>PO is received</desc>
@@ -1553,7 +1555,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1620.78" width="60" height="40.5"/>
 			<path d="M0 1620.78 L36 1593.78 L72 1620.78 L36 1647.78 L0 1620.78 Z" class="st11"/>
-			<text x="13.74" y="1618.38" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Does it need <tspan
+			<text x="13.74" y="1618.38" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Does it need <tspan
 						x="12.35" dy="1.2em" class="st9">configuration</tspan></text>		</g>
 		<g id="shape484-285" v:mID="484" v:groupContext="shape" v:layerMember="1;0" transform="translate(269.005,-1184.67)">
 			<title>On-page reference.484</title>
@@ -1948,7 +1950,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1620.78" width="60" height="40.5"/>
 			<path d="M0 1620.78 L36 1593.78 L72 1620.78 L36 1647.78 L0 1620.78 Z" class="st11"/>
-			<text x="20.22" y="1623.18" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Is it fixed</text>		</g>
+			<text x="20.22" y="1623.18" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Is it fixed</text>		</g>
 		<g id="shape518-403" v:mID="518" v:groupContext="shape" v:layerMember="1" transform="translate(548.191,-1413)">
 			<title>Dynamic connector.518</title>
 			<desc>No</desc>

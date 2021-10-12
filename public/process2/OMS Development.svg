@@ -15,28 +15,30 @@
 	<style type="text/css">
 	<![CDATA[
 		.st1 {fill:#418ab3;fill-opacity:0;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
-		.st2 {fill:#418ab3;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st2 {fill:#65cdd8;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
 		.st3 {fill:#ffffff;font-family:Segoe UI;font-size:1.33333em;font-weight:bold}
 		.st4 {fill:#418ab3;fill-opacity:0}
 		.st5 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
 		.st6 {fill:#418ab3;fill-opacity:0;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st7 {fill:#418ab3;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st7 {fill:#65cdd8;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st8 {fill:#ffffff;font-family:Segoe UI;font-size:1.00001em}
 		.st9 {font-size:1em}
 		.st10 {fill:#418ab3;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
-		.st11 {fill:#418ab3;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st12 {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
-		.st13 {fill:#a6b727;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st11 {fill:#2e2e2e;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st12 {fill:#2e2e2e;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
+		.st12a {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
+		.st13 {fill:#65cdd8;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st14 {marker-end:url(#mrkr4-68);stroke:#9dad24;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st15 {fill:#9dad24;fill-opacity:1;stroke:#9dad24;stroke-opacity:1;stroke-width:0.16556291390728}
+		.st15 {fill:#2e2e2e;fill-opacity:1;stroke:#9dad24;stroke-opacity:1;stroke-width:0.16556291390728}
 		.st16 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st17 {fill:#79861a;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
-		.st18 {fill:#ffffff;font-family:Segoe UI;font-size:0.75em;font-weight:bold}
+		.st17 {fill:#2e2e2e;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
+		.st18 {fill:#2e2e2e;font-family:Segoe UI;font-size:0.75em;font-weight:bold}
+		.st18a {fill:#ffffff;font-family:Segoe UI;font-size:0.75em;font-weight:bold}
 		.st19 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st20 {fill:#ff0000;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
-		.st21 {fill:#a6b727;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
+		.st21 {fill:#2e2e2e;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
 		.st22 {fill:#ffffff;stroke:none;stroke-linecap:butt}
-		.st23 {fill:#7a871a;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
+		.st23 {fill:#2e2e2e;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
 		.st24 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -710,7 +712,7 @@
 			<v:textRect cx="36" cy="828.39" width="72" height="27"/>
 			<path d="M13.5 841.89 L58.5 841.89 A13.5 13.5 -180 0 0 58.5 814.89 L13.5 814.89 A13.5 13.5 -180 1 0 13.5 841.89 Z"
 					class="st11"/>
-			<text x="26.9" y="830.79" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Start</text>		</g>
+			<text x="26.9" y="830.79" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Start</text>		</g>
 		<g id="shape57-60" v:mID="57" v:groupContext="shape" v:layerMember="0" transform="translate(227.25,-690.173)">
 			<title>Process</title>
 			<desc>Alignment</desc>
@@ -1113,7 +1115,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="814.89" width="60" height="40.5"/>
 			<path d="M0 814.89 L36 787.89 L72 814.89 L36 841.89 L0 814.89 Z" class="st11"/>
-			<text x="18.08" y="817.59" class="st18" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Decision</text>		</g>
+			<text x="18.08" y="817.59" class="st18a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Decision</text>		</g>
 		<g id="shape281-167" v:mID="281" v:groupContext="shape" v:layerMember="1" transform="translate(576,-544.11)">
 			<title>Dynamic connector.281</title>
 			<desc>4</desc>
@@ -1327,7 +1329,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="814.89" width="60" height="40.5"/>
 			<path d="M0 814.89 L36 787.89 L72 814.89 L36 841.89 L0 814.89 Z" class="st11"/>
-			<text x="18.08" y="817.59" class="st18" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Decision</text>		</g>
+			<text x="18.08" y="817.59" class="st18a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Decision</text>		</g>
 		<g id="shape320-220" v:mID="320" v:groupContext="shape" v:layerMember="1" transform="translate(225,-327.173)">
 			<title>Dynamic connector.320</title>
 			<path d="M0 832.89 L29.96 832.89" class="st14"/>
@@ -1494,7 +1496,7 @@
 			<v:textRect cx="36" cy="827.265" width="72" height="29.25"/>
 			<path d="M14.63 841.89 L57.37 841.89 A14.625 14.625 -180 0 0 57.37 812.64 L14.63 812.64 A14.625 14.625 -180 1 0 14.63
 						 841.89 Z" class="st11"/>
-			<text x="28.97" y="829.66" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>End</text>		</g>
+			<text x="28.97" y="829.66" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>End</text>		</g>
 		<g id="shape349-266" v:mID="349" v:groupContext="shape" v:layerMember="1" transform="translate(515.25,-257.441)">
 			<title>Dynamic connector.349</title>
 			<path d="M0 850.68 L18 850.68 L18 851.1 L34.01 851.1" class="st14"/>
@@ -1538,7 +1540,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="814.89" width="60" height="40.5"/>
 			<path d="M0 814.89 L36 787.89 L72 814.89 L36 841.89 L0 814.89 Z" class="st11"/>
-			<text x="18.08" y="817.59" class="st18" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Decision</text>		</g>
+			<text x="18.08" y="817.59" class="st18a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Decision</text>		</g>
 		<g id="shape366-281" v:mID="366" v:groupContext="shape" transform="translate(412.312,-442.11)">
 			<title>Sheet.366</title>
 			<desc>Fails</desc>

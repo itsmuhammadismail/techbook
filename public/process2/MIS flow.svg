@@ -15,26 +15,27 @@
 	<style type="text/css">
 	<![CDATA[
 		.st1 {fill:#418ab3;fill-opacity:0;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
-		.st2 {fill:#418ab3;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st2 {fill:#65cdd8;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
 		.st3 {fill:#ffffff;font-family:Segoe UI;font-size:1.33333em}
 		.st4 {fill:#418ab3;fill-opacity:0}
 		.st5 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
 		.st6 {fill:#418ab3;fill-opacity:0;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st7 {fill:#418ab3;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st7 {fill:#65cdd8;stroke:#254f65;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st8 {fill:#ffffff;font-family:Segoe UI;font-size:1.00001em}
 		.st9 {font-size:1em}
-		.st10 {fill:#418ab3;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
-		.st11 {fill:#418ab3;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st12 {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em}
-		.st13 {fill:#a6b727;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st10 {fill:#2e2e2e;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
+		.st11 {fill:#2e2e2e;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st12 {fill:#2e2e2e;font-family:Segoe UI;font-size:0.666664em}
+		.st12a {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em}
+		.st13 {fill:#65cdd8;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st14 {marker-end:url(#mrkr4-54);stroke:#9dad24;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
-		.st15 {fill:#9dad24;fill-opacity:1;stroke:#9dad24;stroke-opacity:1;stroke-width:0.16556291390728}
+		.st15 {fill:#2e2e2e;fill-opacity:1;stroke:#9dad24;stroke-opacity:1;stroke-width:0.16556291390728}
 		.st16 {visibility:visible}
-		.st17 {fill:#a6b727;fill-opacity:0.098;stroke:#a6b727;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.098}
-		.st18 {fill:#838383;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st17 {fill:#65cdd8;fill-opacity:0.098;stroke:#a6b727;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.098}
+		.st18 {fill:#2e2e2e;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st19 {fill:#ffffff;font-family:Segoe UI;font-size:0.666664em;font-weight:bold}
 		.st20 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st21 {fill:#79861a;font-family:Segoe UI;font-size:0.666664em}
+		.st21 {fill:#2e2e2e;font-family:Segoe UI;font-size:0.666664em}
 		.st22 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -575,7 +576,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1174.5" width="72" height="27"/>
 			<path d="M13.5 1188 L58.5 1188 A13.5 13.5 -180 0 0 58.5 1161 L13.5 1161 A13.5 13.5 -180 1 0 13.5 1188 Z" class="st11"/>
-			<text x="27.74" y="1176.9" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Start</text>		</g>
+			<text x="27.74" y="1176.9" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Start</text>		</g>
 		<g id="shape57-46" v:mID="57" v:groupContext="shape" v:layerMember="0" transform="translate(252,-1062)">
 			<title>Process</title>
 			<desc>PMO team Initiates NIR</desc>
@@ -887,7 +888,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1161" width="60" height="40.5"/>
 			<path d="M0 1161 L36 1134 L72 1161 L36 1188 L0 1161 Z" class="st11"/>
-			<text x="9.52" y="1163.4" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>If testing is ok?</text>		</g>
+			<text x="9.52" y="1163.4" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>If testing is ok?</text>		</g>
 		<g id="shape137-109" v:mID="137" v:groupContext="shape" v:layerMember="0" transform="translate(117,-684)">
 			<title>Process.137</title>
 			<desc>QA Team prepares for testing</desc>
@@ -1028,7 +1029,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1161" width="60" height="40.5"/>
 			<path d="M0 1161 L36 1134 L72 1161 L36 1188 L0 1161 Z" class="st11"/>
-			<text x="9.52" y="1163.4" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>If testing is ok?</text>		</g>
+			<text x="9.52" y="1163.4" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>If testing is ok?</text>		</g>
 		<g id="shape144-128" v:mID="144" v:groupContext="shape" v:layerMember="1" transform="translate(166.499,-684)">
 			<title>Dynamic connector.144</title>
 			<v:userDefs>
@@ -1136,7 +1137,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1161" width="60" height="40.5"/>
 			<path d="M0 1161 L36 1134 L72 1161 L36 1188 L0 1161 Z" class="st11"/>
-			<text x="9.52" y="1163.4" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>If testing is ok?</text>		</g>
+			<text x="9.52" y="1163.4" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>If testing is ok?</text>		</g>
 		<g id="shape148-145" v:mID="148" v:groupContext="shape" v:layerMember="1" transform="translate(350.995,-711)">
 			<title>Dynamic connector.148</title>
 			<v:userDefs>
@@ -1406,7 +1407,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="1174.5" width="72" height="27"/>
 			<path d="M13.5 1188 L58.5 1188 A13.5 13.5 -180 0 0 58.5 1161 L13.5 1161 A13.5 13.5 -180 1 0 13.5 1188 Z" class="st11"/>
-			<text x="28.18" y="1176.9" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>END</text>		</g>
+			<text x="28.18" y="1176.9" class="st12a" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>END</text>		</g>
 		<g id="shape204-244" v:mID="204" v:groupContext="shape" v:layerMember="0" transform="translate(252,-760.5)">
 			<title>Process.204</title>
 			<desc>Required modifications are performed</desc>
