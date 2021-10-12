@@ -75,7 +75,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/sqa-automation">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img src="/process/sqa.svg" alt="" className="h-[4.5rem]" />
@@ -85,7 +85,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/pmo-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img src="/process/pmo.svg" alt="" className="h-[4.5rem]" />
@@ -95,7 +95,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/oracle-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
                     <img
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/dba-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/dba.svg" alt="" className="h-[4.5rem]" />
@@ -119,7 +119,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/production-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img
@@ -133,7 +133,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/erp-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/erp.svg" alt="" className="h-[4.5rem]" />
@@ -143,7 +143,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/webapp-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/web.svg" alt="" className="h-[4.5rem]" />
@@ -153,7 +153,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/mis-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img src="/process/mis.svg" alt="" className="h-[4.5rem]" />
@@ -163,7 +163,7 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              <Link href="">
+              <Link href="/processes/helpdesk-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
                     <img
