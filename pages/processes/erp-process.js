@@ -18,7 +18,7 @@ const ERP = () => {
                 ERP Flow (Process)
               </h1>
             </Fade>
-            <img src="/process2/ERP Flow.svg" alt="" className="mb-8" />
+            <img src="/process2/erp.svg" alt="" className="mb-8" />
           </div>
         </div>
       </Layout>

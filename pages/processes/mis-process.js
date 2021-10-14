@@ -18,7 +18,7 @@ const MIS = () => {
                 MIS/BI (Process)
               </h1>
             </Fade>
-            <img src="/process2/MIS Flow.svg" alt="" />
+            <img src="/process2/mis.svg" alt="" />
           </div>
         </div>
       </Layout>

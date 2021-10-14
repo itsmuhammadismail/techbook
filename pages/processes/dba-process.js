@@ -18,7 +18,11 @@ const DBA = () => {
                 DBA (Process Flow)
               </h1>
             </Fade>
-            <img src="/process2/DBA Process Flow (1).svg" alt="" />
+            <img
+              src="/process2/DBA Process Flow (1).svg"
+              alt=""
+              className="w-full"
+            />
           </div>
         </div>
       </Layout>
