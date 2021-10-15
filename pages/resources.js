@@ -39,7 +39,11 @@ export default function Timeline() {
                   SOP
                 </div>
                 <div className="flex ">
-                  <a href="/dummy.docx" className="flex flex-col items-center">
+                  <a
+                    href="/dummy.docx"
+                    download
+                    className="flex flex-col items-center"
+                  >
                     <img className="w-[2rem] mt-4" src="/home/Group 555.svg" />
                     <p className=" text-[10px] text-sm text-[#707070] mt-2">
                       EPMO policy v1.0 pdf
@@ -54,6 +58,7 @@ export default function Timeline() {
               <div className="flex flex-wrap gap-[0.5rem] mt-6">
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -63,6 +68,7 @@ export default function Timeline() {
                 </a>
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -72,6 +78,7 @@ export default function Timeline() {
                 </a>
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -82,6 +89,7 @@ export default function Timeline() {
 
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -92,6 +100,7 @@ export default function Timeline() {
 
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 593.svg" className="w-[2rem]" />
@@ -102,6 +111,7 @@ export default function Timeline() {
 
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -111,6 +121,7 @@ export default function Timeline() {
                 </a>
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -170,68 +181,65 @@ export default function Timeline() {
               <div className="flex flex-wrap gap-[0.5rem] mt-6">
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
                   <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                    01- RFC Template.docx
+                    01-QA Daily Activity Process.pptx
                   </p>
                 </a>
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
                   <p className="text-[#707070]  mt-2 text-[10px] max-w-[5rem] text-center">
-                    02- Project Charter Template.docx
+                    02-QA Resource Sheet - Templat.xlsx
                   </p>
                 </a>
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
                   <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                    03- FSD Template.docx
+                    03-Release Note Template.docx
                   </p>
                 </a>
 
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
                   <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                    04- Metting Minutes Template.docx
+                    04-Test case - Template.xlsx
                   </p>
                 </a>
 
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 593.svg" className="w-[2rem]" />
                   <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                    Weekly Project Status Template.docx
+                    Test Case Sign Off - Template.doc
                   </p>
                 </a>
 
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
                   <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                    05- Project Closure Report Template.docx
-                  </p>
-                </a>
-                <a
-                  href="/dummy.docx"
-                  className="flex flex-col items-center flex-wrap"
-                >
-                  <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                    06- NIR Template.docx
+                    05-Test Plan - Template.docx
                   </p>
                 </a>
               </div>
@@ -335,6 +343,7 @@ export default function Timeline() {
               <div className="flex gap-8 mt-6">
                 <a
                   href="/dummy.docx"
+                  download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -513,6 +522,7 @@ export default function Timeline() {
             <div className="flex gap-8 mt-6">
               <a
                 href="/dummy.docx"
+                download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 561.svg" className="w-[2rem]" />
@@ -522,6 +532,7 @@ export default function Timeline() {
               </a>
               <a
                 href="/dummy.docx"
+                download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 593.svg" className="w-[2rem]" />
@@ -643,7 +654,7 @@ export default function Timeline() {
             <div className=" ho text-[1.5rem] font-bold mt-8 ">
               Sample Template - Documents
             </div>
-            <a href="/dummy.docx" className="flex gap-8 mt-6">
+            <a href="/dummy.docx" download className="flex gap-8 mt-6">
               <div className="flex flex-col items-center flex-wrap">
                 <img src="/home/Group 561.svg" className="w-[2rem]" />
                 <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
@@ -652,6 +663,7 @@ export default function Timeline() {
               </div>
               <a
                 href="/dummy.docx"
+                download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 593.svg" className="w-[2rem]" />
