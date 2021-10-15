@@ -53,7 +53,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[4rem]"
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">18</h2>
               <p className="text-xs">Number of NIRs served</p>
             </div>
           </Zoom>
@@ -64,7 +64,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[3.5rem] "
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">22</h2>
               <p className="text-xs">NIRs in development</p>
             </div>
           </Zoom>
@@ -75,7 +75,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[3.5rem] "
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">35</h2>
               <p className="text-xs">NIRs in UAT</p>
             </div>
           </Zoom>
@@ -86,7 +86,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[3.5rem] "
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">19</h2>
               <p className="text-xs">Projects in development</p>
             </div>
           </Zoom>
@@ -97,7 +97,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[3.5rem] "
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">41</h2>
               <p className="text-xs">Projects in UAT</p>
             </div>
           </Zoom>
@@ -108,7 +108,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[3.5rem] "
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">27</h2>
               <p className="text-xs">
                 Support Desk issues resolved
               </p>
@@ -121,7 +121,7 @@ const KeyFigures = () => {
                 alt=""
                 className="h-[3.5rem] "
               />
-              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
+              <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">52</h2>
               <p className="text-xs">Products in Portfolio</p>
             </div>
           </Zoom>

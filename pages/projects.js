@@ -48,7 +48,7 @@ const Projects = () => {
             }`}
             onClick={() => handleSelected("tab 4")}
           >
-            TAB 4
+            CHEAT SHEET
           </div>
         </div>
         {selected === "inprogress" && (
