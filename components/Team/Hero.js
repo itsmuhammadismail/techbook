@@ -134,7 +134,7 @@ const Hero = () => {
                 style={{ transform: props.xy.interpolate(trans1) }}
                 className="h-[17rem]"
               >
-                <img src="/Team.svg" alt="" />
+                <img src="/TeamPage.svg" alt="" />
               </animated.div>
             </div>
           </Fade>
