@@ -22,7 +22,7 @@ const Head = () => {
         <Zoom delay={1000}>
           <div className="flex flex-col  items-center w-[16rem] h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Sabir Hafeez</h2>
             <p className="text-center text-sm">
@@ -33,7 +33,7 @@ const Head = () => {
         <Zoom delay={1500}>
           <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Atif Amin</h2>
             <p className="text-center text-sm">
@@ -44,7 +44,7 @@ const Head = () => {
         <Zoom delay={2000}>
           <div className="flex flex-col  items-center w-[16rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Syed Ghayur Abbas Rizvi</h2>
             <p className="text-center text-sm">
@@ -55,7 +55,7 @@ const Head = () => {
         <Zoom delay={2500}>
           <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Shakeel Rasheed</h2>
             <p className="text-center text-sm">
@@ -66,7 +66,7 @@ const Head = () => {
         <Zoom delay={3000}>
           <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Sadan-ul-Haq Syed</h2>
             <p className="text-center text-sm">DBA Head</p>
@@ -75,7 +75,7 @@ const Head = () => {
         <Zoom delay={3500}>
           <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Asif Iqbal Siddiqui</h2>
             <p className="text-center text-sm">Head of Production Support</p>
@@ -84,7 +84,7 @@ const Head = () => {
         <Zoom delay={4000}>
           <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
             <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/heads.png" alt="" className="h-[100%] " />
+              <img src="/Head.svg" alt="" className="h-[100%] " />
             </div>
             <h2 className="text-xl mt-4 ">Atif Tanveer Lodhi</h2>
             <p className="text-center text-sm">Head of EPMO & IT Governance</p>

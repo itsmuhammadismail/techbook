@@ -162,7 +162,7 @@ a {
 }
 .redImage:hover {
   /* background-image: url(/CLS.png); */
-  background-color: #be0101;
+  background-color: #df0b0b;
 }
 
 .blueImage {
@@ -170,12 +170,12 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; */
-  background-color: #009AAB;
+  background-color: #64CDD8;
   transition: all 0.5s ease;
 }
 .blueImage:hover {
   /* background-image: url(/lead.png); */
-  background-color: #007986;
+  background-color: #51c4d1;
 }
 .grayImage {
   /* background-image: url(/teams.png);
