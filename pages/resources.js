@@ -57,7 +57,7 @@ export default function Timeline() {
               </div>
               <div className="flex flex-wrap gap-[0.5rem] mt-6">
                 <a
-                  href="/dummy.docx"
+                  href="/resources/01 - RFC Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -67,7 +67,7 @@ export default function Timeline() {
                   </p>
                 </a>
                 <a
-                  href="/dummy.docx"
+                  href="/resources/02 - Project Charter Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -77,7 +77,7 @@ export default function Timeline() {
                   </p>
                 </a>
                 <a
-                  href="/dummy.docx"
+                  href="/resources/04 - FSD Template - New.doc"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -88,7 +88,7 @@ export default function Timeline() {
                 </a>
 
                 <a
-                  href="/dummy.docx"
+                  href="/resources/Meeting Minutes Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -99,7 +99,7 @@ export default function Timeline() {
                 </a>
 
                 <a
-                  href="/dummy.docx"
+                  href="/resources/Weekly Project Status - Template.xlsx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -110,7 +110,7 @@ export default function Timeline() {
                 </a>
 
                 <a
-                  href="/dummy.docx"
+                  href="/resources/Project Closure Report Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -120,7 +120,7 @@ export default function Timeline() {
                   </p>
                 </a>
                 <a
-                  href="/dummy.docx"
+                  href="/resources/NIR Template - Updated.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
