@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <div className="relative max-w-[75rem] mx-auto">
-      <div className=" left-0  flex flex-col justify-center items-center py-[5rem] min-h-[90vh]">
+      <div className=" left-0  flex flex-col justify-center items-center  min-h-[70vh]">
         <div className="flex gap-[10rem]">
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
@@ -59,11 +59,9 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               className="h-[20rem]"
             >
-              <img
-                src="/resourcesHero.svg"
-                alt=""
-                className="w-[40rem] mt-[4rem]"
-              />
+              <div className="w-[40rem] ml-[2rem] mt-[2rem]">
+                <img src="/1.svg" alt="" />
+              </div>
             </animated.div>
           </div>
         </Zoom>

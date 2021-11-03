@@ -26,7 +26,7 @@ const Process = () => {
 
   return (
     <div className="relative max-w-[70rem] mx-auto">
-      <img
+      {/* <img
         src="/home/dots.svg"
         alt=""
         className="absolute left-[2rem] top-[20rem] "
@@ -35,13 +35,13 @@ const Process = () => {
         src="/home/dots.svg"
         alt=""
         className="absolute right-[2rem] top-[20rem]"
-      />
+      /> */}
       <div className=" left-0  flex flex-col justify-center items-center min-h-[75vh]">
         <div className="flex gap-[10rem]">
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
-              Process
+              Processes
             </h1>
           </Fade>
           <img src="/home/cloud2.svg" alt="" className="" ref={cloud2Ref} />
@@ -56,8 +56,8 @@ const Process = () => {
           </p>
         </Zoom>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
-        <div className="w-[40rem] ml-[2rem]">
-          <ProcessSvg />
+        <div className="w-[40rem] ml-[2rem] mt-[2rem]">
+          <img src="/3.svg" alt="" />
         </div>
       </div>
     </div>

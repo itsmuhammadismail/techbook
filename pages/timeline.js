@@ -52,7 +52,11 @@ export default function Timeline({ data }) {
       let tdate = d[13];
       let tmonth = "";
       if (tdate !== undefined) tmonth = tdate.split("/");
-      if (typeof tmonth !== "string" && +tmonth[1] === date.getMonth() + 1) {
+      if (
+        typeof tmonth !== "string" &&
+        +tmonth[1] === date.getMonth() + 1 &&
+        +tmonth[2] === date.getFullYear()
+      ) {
         if (d[2] === "NIR") {
           newNir.push(d);
         } else if (d[2] === "Project") {

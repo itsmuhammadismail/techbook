@@ -39,7 +39,7 @@ const Hero = () => {
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
-              Timeline
+              Timelines
             </h1>
           </Fade>
 
@@ -61,11 +61,9 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               // className="h-[30rem]"
             >
-              <img
-                src="/home/timeline.svg"
-                alt=""
-                className="w-[40rem] mt-[4rem]"
-              />
+              <div className="w-[40rem] ml-[2rem] mt-[2rem]">
+                <img src="/2.svg" alt="" />
+              </div>
             </animated.div>
           </div>
         </Zoom>

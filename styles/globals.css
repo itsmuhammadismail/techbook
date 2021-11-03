@@ -136,6 +136,12 @@ a {
   line-height: 4.5rem;
   font-weight: bold;
 }
+.heading2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+}
 
 .ho {
   font-family: "Playfair Display", serif;
@@ -157,7 +163,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; */
-  background-color: #ED1818;
+  background-color: #ed1818;
   transition: all 0.5s ease;
 }
 .redImage:hover {
@@ -170,7 +176,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; */
-  background-color: #64CDD8;
+  background-color: #64cdd8;
   transition: all 0.5s ease;
 }
 .blueImage:hover {
@@ -182,7 +188,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; */
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   transition: all 0.5s ease;
 }
 .grayImage:hover {
