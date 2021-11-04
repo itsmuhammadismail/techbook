@@ -5,12 +5,12 @@ const Teams = () => {
   return (
     <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
       <Fade left>
-        <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
+        <h1 className="heading2 font-bold leading-[5rem] ">
           Teams
         </h1>
       </Fade>
       <Zoom delay={500}>
-        <p className="text-sm text-[#707070]  w-[43rem] my-[1rem] text-center mb-8">
+        <p className="text-sm text-[#707070] w-[43rem] my-[1rem] text-center mb-8">
           Our engineers, managers and executives are laying the foundation for
           the next decade of technology to enable TCS Services. They include
           brilliant young minds and represent the best of TCS.

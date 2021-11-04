@@ -61,7 +61,7 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               // className="h-[30rem]"
             >
-              <img src="/Projects.svg" alt="" className="w-[40rem] mt-[4rem]" />
+              <img src="/4.svg" alt="" className="w-[40rem] mt-[4rem]" />
             </animated.div>
           </div>
         </Zoom>
