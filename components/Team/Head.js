@@ -81,31 +81,45 @@ const Head = () => {
           </Link>
         </Zoom>
         <Zoom delay={3000}>
-          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/Head.svg" alt="" className="h-[100%] " />
-            </div>
-            <h2 className="text-xl mt-4 ">Asif Iqbal Siddiqui</h2>
-            <p className="text-center text-sm">Head of Production Support</p>
-          </div>
+          <Link href="/asif-siddiqui">
+            <a>
+              <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+                <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+                  <img src="/Head.svg" alt="" className="h-[100%] " />
+                </div>
+                <h2 className="text-xl mt-4 ">Asif Iqbal Siddiqui</h2>
+                <p className="text-center text-sm">
+                  Head of Production Support
+                </p>
+              </div>
+            </a>
+          </Link>
         </Zoom>
         <Zoom delay={3500}>
-          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/Head.svg" alt="" className="h-[100%] " />
-            </div>
-            <h2 className="text-xl mt-4 ">Bilal Majeed</h2>
-            <p className="text-center text-sm">Head of Product & PM</p>
-          </div>
+          <Link href="/bilal-majeed">
+            <a>
+              <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+                <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+                  <img src="/Head.svg" alt="" className="h-[100%] " />
+                </div>
+                <h2 className="text-xl mt-4 ">Bilal Majeed</h2>
+                <p className="text-center text-sm">Head of Product & PM</p>
+              </div>
+            </a>
+          </Link>
         </Zoom>
         <Zoom delay={4000}>
-          <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
-            <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-              <img src="/Head.svg" alt="" className="h-[100%] " />
-            </div>
-            <h2 className="text-xl mt-4 ">Noman Sami</h2>
-            <p className="text-center text-sm">QA Manager</p>
-          </div>
+          <Link href="/noman-sami">
+            <a>
+              <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+                <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+                  <img src="/Head.svg" alt="" className="h-[100%] " />
+                </div>
+                <h2 className="text-xl mt-4 ">Noman Sami</h2>
+                <p className="text-center text-sm">QA Manager</p>
+              </div>
+            </a>
+          </Link>
         </Zoom>
       </div>
     </div>
