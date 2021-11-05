@@ -3,7 +3,9 @@ import { useRef, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
-const KeyFigures = () => {
+let delay = 0;
+
+const KeyFigures = ({ data }) => {
   const shapeRef = useRef();
 
   useEffect(() => {
@@ -33,7 +35,24 @@ const KeyFigures = () => {
           </p>
         </Zoom>
         <div className="flex flex-wrap gap-[3rem] 2xl:gap-[5rem] justify-center items-center mt-[6rem] max-w-[70rem]">
-          <Zoom delay={500}>
+          {data.map((d, index) => (
+            <Zoom key={index} delay={delay}>
+              <div className="flex flex-col justify-center items-center w-[10rem] text-center">
+                <div className="hidden">{(delay += 500)}</div>
+                <img
+                  src={`https://drive.google.com/uc?export=view&id=${d[0]}`}
+                  alt=""
+                  className="h-[3.5rem] "
+                />
+
+                <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">
+                  {d[1]}
+                </h2>
+                <p className="text-xs">{d[2]}</p>
+              </div>
+            </Zoom>
+          ))}
+          {/* <Zoom delay={500}>
             <div className="flex flex-col justify-center items-center w-[10rem] text-center">
               <img
                 src="/home/key/projects.svg"
@@ -41,40 +60,26 @@ const KeyFigures = () => {
                 className="h-[3.5rem] "
               />
               <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">15</h2>
-              <p className="text-xs">
-                Number of Projects delivered
-              </p>
+              <p className="text-xs">Number of Projects delivered</p>
             </div>
           </Zoom>
           <Zoom delay={1000}>
             <div className="flex flex-col justify-center items-center  w-[10rem] text-center">
-              <img
-                src="/home/key/nirServed.svg"
-                alt=""
-                className="h-[4rem]"
-              />
+              <img src="/home/key/nirServed.svg" alt="" className="h-[4rem]" />
               <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">18</h2>
               <p className="text-xs">Number of NIRs served</p>
             </div>
           </Zoom>
           <Zoom delay={1500}>
             <div className="flex flex-col justify-center items-center  w-[10rem] text-center">
-              <img
-                src="/home/key/nirDev.svg"
-                alt=""
-                className="h-[3.5rem] "
-              />
+              <img src="/home/key/nirDev.svg" alt="" className="h-[3.5rem] " />
               <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">22</h2>
               <p className="text-xs">NIRs in development</p>
             </div>
           </Zoom>
           <Zoom delay={2000}>
             <div className="flex flex-col justify-center items-center  w-[10rem] text-center">
-              <img
-                src="/home/key/nirUat.svg"
-                alt=""
-                className="h-[3.5rem] "
-              />
+              <img src="/home/key/nirUat.svg" alt="" className="h-[3.5rem] " />
               <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">35</h2>
               <p className="text-xs">NIRs in UAT</p>
             </div>
@@ -109,9 +114,7 @@ const KeyFigures = () => {
                 className="h-[3.5rem] "
               />
               <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">27</h2>
-              <p className="text-xs">
-                Support Desk issues resolved
-              </p>
+              <p className="text-xs">Support Desk issues resolved</p>
             </div>
           </Zoom>
           <Zoom delay={4000}>
@@ -124,7 +127,7 @@ const KeyFigures = () => {
               <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">52</h2>
               <p className="text-xs">Products in Portfolio</p>
             </div>
-          </Zoom>
+          </Zoom> */}
         </div>
       </div>
     </div>

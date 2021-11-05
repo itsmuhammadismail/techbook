@@ -19,7 +19,10 @@ const Modal = ({ modalStyle, show, onClose, backdropStyle }) => {
         onClick={onClose}
       >
         <div style={modalStyle} className={styles.modal}>
-          <div className="bg-[#ED1818] w-[3rem] h-[3rem] rounded-full flex justify-center items-center absolute right-[-1.2rem] top-[-1.2rem] cursor-pointer" onClick={onClose}>
+          <div
+            className="bg-[#ED1818] w-[3rem] h-[3rem] rounded-full flex justify-center items-center absolute right-[-1.2rem] top-[-1.2rem] cursor-pointer"
+            onClick={onClose}
+          >
             <img src="/cross.svg" alt="" className="h-[1.1rem]" />
           </div>
           <img src="/modalBack.png" alt="" className="w-full" />
@@ -29,9 +32,7 @@ const Modal = ({ modalStyle, show, onClose, backdropStyle }) => {
           <div className="flex flex-col justify-center items-center mt-[-4.5rem]">
             <h1 className="text-[3.5rem]">Thank You!</h1>
             <p className="text-xs max-w-[35rem] text-center">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s,{" "}
+              Successfully Subscribed
             </p>
           </div>
         </div>
