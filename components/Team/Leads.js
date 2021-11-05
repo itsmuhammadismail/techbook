@@ -22,8 +22,8 @@ const Leads = () => {
             <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
               <img src="/Lead.svg" alt="" className="h-[100%]" />
             </div>
-            <h2 className="text-xl mt-4 ">Muhammad Arif Matloob</h2>
-            <p className="text-center text-sm">Senior Manager - Software</p>
+            <h2 className="text-xl mt-4 ">Rumman Hussain Siddiqui</h2>
+            <p className="text-center text-sm">Senior Android Developer</p>
           </div>
         </Zoom>
         <Zoom delay={1500}>
@@ -31,8 +31,8 @@ const Leads = () => {
             <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
               <img src="/Lead.svg" alt="" className="h-[100%] mb-[-0.5rem]" />
             </div>
-            <h2 className="text-xl mt-4 ">Riaz Mehmood</h2>
-            <p className="text-center text-sm">System Analyst - UI Developer</p>
+            <h2 className="text-xl mt-4 ">Muhammad Arif Matloob</h2>
+            <p className="text-center text-sm">Senior Manager - Software</p>
           </div>
         </Zoom>
         <Zoom delay={2000}>
@@ -40,8 +40,8 @@ const Leads = () => {
             <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
               <img src="/Lead.svg" alt="" className="h-[100%] mb-[-0.5rem]" />
             </div>
-            <h2 className="text-xl mt-4 ">Syed Fatah Ali Shah</h2>
-            <p className="text-center text-sm">Software Development Lead</p>
+            <h2 className="text-xl mt-4 ">Riaz Mehmood</h2>
+            <p className="text-center text-sm">System Analyst - UI Developer</p>
           </div>
         </Zoom>
         <Zoom delay={2500}>
@@ -58,8 +58,8 @@ const Leads = () => {
             <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
               <img src="/Lead.svg" alt="" className="h-[100%] mb-[-0.5rem]" />
             </div>
-            <h2 className="text-xl mt-4 ">Rumman Hussain Siddiqui</h2>
-            <p className="text-center text-sm">Senior Android Developer</p>
+            <h2 className="text-xl mt-4 ">Syed Fateh Ali Shah</h2>
+            <p className="text-center text-sm">Software Development Lead</p>
           </div>
         </Zoom>
         <Zoom delay={3500}>
