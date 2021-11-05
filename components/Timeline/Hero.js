@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <div className="relative lg:container mx-auto">
-      <div className=" left-0  flex flex-col justify-center items-center min-h-[75vh]">
+      <div className=" left-0  flex flex-col items-center h-[65vh] pt-[2.5rem]">
         <div className="flex gap-[10rem]">
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
