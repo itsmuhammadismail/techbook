@@ -76,7 +76,7 @@ const HeadDev = () => {
                 <div className="grayImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
                   <img src="/Team.svg" alt="" className="h-[100%] " />
                 </div>
-                <h2 className="text-xl mt-4 ">SApna Kumari</h2>
+                <h2 className="text-xl mt-4 ">Sapna Kumari</h2>
                 <p className="text-center text-sm">Project Manager</p>
               </div>
             </Zoom>
