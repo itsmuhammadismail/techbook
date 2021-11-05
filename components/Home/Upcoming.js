@@ -4,7 +4,7 @@ import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 
-const Upcoming = () => {
+const Upcoming = ({ data }) => {
   const imgRef = useRef();
   const upRef = useRef();
 
@@ -58,18 +58,19 @@ const Upcoming = () => {
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/cls.svg" alt="" />
-                <h2 className="ho font-bold text-[2.5rem]">CLS</h2>
+                <h2 className="ho font-bold text-[2.5rem]">{data[0][0]}</h2>
               </div>
-              <div className="my-2 text-[1rem] font-semibold">Courier & Logistics System</div>
+              <div className="my-2 text-[1rem] font-semibold">
+              {data[0][1]}
+              </div>
               <p className="text-[#707070] text-sm">
-                Cloud based real-time Logistics and Supply Chain System for
-                Delivery Orchestration and Operational Visibility
+              {data[0][2]}
               </p>
               <div className="flex mt-auto gap-4">
                 <img src="/home/calender.svg" alt="" className="h-[2rem]" />
                 <div className="text-xs text-[#707070] ">
-                  <div className="">Start: 2019-10-01</div>
-                  <div className="">Finish: 2021-05-03</div>
+                  <div className="">Start: {data[0][3]}</div>
+                  <div className="">Finish: {data[0][4]}</div>
                 </div>
               </div>
             </div>
@@ -79,17 +80,19 @@ const Upcoming = () => {
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] mt-[4rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/crm.svg" alt="" />
-                <h2 className="ho font-bold text-[2.5rem]">CRM</h2>
+                <h2 className="ho font-bold text-[2.5rem]">{data[1][0]}</h2>
               </div>
-              <div className="my-2 text-[1rem] font-semibold">Sales CRM System</div>
+              <div className="my-2 text-[1rem] font-semibold">
+              {data[1][1]}
+              </div>
               <p className="text-[#707070] text-sm">
-                Enterprise Customer Relationship Management System
+              {data[1][2]}
               </p>
               <div className="flex mt-auto gap-4">
                 <img src="/home/calender.svg" alt="" className="h-[2rem]" />
                 <div className="text-xs text-[#707070] ">
-                  <div className="">Start: 2019-10-01</div>
-                  <div className="">Finish: 2021-05-03</div>
+                  <div className="">Start: {data[1][3]}</div>
+                  <div className="">Finish: {data[1][4]}</div>
                 </div>
               </div>
             </div>
@@ -99,17 +102,19 @@ const Upcoming = () => {
             <div className="bg-white p-6 mt-[8rem] w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/gwms.svg" alt="" />
-                <h2 className="ho font-bold text-[2.5rem]">GWMS</h2>
+                <h2 className="ho font-bold text-[2.5rem]">{data[2][0]}</h2>
               </div>
-              <div className="my-2 text-[1rem] font-semibold">Realtime Warehouse Management</div>
+              <div className="my-2 text-[1rem] font-semibold">
+              {data[2][1]}
+              </div>
               <p className="text-[#707070] text-sm">
-                GWMS is designed to onboard and serve customers in real time
+              {data[2][2]}
               </p>
               <div className="flex mt-auto gap-4">
                 <img src="/home/calender.svg" alt="" className="h-[2rem]" />
                 <div className="text-xs text-[#707070] ">
-                  <div className="">Start: 2019-10-01</div>
-                  <div className="">Finish: 2021-05-03</div>
+                  <div className="">Start: {data[2][3]}</div>
+                  <div className="">Finish: {data[2][4]}</div>
                 </div>
               </div>
             </div>
