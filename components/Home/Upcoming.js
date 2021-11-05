@@ -58,19 +58,19 @@ const Upcoming = ({ data }) => {
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/cls.svg" alt="" />
-                <h2 className="ho font-bold text-[2.5rem]">{data[0][0]}</h2>
+                <h2 className="ho font-bold text-[2.5rem]">
+                  {data && data[0][0]}
+                </h2>
               </div>
               <div className="my-2 text-[1rem] font-semibold">
-              {data[0][1]}
+                {data && data[0][1]}
               </div>
-              <p className="text-[#707070] text-sm">
-              {data[0][2]}
-              </p>
+              <p className="text-[#707070] text-sm">{data && data[0][2]}</p>
               <div className="flex mt-auto gap-4">
                 <img src="/home/calender.svg" alt="" className="h-[2rem]" />
                 <div className="text-xs text-[#707070] ">
-                  <div className="">Start: {data[0][3]}</div>
-                  <div className="">Finish: {data[0][4]}</div>
+                  <div className="">Start: {data && data[0][3]}</div>
+                  <div className="">Finish: {data && data[0][4]}</div>
                 </div>
               </div>
             </div>
@@ -80,19 +80,19 @@ const Upcoming = ({ data }) => {
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] mt-[4rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/crm.svg" alt="" />
-                <h2 className="ho font-bold text-[2.5rem]">{data[1][0]}</h2>
+                <h2 className="ho font-bold text-[2.5rem]">
+                  {data && data[1][0]}
+                </h2>
               </div>
               <div className="my-2 text-[1rem] font-semibold">
-              {data[1][1]}
+                {data && data[1][1]}
               </div>
-              <p className="text-[#707070] text-sm">
-              {data[1][2]}
-              </p>
+              <p className="text-[#707070] text-sm">{data && data[1][2]}</p>
               <div className="flex mt-auto gap-4">
                 <img src="/home/calender.svg" alt="" className="h-[2rem]" />
                 <div className="text-xs text-[#707070] ">
-                  <div className="">Start: {data[1][3]}</div>
-                  <div className="">Finish: {data[1][4]}</div>
+                  <div className="">Start: {data && data[1][3]}</div>
+                  <div className="">Finish: {data && data[1][4]}</div>
                 </div>
               </div>
             </div>
@@ -102,19 +102,19 @@ const Upcoming = ({ data }) => {
             <div className="bg-white p-6 mt-[8rem] w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/gwms.svg" alt="" />
-                <h2 className="ho font-bold text-[2.5rem]">{data[2][0]}</h2>
+                <h2 className="ho font-bold text-[2.5rem]">
+                  {data && data[2][0]}
+                </h2>
               </div>
               <div className="my-2 text-[1rem] font-semibold">
-              {data[2][1]}
+                {data && data[2][1]}
               </div>
-              <p className="text-[#707070] text-sm">
-              {data[2][2]}
-              </p>
+              <p className="text-[#707070] text-sm">{data && data[2][2]}</p>
               <div className="flex mt-auto gap-4">
                 <img src="/home/calender.svg" alt="" className="h-[2rem]" />
                 <div className="text-xs text-[#707070] ">
-                  <div className="">Start: {data[2][3]}</div>
-                  <div className="">Finish: {data[2][4]}</div>
+                  <div className="">Start: {data && data[2][3]}</div>
+                  <div className="">Finish: {data && data[2][4]}</div>
                 </div>
               </div>
             </div>

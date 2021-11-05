@@ -35,7 +35,7 @@ const KeyFigures = ({ data }) => {
           </p>
         </Zoom>
         <div className="flex flex-wrap gap-[3rem] 2xl:gap-[5rem] justify-center items-center mt-[6rem] max-w-[70rem]">
-          {data && data.map((d, index) => (
+          {data &&  data.map((d, index) => (
             <Zoom key={index} delay={delay}>
               <div className="flex flex-col justify-center items-center w-[10rem] text-center">
                 <div className="hidden">{(delay += 500)}</div>
