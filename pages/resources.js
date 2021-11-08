@@ -7,7 +7,7 @@ export default function Timeline() {
   return (
     <div>
       <Head>
-        <title>Techbook</title>
+        <title>Resources</title>
         <meta name="description" content="Techbook" />
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>

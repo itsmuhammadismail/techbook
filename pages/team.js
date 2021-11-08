@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <div>
       <Head>
-      <title>Techbook</title>
+      <title>Team</title>
         <meta name="description" content="Techbook" />
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
