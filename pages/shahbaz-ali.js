@@ -8,7 +8,7 @@ const HeadDev = () => {
   return (
     <div>
       <Head>
-        <title>Techbook</title>
+        <title>Shahbaz Ali</title>
         <meta name="description" content="Techbook" />
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
@@ -20,7 +20,7 @@ const HeadDev = () => {
                 <img src="/Lead.svg" alt="" className="h-[100%] " />
               </div>
               <h2 className=" heading2 text-[2.5rem] font-bold leading-[5rem]">
-                shahbaz Ali 
+                Shahbaz Ali 
               </h2>
               <p className="text-center text-sm">
                 AM Middleware & Integrations

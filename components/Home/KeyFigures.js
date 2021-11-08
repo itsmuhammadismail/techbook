@@ -1,12 +1,16 @@
 import { gsap } from "gsap";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 let delay = 0;
 
 const KeyFigures = ({ data }) => {
   const shapeRef = useRef();
+
+  const [viewPortEntered, setViewPortEntered] = useState(false);
 
   useEffect(() => {
     gsap.to(shapeRef.current, {
@@ -35,23 +39,32 @@ const KeyFigures = ({ data }) => {
           </p>
         </Zoom>
         <div className="flex flex-wrap gap-[3rem] 2xl:gap-[5rem] justify-center items-center mt-[6rem] max-w-[70rem]">
-          {data &&  data.map((d, index) => (
-            <Zoom key={index} delay={delay}>
-              <div className="flex flex-col justify-center items-center w-[10rem] text-center">
-                <div className="hidden">{(delay += 500)}</div>
-                <img
-                  src={`https://drive.google.com/uc?export=view&id=${d[0]}`}
-                  alt=""
-                  className="h-[3.5rem] "
-                />
+          {data &&
+            data.map((d, index) => (
+              <Zoom key={index} delay={delay}>
+                <div className="flex flex-col justify-center items-center w-[10rem] text-center">
+                  <div className="hidden">{(delay += 500)}</div>
+                  <img
+                    src={`https://drive.google.com/uc?export=view&id=${d[0]}`}
+                    alt=""
+                    className="h-[3.5rem] "
+                  />
 
-                <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">
-                  {d[1]}
-                </h2>
-                <p className="text-xs">{d[2]}</p>
-              </div>
-            </Zoom>
-          ))}
+                  <h2 className="text-[#ED1818] text-3xl 2xl:text-4xl mt-4">
+                    {/* <CountUp end={d[1]} duration={2.75} /> */}
+                    {/* <CountUp end={d[1]} duration={2} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp> */}
+                    {d[1]}
+                  </h2>
+                  <p className="text-xs">{d[2]}</p>
+                </div>
+              </Zoom>
+            ))}
           {/* <Zoom delay={500}>
             <div className="flex flex-col justify-center items-center w-[10rem] text-center">
               <img

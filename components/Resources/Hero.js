@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <div className="relative max-w-[75rem] mx-auto">
-      <div className=" left-0  flex flex-col items-center h-[65vh] pt-[2.5rem]">
+      <div className=" left-0  flex flex-col items-center h-[65vh] justify-center">
         <div className="flex gap-[10rem]">
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
@@ -45,7 +45,7 @@ const Hero = () => {
           <img src="/home/cloud2.svg" alt="" className="" ref={cloud2Ref} />
         </div>
         <Zoom delay={500}>
-          <p className="text-sm text-[#707070] text-center w-[45rem] mt-4">
+          <p className="text-sm text-[#707070] text-center w-[45rem] mt-4 h-[2rem]">
             Download documents and resources to start your next Project or NIR.
           </p>
         </Zoom>

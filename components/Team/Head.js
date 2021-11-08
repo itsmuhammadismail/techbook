@@ -20,6 +20,19 @@ const Head = () => {
       </Zoom>
 
       <div className="flex flex-wrap justify-center items-center gap-8">
+        <Zoom delay={3500}>
+          <Link href="/bilal-majeed">
+            <a>
+              <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
+                <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+                  <img src="/Head.svg" alt="" className="h-[100%] " />
+                </div>
+                <h2 className="text-xl mt-4 ">Bilal Majeed</h2>
+                <p className="text-center text-sm">Head of Product & PM</p>
+              </div>
+            </a>
+          </Link>
+        </Zoom>
         <Zoom delay={1000}>
           <Link href="/atif-amin">
             <a>
@@ -95,19 +108,7 @@ const Head = () => {
             </a>
           </Link>
         </Zoom>
-        <Zoom delay={3500}>
-          <Link href="/bilal-majeed">
-            <a>
-              <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
-                <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                  <img src="/Head.svg" alt="" className="h-[100%] " />
-                </div>
-                <h2 className="text-xl mt-4 ">Bilal Majeed</h2>
-                <p className="text-center text-sm">Head of Product & PM</p>
-              </div>
-            </a>
-          </Link>
-        </Zoom>
+
         <Zoom delay={4000}>
           <Link href="/noman-sami">
             <a>

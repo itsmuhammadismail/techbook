@@ -8,7 +8,7 @@ const HeadDev = () => {
   return (
     <div>
       <Head>
-        <title>Techbook</title>
+        <title>Tausif Akber</title>
         <meta name="description" content="Techbook" />
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
