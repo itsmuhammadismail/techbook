@@ -172,7 +172,7 @@ const Leads = () => {
           </Link>
         </Zoom>
         <Zoom delay={2500}>
-          <Link href="/tausif-akbar">
+          <Link href="/tausif-akber">
             <a>
               <div className="flex flex-col items-center w-[16rem] h-[19rem]   ">
                 <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
