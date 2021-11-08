@@ -36,7 +36,7 @@ const Process = () => {
         alt=""
         className="absolute right-[2rem] top-[20rem]"
       /> */}
-      <div className=" left-0  flex flex-col items-center h-[65vh] pt-[2.5rem]">
+      <div className=" left-0  flex flex-col justify-center items-center h-[65vh]">
         <div className="flex gap-[10rem]">
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
@@ -47,7 +47,7 @@ const Process = () => {
           <img src="/home/cloud2.svg" alt="" className="" ref={cloud2Ref} />
         </div>
         <Zoom delay={500}>
-          <p className="text-sm text-[#707070] text-center max-w-[45rem] mt-4">
+          <p className="text-sm text-[#707070] text-center max-w-[45rem] mt-4 h-[2rem]">
             TCS Technology Team uses the processes below to refine communication
             and involvement with key stakeholders. Our Internal teams include
             Project Management, Software Quality Assurance, Development,

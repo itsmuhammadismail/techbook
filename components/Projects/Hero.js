@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <div className="relative lg:container mx-auto">
-      <div className=" left-0  flex flex-col justify-center items-center  min-h-[75vh]">
+      <div className=" left-0  flex flex-col justify-center items-center  h-[65vh]">
         <div className="flex gap-[10rem]">
           <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
           <Fade left>
@@ -46,7 +46,7 @@ const Hero = () => {
           <img src="/home/cloud2.svg" alt="" className="" ref={cloud2Ref} />
         </div>
         <Zoom delay={500}>
-          <p className="text-sm text-[#707070]  text-center max-w-[45rem] mt-4">
+          <p className="text-sm text-[#707070]  text-center max-w-[45rem] mt-4 h-[2rem]">
             View projects we are working. You can filter by projects and NIRs
             and also sort results based on selected columns.
           </p>
@@ -61,7 +61,7 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               // className="h-[30rem]"
             >
-              <img src="/4.svg" alt="" className="w-[40rem] mt-[4rem]" />
+              <img src="/4.svg" alt="" className="w-[40rem] mt-[2rem]" />
             </animated.div>
           </div>
         </Zoom>
