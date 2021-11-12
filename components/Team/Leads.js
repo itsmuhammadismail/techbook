@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Leads = () => {
   return (
-    <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
+    <div className="media mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
       <Fade left>
         <h1 className="heading2 font-bold leading-[5rem] ">Leads</h1>
       </Fade>

@@ -15,32 +15,34 @@ export default function Home() {
       </Head>
       <Layout>
         <Process />
-        <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center mt-8">
-          <Fade left>
-            <h1 className="heading2 font-bold leading-[5rem] ">
-              Process Flow
-            </h1>
-          </Fade>
-          <Zoom delay={500}>
-            <p className="text-sm text-[#707070]  text-center w-[45rem] mt-4">
-              IT department flow charts, or workflows are a visual
-              representation of the specific activities that occur in order to
-              complete an IT process. There are many sub-processes and steps
-              within the IT function that take place
-              <br /> from the time IT employees are planning out their IT
-              infrastructure until those plans reach their <br />
-              end user (IT procurement, network administration, user support,
-              etc.)
-            </p>
-          </Zoom>
-          <div className="mt-[3rem] mb-[5rem]">
+        <div className="bg-[#fafafa]">
+          <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center mt-8 pt-8">
+            <Fade left>
+              <h1 className="heading2 font-bold leading-[5rem] ">
+                Process Flow
+              </h1>
+            </Fade>
             <Zoom delay={500}>
-              <img src="/flowchart2.svg" alt="" />
+              <p className="text-sm text-[#707070]  text-center w-[45rem] mt-4">
+                IT department flow charts, or workflows are a visual
+                representation of the specific activities that occur in order to
+                complete an IT process. There are many sub-processes and steps
+                within the IT function that take place
+                <br /> from the time IT employees are planning out their IT
+                infrastructure until those plans reach their <br />
+                end user (IT procurement, network administration, user support,
+                etc.)
+              </p>
             </Zoom>
+            <div className="mt-[3rem] mb-[5rem]">
+              <Zoom delay={500}>
+                <img src="/flowchart2.svg" alt="" />
+              </Zoom>
+            </div>
           </div>
         </div>
-        <div className="bg-[#FAFAFA]">
-          <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center py-[4rem]">
+        <div className="">
+          <div className="media mx-auto flex flex-col justify-center items-center py-[4rem]">
             <Fade left>
               <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
                 Main Process Diagram
@@ -54,11 +56,11 @@ export default function Home() {
                 galley.
               </p>
             </Zoom>
-            <div className="mx-auto mt-[4rem] flex flex-wrap gap-[3rem] justify-center">
+            <div className="mx-auto mt-[4rem] flex flex-wrap 2xl:gap-[3rem] justify-center">
               <Link href="/processes/it-process">
                 <a>
-                  <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
-                    <img src="/process/it.svg" alt="" className="h-[4.5rem]" />
+                  <div className="flex flex-col items-center justify-center gap-2 mb-12 2xl:mb-0 transition-all duration-500 hover:scale-75">
+                    <img src="/process/it.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
                     <p className="font-semibold text-sm w-[9rem] text-center">
                       IT Process
                     </p>
@@ -68,8 +70,8 @@ export default function Home() {
               <Link href="/processes/sqa-manual">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
-                    <img src="/process/sqa.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/sqa.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       SQA (Manual Process)
                     </p>
                   </div>
@@ -78,8 +80,8 @@ export default function Home() {
               <Link href="/processes/sqa-automation">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
-                    <img src="/process/sqa.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/sqa.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       SQA (Automation Process)
                     </p>
                   </div>
@@ -88,8 +90,8 @@ export default function Home() {
               <Link href="/processes/pmo-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2  transition-all duration-500 hover:scale-75">
-                    <img src="/process/pmo.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/pmo.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       PMO Process
                     </p>
                   </div>
@@ -101,9 +103,9 @@ export default function Home() {
                     <img
                       src="/process/oracle.svg"
                       alt=""
-                      className="h-[4.5rem]"
+                      className="h-[3.5rem] 2xl:h-[4.5rem]"
                     />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       Oracle Development Process
                     </p>
                   </div>
@@ -112,8 +114,8 @@ export default function Home() {
               <Link href="/processes/dba-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
-                    <img src="/process/dba.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/dba.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       DBA Process
                     </p>
                   </div>
@@ -125,9 +127,9 @@ export default function Home() {
                     <img
                       src="/process/production.svg"
                       alt=""
-                      className="h-[4.5rem]"
+                      className="h-[3.5rem] 2xl:h-[4.5rem]"
                     />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       Production Support Process
                     </p>
                   </div>
@@ -136,8 +138,8 @@ export default function Home() {
               <Link href="/processes/erp-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
-                    <img src="/process/erp.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/erp.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       ERP Process
                     </p>
                   </div>
@@ -146,8 +148,8 @@ export default function Home() {
               <Link href="/processes/webapp-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
-                    <img src="/process/web.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/web.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       Web/App Development Process
                     </p>
                   </div>
@@ -156,8 +158,8 @@ export default function Home() {
               <Link href="/processes/mis-process">
                 <a>
                   <div className="flex flex-col items-center justify-center gap-2 transition-all duration-500 hover:scale-75">
-                    <img src="/process/mis.svg" alt="" className="h-[4.5rem]" />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <img src="/process/mis.svg" alt="" className="h-[3.5rem] 2xl:h-[4.5rem]" />
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       MIS/BI Process
                     </p>
                   </div>
@@ -169,9 +171,9 @@ export default function Home() {
                     <img
                       src="/process/helpdesk.svg"
                       alt=""
-                      className="h-[4.5rem]"
+                      className="h-[3.5rem] 2xl:h-[4.5rem]"
                     />
-                    <p className="font-semibold text-sm w-[9rem] text-center">
+                    <p className="font-semibold text-xs 2xl:text-sm w-[9rem] text-center">
                       Helpdesk / Servicedesk Process
                     </p>
                   </div>

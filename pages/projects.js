@@ -17,7 +17,7 @@ const Projects = () => {
       </Head>
       <Layout>
         <Hero />
-        <div className="max-w-[65rem] 2xl:max-w-[75rem] mx-auto flex items-center">
+        <div className="media mx-auto flex items-center">
           <div
             className={`flex-1 flex justify-center items-center h-[4rem] hover:bg-[#65cdd8] ${
               selected === "inprogress" ? "bg-[#65cdd8]" : "bg-[#f3f1f4]"
@@ -54,7 +54,7 @@ const Projects = () => {
         {selected === "inprogress" && (
           <div className="flex justify-center items-center border-b">
             <iframe
-              className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
+              className="pages h-[155rem] 2xl:h-[208rem]"
               src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
               frameBorder={0}
               style={{ border: 0 }}
@@ -65,7 +65,7 @@ const Projects = () => {
         {selected === "completion" && (
           <div className="flex justify-center items-center border-b">
             <iframe
-              className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
+              className="pages h-[155rem] 2xl:h-[208rem]"
               src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_lqbwj8z4nc"
               frameBorder={0}
               style={{ border: 0 }}
@@ -76,7 +76,7 @@ const Projects = () => {
         {selected === "tab 3" && (
           <div className="flex justify-center items-center border-b">
             <iframe
-              className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
+              className="pages h-[155rem] 2xl:h-[208rem]"
               src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_f7jayqnboc"
               frameBorder={0}
               style={{ border: 0 }}
@@ -87,7 +87,7 @@ const Projects = () => {
         {selected === "tab 4" && (
           <div className="flex justify-center items-center border-b">
             <iframe
-              className="w-[65rem] 2xl:w-[75rem] h-[185rem] 2xl:h-[208rem]"
+              className="pages h-[155rem] 2xl:h-[208rem]"
               src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_cqvwrsnboc"
               frameBorder={0}
               style={{ border: 0 }}

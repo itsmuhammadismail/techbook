@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 const Footer = () => {
   return (
-    <div className="border-t">
+    <div className="bg-[#FAFAFA]">
       <footer className="max-w-[70rem] mx-auto flex justify-between items-center p-[1.5rem] ">
         <div className="">
           <Link href="/#top">

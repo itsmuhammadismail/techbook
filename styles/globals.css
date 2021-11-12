@@ -136,6 +136,7 @@ a {
   line-height: 4.5rem;
   font-weight: bold;
 }
+
 .heading2 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
@@ -198,4 +199,31 @@ a {
 
 .sop {
   @apply text-[2.25rem] font-bold mt-6 mb-[-1rem];
+}
+
+.media {
+  max-width: 70rem;
+}
+
+.pages {
+  width: 70rem;
+}
+
+.timeline-box {
+  width: 34rem;
+}
+
+@media (max-width: 1366px) {
+  .media {
+    max-width: 55rem;
+  }
+  .pages {
+    width: 55rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .timeline-box {
+    width: 24rem;
+  }
 }

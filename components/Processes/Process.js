@@ -56,7 +56,7 @@ const Process = () => {
           </p>
         </Zoom>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
-        <div className="w-[40rem] ml-[2rem] mt-[2rem]">
+        <div className="w-[40rem] ml-[2rem] mt-[4rem]">
           <img src="/3.svg" alt="" />
         </div>
       </div>

@@ -2,7 +2,7 @@ import { useSpring, animated } from "react-spring";
 import MailboxSvg from "./MailboxSvg";
 import Fade from "react-reveal/Fade";
 import Modal from "./Modal";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
@@ -14,10 +14,23 @@ const Newsletter = () => {
   }));
   const [show, setShow] = useState(false);
 
+  const email = useRef();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setShow(true);
+    const res = await fetch(
+      `http://qaapp-uat/TCSNEWEBAPI/api/WebsiteAPI/SubscribeNewsLetter?email=${email.current.value}`
+    )
+      .then((response) => response.json())
+      .catch((error) => console.log("error", error));
+    console.log(res);
+  };
+
   return (
-    <div className="">
-      <div className="max-w-[70rem] mx-auto my-[5rem]  flex flex-col justify-center items-center">
-        <div className="flex mx-auto items-end justify-center max-w-[70rem] ">
+    <div className="bg-[#f1f1f1]">
+      <div className="media mx-auto py-[5rem]  flex flex-col justify-center items-center bg-[#f1f1f1]">
+        <div className="flex mx-auto items-end justify-center media ">
           <Fade left>
             <div className="">
               <div
@@ -39,20 +52,21 @@ const Newsletter = () => {
               <h1 className="heading text-[4.5rem] font-bold leading-[5rem] w-[30rem]">
                 Subscribe to Newsletter
               </h1>
-              <div className="flex mt-[2.5rem]">
+              <form className="flex mt-[2.5rem]" onSubmit={handleSubmit}>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Enter your email address"
                   className="bg-[#E5E5E5] h-[2.5rem] p-5 rounded-l-full w-[18rem] focus:outline-none"
+                  ref={email}
+                  required
                 />
                 <button
                   type="submit"
-                  onClick={() => setShow(true)}
                   className="bg-[#ED1818] text-white rounded-full h-[2.5rem] ml-[-1rem] w-[9rem] p-5 flex justify-center items-center"
                 >
                   Subscribe
                 </button>
-              </div>
+              </form>
             </div>
           </Fade>
           <Fade right>

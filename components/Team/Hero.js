@@ -84,7 +84,7 @@ const Hero = () => {
   }, [blink]);
 
   return (
-    <div className="max-w-[70rem] mx-auto p-[1.5rem] h-[78vh] w-[100vw] flex items-center">
+    <div className="media mx-auto p-[1.5rem] h-[78vh] w-[100vw] flex items-center">
       <div className="flex items-center justify-between w-full relative">
         <img
           src="/home/dots.svg"
@@ -108,11 +108,11 @@ const Hero = () => {
 
         <div className="w-full flex justify-between items-center">
           <div className="ml-[9rem]">
-            <h1 className="heading text-[4.5rem] font-bold w-[37rem] leading-[5rem]">
+            <h1 className="heading fw-[27rem] 2xl:w-[37rem] leading-[5rem]">
               {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
             </h1>
             <Fade up delay={1000}>
-              <p className="w-[32rem] text-[#707070] text-sm pt-2">
+              <p className="w-[24rem] 2xl:w-[30rem] text-[#9c8b8b] text-xs 2xl:text-sm pt-2">
                 TCS Technology Team is based out of the TCS Head Office in
                 Karachi. Supporting the Company’s widespread network of 900+
                 outlets in 380 cities, 600+ satellite-tracked vehicles, and a

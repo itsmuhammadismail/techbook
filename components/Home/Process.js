@@ -23,7 +23,7 @@ const Process = () => {
     });
   }, []);
   return (
-    <div className="relative z-[-10]">
+    <div className="relative z-[-10] bg-[#fafafa] overflow-hidden">
       <img
         src="/home/processCircleTop.svg"
         alt=""
@@ -36,7 +36,7 @@ const Process = () => {
         className="absolute bottom-0"
         ref={shape2Ref}
       />
-      <div className="lg:container mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
+      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
         <Fade left>
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
             Process
@@ -53,7 +53,7 @@ const Process = () => {
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
         <Fade>
-          <div className="w-[50rem] ">
+          <div className="w-[43rem] ">
             <ProcessSvg />
           </div>
         </Fade>

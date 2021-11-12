@@ -168,7 +168,7 @@ export default function Timeline() {
                       <li className="pl-2">Design </li>
                       <li className="pl-2">Development </li>
                       <li className="pl-2">Testing </li>
-                      <li className="pl-2">De[ployment </li>
+                      <li className="pl-2">Deployment </li>
                       <li className="pl-2">Mentenance </li>
                     </ul>
                   </p>

@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const Teams = () => {
   return (
-    <div className="bg-[#FAFAFA]">
-      <div className="max-w-[65rem] 2xl:max-w-[70rem] mx-auto flex justify-between items-center min-h-[100vh] gap-8">
+    <div className="">
+      <div className="media mx-auto flex justify-between items-center min-h-[100vh] gap-8">
         <Fade left>
-          <div className="">
+          <div className=" relative">
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
               Teams
             </h1>
@@ -33,21 +33,21 @@ const Teams = () => {
             <img
               src="/home/team1.svg"
               alt=""
-              className="absolute h-[22rem] 2xl:h-[25rem] ml-[-25rem]"
+              className="absolute h-[19rem] 2xl:h-[25rem] ml-[-20rem] 2xl:ml-[-25rem]"
             />
           </Zoom>
           <Zoom delay={1000}>
             <img
               src="/home/team2.svg"
               alt=""
-              className="absolute h-[22rem] 2xl:h-[25rem]"
+              className="absolute h-[19rem] 2xl:h-[25rem]"
             />
           </Zoom>
           <Zoom delay={1500}>
             <img
               src="/home/team3.svg"
               alt=""
-              className="absolute h-[22rem] 2xl:h-[25rem] mr-[-25rem]"
+              className="absolute h-[19rem] 2xl:h-[25rem] mr-[-20rem] 2xl:mr-[-25rem]"
             />
           </Zoom>
           <div className="relative z-[10]"></div>

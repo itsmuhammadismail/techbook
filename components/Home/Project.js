@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Project = () => {
   return (
-    <div className="mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
+    <div className="bg-[#fafafa] mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
       <Fade left>
         <h1 className="heading ">Project Dashboard</h1>
       </Fade>

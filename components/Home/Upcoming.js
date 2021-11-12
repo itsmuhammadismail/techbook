@@ -23,14 +23,14 @@ const Upcoming = ({ data }) => {
     });
   }, []);
   return (
-    <div className="bg-[#FAFAFA] relative ">
+    <div className=" relative ">
       <img
         src="/home/upcomingCircle.svg"
         alt=""
         className="absolute right-0 bottom-[3rem] h-[30rem]"
         ref={imgRef}
       />
-      <div className="max-w-[65rem] 2xl:max-w-[70rem]  mx-auto flex flex-col justify-center  py-[5rem] min-h-[100vh]">
+      <div className="media mx-auto flex flex-col justify-center  py-[5rem] min-h-[100vh]">
         <div className="flex items-center">
           <Zoom delay={1000}>
             <img

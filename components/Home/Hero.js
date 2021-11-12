@@ -101,7 +101,7 @@ const Hero = () => {
   }, [blink]);
 
   return (
-    <div className="max-w-[70rem] mx-auto p-[1.5rem] h-[78vh]  flex items-center">
+    <div className="media mx-auto p-[1.5rem] h-[78vh]  flex items-center">
       <div className="flex items-center justify-between w-full relative">
         <img
           src="/home/dots.svg"
@@ -125,16 +125,16 @@ const Hero = () => {
 
         <div className="w-full flex justify-between items-center">
           <div className="ml-[9rem]">
-            <h1 className="heading  w-[37rem] ">
+            <h1 className="heading w-[27rem] 2xl:w-[37rem] ">
               {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
             </h1>
             <Fade up delay={1000}>
-              <p className="w-[30rem] text-[#707070] text-sm pt-2">
+              <p className="w-[24rem] 2xl:w-[30rem] text-[#9c8b8b] text-xs 2xl:text-sm pt-2">
                 Welcome to TCS Techbook. Your single point reference for
                 everything related to the TCS Technology (IT). This website
                 describes IT functions, teams and department structure and
                 standard operating process followed by each team. We also
-                present coming an easy view of completion deadlines and a<br/>
+                present coming an easy view of completion deadlines and a
                 detailed project dashboard for management and key stakeholders.
               </p>
             </Fade>

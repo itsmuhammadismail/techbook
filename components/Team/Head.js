@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Head = () => {
   return (
-    <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
+    <div className="media mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
       <Fade left>
         <h1 className="heading2 text-[3.5rem] font-bold leading-[5rem] ">
           Heads

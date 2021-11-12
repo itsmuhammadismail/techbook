@@ -13,7 +13,7 @@ const HeadDev = () => {
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
       <Layout>
-        <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem] gap-12">
+        <div className="media mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem] gap-12">
           <Zoom delay={1000}>
             <div className="flex flex-col items-center w-[23rem]  ">
               <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center ">

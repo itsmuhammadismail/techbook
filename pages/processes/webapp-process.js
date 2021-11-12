@@ -11,14 +11,18 @@ const WEBAPP = () => {
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
       <Layout>
-        <div className="border-b">
-          <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center">
+        <div className="">
+          <div className="media mx-auto flex flex-col justify-center items-center">
             <Fade left>
               <h1 className="heading text-[4.5rem] font-bold leading-[5rem] my-[4rem] text-center">
                 Web App Development (Process)
               </h1>
             </Fade>
-            <img src="/process2/WebApps Development.svg" alt="" className="mb-8" />
+            <img
+              src="/process2/WebApps Development.svg"
+              alt=""
+              className="mb-8"
+            />
           </div>
         </div>
       </Layout>

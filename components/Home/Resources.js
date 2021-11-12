@@ -13,8 +13,8 @@ const Resources = () => {
   }));
 
   return (
-    <div className="bg-[#FAFAFA]">
-      <div className="lg:container mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
+    <div className="">
+      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
         <Fade left>
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
             Resources
@@ -34,7 +34,7 @@ const Resources = () => {
         >
           <animated.div style={{ transform: props.xy.interpolate(trans1) }}>
             {/* <img src="/resources.svg" alt="" className="w-[40rem] mt-8" /> */}
-            <div className="w-[40rem] mt-8">
+            <div className="w-[34rem] mt-8">
               {/* <ResourcesSvg /> */}
               <img src="/resources.svg" alt="" />
             </div>
