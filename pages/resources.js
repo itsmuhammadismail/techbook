@@ -13,7 +13,7 @@ export default function Timeline() {
       </Head>
       <Layout>
         <Hero />
-        <div className="border-b pb-[2rem]">
+        <div className="pb-[2rem]">
           {/* PMO TEAM START */}
           <Resource
             isgray

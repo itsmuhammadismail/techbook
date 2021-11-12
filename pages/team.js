@@ -14,7 +14,7 @@ const Team = () => {
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
       <Layout>
-        <div className="border-b">
+        <div className="">
         <Hero />
         <Heads />
         <Leads />

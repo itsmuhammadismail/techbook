@@ -143,7 +143,7 @@ export default function Timeline({ data }) {
           src="/home/keyFigures.svg"
           style={{ transform: "scaleX(-1)" }}
         />
-        <div className="border-b">
+        <div className="">
           <Hero />
 
           <div className="flex flex-col justify-center items-center mb-[6rem]">
