@@ -4,6 +4,10 @@ import Box from "../components/Timeline/Box";
 import Hero from "../components/Timeline/Hero";
 import Zoom from "react-reveal/Zoom";
 
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 import { google } from "googleapis";
 import { useEffect, useState } from "react";
 
@@ -40,6 +44,11 @@ export default function Timeline({ data }) {
   const [project, setProject] = useState([]);
   const [project2, setProject2] = useState([]);
   const [project3, setProject3] = useState([]);
+  const [department, setDepartment] = useState("all");
+
+  const handleChange = (event) => {
+    setDepartment(event.target.value);
+  };
 
   useEffect(() => {
     let newNir = [];
@@ -145,7 +154,58 @@ export default function Timeline({ data }) {
         />
         <div className="">
           <Hero />
+          <div className="flex justify-center mb-8">
+            <FormControl>
+              <InputLabel id="demo-simple-select-label">Department</InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={department}
+                label="Department"
+                onChange={handleChange}
+              >
+                <MenuItem value={"all"}>All Department</MenuItem>
+                <MenuItem value={20}>Consumer</MenuItem>
+                <MenuItem value={30}>E-Commerce</MenuItem>
+                <MenuItem value={30}>Corporate</MenuItem>
+                <MenuItem value={30}>Operations</MenuItem>
+                <MenuItem value={30}>Information Technology</MenuItem>
+                <MenuItem value={30}>Company-Wide</MenuItem>
+                <MenuItem value={30}>International</MenuItem>
+                <MenuItem value={30}>Finance</MenuItem>
+                <MenuItem value={30}>Human Resources</MenuItem>
+                <MenuItem value={30}>Corporate</MenuItem>
+                <MenuItem value={30}>Yayvo</MenuItem>
+                <MenuItem value={30}>Customer Support</MenuItem>
+                <MenuItem value={30}>ECOM</MenuItem>
+                <MenuItem value={30}>ECOM Sales</MenuItem>
+                <MenuItem value={30}>ECOM Corporate</MenuItem>
+                <MenuItem value={30}>Admin</MenuItem>
+                <MenuItem value={30}>Visa & Travel</MenuItem>
+                <MenuItem value={30}>BPR & Invoation</MenuItem>
+                <MenuItem value={30}>Sentiments</MenuItem>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </Select>
+            </FormControl>
+          </div>
           <div className="flex flex-col justify-center items-center mb-[6rem]">
             <Zoom delay={500}>
               <div className="top-timeline">
