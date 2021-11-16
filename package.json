@@ -8,6 +8,9 @@
     "start": "NODE_ENV=production node techbook.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.1.0",
     "google-spreadsheet": "^3.1.15",
     "googleapis": "^87.0.0",
     "gsap": "^3.7.1",
