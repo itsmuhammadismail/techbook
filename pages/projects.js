@@ -87,7 +87,7 @@ const Projects = () => {
         {selected === "tab 4" && (
           <div className="flex justify-center items-center">
             <iframe
-              className="pages h-[100rem] 2xl:h-[150rem]"
+              className="pages h-[26rem] 2xl:h-[35rem]"
               src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_cqvwrsnboc"
               frameBorder={0}
               style={{ border: 0 }}
