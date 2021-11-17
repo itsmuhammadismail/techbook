@@ -44,13 +44,9 @@ export default function Timeline({ data }) {
   const [project, setProject] = useState([]);
   const [project2, setProject2] = useState([]);
   const [project3, setProject3] = useState([]);
-  const [department, setDepartment] = useState("all");
+  const [department, setDepartment] = useState("All Department");
 
-  const handleChange = (event) => {
-    setDepartment(event.target.value);
-  };
-
-  useEffect(() => {
+  const handleData = (depart) => {
     let newNir = [];
     let newNir2 = [];
     let newNir3 = [];
@@ -61,12 +57,14 @@ export default function Timeline({ data }) {
       let tdate = d[13];
       let tmonth = "";
       if (tdate !== undefined) tmonth = tdate.split("/");
+
       if (
         typeof tmonth !== "string" &&
         +tmonth[1] === date.getMonth() + 1 &&
         +tmonth[2] === date.getFullYear()
       ) {
         if (d[2] === "NIR") {
+          console.log(d[8]);
           newNir.push(d);
         } else if (d[2] === "Project") {
           newProjects.push(d);
@@ -133,6 +131,14 @@ export default function Timeline({ data }) {
     setNir(newNir);
     setNir2(newNir2);
     setNir3(newNir3);
+  };
+
+  const handleChange = (event) => {
+    setDepartment(event.target.value);
+  };
+
+  useEffect(() => {
+    handleData(null);
   }, [data]);
 
   return (
@@ -164,45 +170,29 @@ export default function Timeline({ data }) {
                 label="Department"
                 onChange={handleChange}
               >
-                <MenuItem value={"all"}>All Department</MenuItem>
-                <MenuItem value={20}>Consumer</MenuItem>
+                <MenuItem value={"All Department"}>All Department</MenuItem>
+                <MenuItem value={"Consumer"}>Consumer</MenuItem>
                 <MenuItem value={30}>E-Commerce</MenuItem>
-                <MenuItem value={30}>Corporate</MenuItem>
-                <MenuItem value={30}>Operations</MenuItem>
-                <MenuItem value={30}>Information Technology</MenuItem>
-                <MenuItem value={30}>Company-Wide</MenuItem>
-                <MenuItem value={30}>International</MenuItem>
-                <MenuItem value={30}>Finance</MenuItem>
-                <MenuItem value={30}>Human Resources</MenuItem>
-                <MenuItem value={30}>Corporate</MenuItem>
-                <MenuItem value={30}>Yayvo</MenuItem>
-                <MenuItem value={30}>Customer Support</MenuItem>
-                <MenuItem value={30}>ECOM</MenuItem>
-                <MenuItem value={30}>ECOM Sales</MenuItem>
-                <MenuItem value={30}>ECOM Corporate</MenuItem>
-                <MenuItem value={30}>Admin</MenuItem>
-                <MenuItem value={30}>Visa & Travel</MenuItem>
-                <MenuItem value={30}>BPR & Invoation</MenuItem>
-                <MenuItem value={30}>Sentiments</MenuItem>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <MenuItem value={40}>Corporate</MenuItem>
+                <MenuItem value={50}>Operations</MenuItem>
+                <MenuItem value={60}>Information Technology</MenuItem>
+                <MenuItem value={70}>Company-Wide</MenuItem>
+                <MenuItem value={80}>International</MenuItem>
+                <MenuItem value={90}>Finance</MenuItem>
+                <MenuItem value={100}>Human Resources</MenuItem>
+                <MenuItem value={120}>Yayvo</MenuItem>
+                <MenuItem value={130}>Customer Support</MenuItem>
+                <MenuItem value={140}>ECOM</MenuItem>
+                <MenuItem value={150}>ECOM Sales</MenuItem>
+                <MenuItem value={160}>ECOM (Corporate)</MenuItem>
+                <MenuItem value={170}>Admin</MenuItem>
+                <MenuItem value={180}>Visa & Travel</MenuItem>
+                <MenuItem value={190}>BPR & Invoation</MenuItem>
+                <MenuItem value={200}>Sentiments</MenuItem>
+                <MenuItem value={210}>BPR</MenuItem>
+                <MenuItem value={220}>Corporate Sales</MenuItem>
+                <MenuItem value={230}>Sales/Operations</MenuItem>
+                <MenuItem value={240}>W&D</MenuItem>
               </Select>
             </FormControl>
           </div>
