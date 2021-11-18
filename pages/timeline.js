@@ -211,7 +211,7 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="w-[34rem]">
+              <div className="w-[34rem] flex flex-col items-end">
                 {project.map((n, index) => (
                   <Box
                     key={index}
@@ -224,7 +224,7 @@ export default function Timeline({ data }) {
               </div>
               <div className="line-timeline self-stretch"></div>
               <div className=" flex flex-col">
-                <div className="w-[34rem]">
+                <div className="w-[34rem] flex flex-col items-start">
                   {nir.map((n, index) => (
                     <Box
                       key={index}
@@ -248,7 +248,7 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="w-[34rem]">
+              <div className="w-[34rem] flex flex-col items-end">
                 {project2.map((n, index) => (
                   <Box
                     key={index}
@@ -261,7 +261,7 @@ export default function Timeline({ data }) {
               </div>
               <div className="line-timeline self-stretch"></div>
               <div className=" flex flex-col">
-                <div className="w-[34rem]">
+                <div className="w-[34rem] flex flex-col items-start">
                   {nir2.map((n, index) => (
                     <Box
                       key={index}
@@ -285,7 +285,7 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="">
+              <div className="w-[34rem] flex flex-col items-end">
                 {project3.map((n, index) => (
                   <Box
                     key={index}
@@ -298,7 +298,7 @@ export default function Timeline({ data }) {
               </div>
               <div className="line-timeline self-stretch"></div>
               <div className=" flex flex-col">
-                <div className="w-[34rem]">
+                <div className="w-[34rem] flex flex-col items-start">
                   {nir3.map((n, index) => (
                     <Box
                       key={index}
