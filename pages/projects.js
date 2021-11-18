@@ -97,7 +97,7 @@ const Projects = () => {
               <div className="flex justify-center items-center">
                 <iframe
                   className="pages h-[155rem] 2xl:h-[208rem]"
-                  src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_f7jayqnboc"
+                  src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_omj4uriloc"
                   frameBorder={0}
                   style={{ border: 0 }}
                   allowFullScreen
