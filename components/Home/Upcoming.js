@@ -54,7 +54,7 @@ const Upcoming = ({ data }) => {
         </div>
         <div className="flex gap-4 mt-[4rem]">
           {/* Card */}
-          <Zoom delay={1500}>
+          <Zoom delay={1000}>
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/cls.svg" alt="" />
@@ -76,7 +76,7 @@ const Upcoming = ({ data }) => {
             </div>
           </Zoom>
           {/* Card */}
-          <Zoom delay={2000}>
+          <Zoom delay={1200}>
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] mt-[4rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/crm.svg" alt="" />
@@ -98,7 +98,7 @@ const Upcoming = ({ data }) => {
             </div>
           </Zoom>
           {/* Card */}
-          <Zoom delay={2500}>
+          <Zoom delay={1400}>
             <div className="bg-white p-6 mt-[8rem] w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/gwms.svg" alt="" />

@@ -66,9 +66,9 @@ const Projects = () => {
                 centered
               >
                 <Tab label="In Progress" {...a11yProps(0)} />
-                <Tab label="Completion" {...a11yProps(1)} />
+                <Tab label="Complete" {...a11yProps(1)} />
                 <Tab label="Hold" {...a11yProps(2)} />
-                <Tab label="Cheet Sheet" {...a11yProps(3)} />
+                <Tab label="Cheat Sheet" {...a11yProps(3)} />
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>

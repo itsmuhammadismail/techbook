@@ -43,7 +43,7 @@ const KeyFigures = ({ data }) => {
             data.map((d, index) => (
               <Zoom key={index} delay={delay}>
                 <div className="flex flex-col justify-center items-center w-[10rem] text-center mt-[2rem]">
-                  <div className="hidden">{(delay += 500)}</div>
+                  <div className="hidden">{(delay += 200)}</div>
                   <img
                     src={`https://drive.google.com/uc?export=view&id=${d[0]}`}
                     alt=""

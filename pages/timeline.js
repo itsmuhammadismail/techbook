@@ -211,31 +211,43 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="w-[34rem] flex flex-col items-end">
-                {project.map((n, index) => (
+              {nir.length === 0 && project.length === 0 ? (
+                <div className="w-[34rem] flex justify-center items-center">
                   <Box
-                    key={index}
-                    text={n[5]}
-                    date={`${n[13]} (${n[4]})`}
+                    text={"No Projects and NIRs in this"}
                     color="#E0E0E0"
                     anim="left"
                   />
-                ))}
-              </div>
-              <div className="line-timeline self-stretch"></div>
-              <div className=" flex flex-col">
-                <div className="w-[34rem] flex flex-col items-start">
-                  {nir.map((n, index) => (
-                    <Box
-                      key={index}
-                      text={n[5]}
-                      date={`${n[13]} (${n[4]})`}
-                      color="#B2EBF2"
-                      anim="right"
-                    />
-                  ))}
                 </div>
-              </div>
+              ) : (
+                <>
+                  <div className="w-[34rem] flex flex-col items-end">
+                    {project.map((n, index) => (
+                      <Box
+                        key={index}
+                        text={n[5]}
+                        date={`${n[13]} (${n[4]})`}
+                        color="#E0E0E0"
+                        anim="left"
+                      />
+                    ))}
+                  </div>
+                  <div className="line-timeline self-stretch"></div>
+                  <div className=" flex flex-col">
+                    <div className="w-[34rem] flex flex-col items-start">
+                      {nir.map((n, index) => (
+                        <Box
+                          key={index}
+                          text={n[5]}
+                          date={`${n[13]} (${n[4]})`}
+                          color="#B2EBF2"
+                          anim="right"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
             <Zoom delay={500}>
               <div className="top-timeline">
@@ -248,31 +260,43 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="w-[34rem] flex flex-col items-end">
-                {project2.map((n, index) => (
+              {nir2.length === 0 && project2.length === 0 ? (
+                <div className="w-[34rem] flex justify-center items-center">
                   <Box
-                    key={index}
-                    text={n[5]}
-                    date={`${n[13]} (${n[4]})`}
+                    text={"No Projects and NIRs in this"}
                     color="#E0E0E0"
                     anim="left"
                   />
-                ))}
-              </div>
-              <div className="line-timeline self-stretch"></div>
-              <div className=" flex flex-col">
-                <div className="w-[34rem] flex flex-col items-start">
-                  {nir2.map((n, index) => (
-                    <Box
-                      key={index}
-                      text={n[5]}
-                      date={`${n[13]} (${n[4]})`}
-                      color="#B2EBF2"
-                      anim="right"
-                    />
-                  ))}
                 </div>
-              </div>
+              ) : (
+                <>
+                  <div className="w-[34rem] flex flex-col items-end">
+                    {project2.map((n, index) => (
+                      <Box
+                        key={index}
+                        text={n[5]}
+                        date={`${n[13]} (${n[4]})`}
+                        color="#E0E0E0"
+                        anim="left"
+                      />
+                    ))}
+                  </div>
+                  <div className="line-timeline self-stretch"></div>
+                  <div className=" flex flex-col">
+                    <div className="w-[34rem] flex flex-col items-start">
+                      {nir2.map((n, index) => (
+                        <Box
+                          key={index}
+                          text={n[5]}
+                          date={`${n[13]} (${n[4]})`}
+                          color="#B2EBF2"
+                          anim="right"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
             <Zoom delay={500}>
               <div className="top-timeline">
@@ -285,31 +309,43 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="w-[34rem] flex flex-col items-end">
-                {project3.map((n, index) => (
+              {nir3.length === 0 && project3.length === 0 ? (
+                <div className="w-[34rem] flex justify-center items-center">
                   <Box
-                    key={index}
-                    text={n[5]}
-                    date={`${n[13]} (${n[4]})`}
+                    text={"No Projects and NIRs in this"}
                     color="#E0E0E0"
                     anim="left"
                   />
-                ))}
-              </div>
-              <div className="line-timeline self-stretch"></div>
-              <div className=" flex flex-col">
-                <div className="w-[34rem] flex flex-col items-start">
-                  {nir3.map((n, index) => (
-                    <Box
-                      key={index}
-                      text={n[5]}
-                      date={`${n[13]} (${n[4]})`}
-                      color="#B2EBF2"
-                      anim="right"
-                    />
-                  ))}
                 </div>
-              </div>
+              ) : (
+                <>
+                  <div className="w-[34rem] flex flex-col items-end">
+                    {project3.map((n, index) => (
+                      <Box
+                        key={index}
+                        text={n[5]}
+                        date={`${n[13]} (${n[4]})`}
+                        color="#E0E0E0"
+                        anim="left"
+                      />
+                    ))}
+                  </div>
+                  <div className="line-timeline self-stretch"></div>
+                  <div className=" flex flex-col">
+                    <div className="w-[34rem] flex flex-col items-start">
+                      {nir3.map((n, index) => (
+                        <Box
+                          key={index}
+                          text={n[5]}
+                          date={`${n[13]} (${n[4]})`}
+                          color="#B2EBF2"
+                          anim="right"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
