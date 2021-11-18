@@ -53,78 +53,81 @@ export default function Timeline({ data }) {
     let newProjects = [];
     let newProjects2 = [];
     let newProjects3 = [];
+
     data.map((d) => {
       let tdate = d[13];
       let tmonth = "";
       if (tdate !== undefined) tmonth = tdate.split("/");
-
-      if (
-        typeof tmonth !== "string" &&
-        +tmonth[1] === date.getMonth() + 1 &&
-        +tmonth[2] === date.getFullYear()
-      ) {
-        if (d[2] === "NIR") {
-          console.log(d[8]);
-          newNir.push(d);
-        } else if (d[2] === "Project") {
-          newProjects.push(d);
-        }
-      } else {
-        if (typeof tmonth !== "string") {
-          if (date.getMonth() + 1 !== 12) {
-            if (+tmonth[1] === date.getMonth() + 2) {
-              console.log("hello", tmonth[1]);
+      if (depart === null || depart === d[8]) {
+        if (
+          typeof tmonth !== "string" &&
+          +tmonth[1] === date.getMonth() + 1 &&
+          +tmonth[2] === date.getFullYear()
+        ) {
+          if (d[2] === "NIR") {
+            console.log(d[8]);
+            newNir.push(d);
+          } else if (d[2] === "Project") {
+            newProjects.push(d);
+          }
+        } else {
+          if (typeof tmonth !== "string") {
+            if (date.getMonth() + 1 !== 12) {
+              if (+tmonth[1] === date.getMonth() + 2) {
+                console.log("hello", tmonth[1]);
+                if (d[2] === "NIR") {
+                  newNir2.push(d);
+                } else if (d[2] === "Project") {
+                  newProjects2.push(d);
+                }
+              } else if (
+                date.getMonth() + 1 !== 11 &&
+                +tmonth[1] === date.getMonth() + 3
+              ) {
+                console.log("hello", tmonth[1]);
+                if (d[2] === "NIR") {
+                  newNir3.push(d);
+                } else if (d[2] === "Project") {
+                  newProjects3.push(d);
+                }
+              } else if (
+                date.getMonth() + 1 === 11 &&
+                +tmonth[1] === 1 &&
+                +tmonth[2] === date.getFullYear() + 1
+              ) {
+                console.log("hello", tmonth[1]);
+                if (d[2] === "NIR") {
+                  newNir3.push(d);
+                } else if (d[2] === "Project") {
+                  newProjects3.push(d);
+                }
+              }
+            } else if (
+              date.getMonth() + 1 === 12 &&
+              +tmonth[1] === 1 &&
+              +tmonth[2] === date.getFullYear() + 1
+            ) {
               if (d[2] === "NIR") {
                 newNir2.push(d);
               } else if (d[2] === "Project") {
                 newProjects2.push(d);
               }
             } else if (
-              date.getMonth() + 1 !== 11 &&
-              +tmonth[1] === date.getMonth() + 3
-            ) {
-              console.log("hello", tmonth[1]);
-              if (d[2] === "NIR") {
-                newNir3.push(d);
-              } else if (d[2] === "Project") {
-                newProjects3.push(d);
-              }
-            } else if (
-              date.getMonth() + 1 === 11 &&
-              +tmonth[1] === 1 &&
+              date.getMonth() + 1 === 12 &&
+              +tmonth[1] === 2 &&
               +tmonth[2] === date.getFullYear() + 1
             ) {
-              console.log("hello", tmonth[1]);
               if (d[2] === "NIR") {
                 newNir3.push(d);
               } else if (d[2] === "Project") {
                 newProjects3.push(d);
               }
-            }
-          } else if (
-            date.getMonth() + 1 === 12 &&
-            +tmonth[1] === 1 &&
-            +tmonth[2] === date.getFullYear() + 1
-          ) {
-            if (d[2] === "NIR") {
-              newNir2.push(d);
-            } else if (d[2] === "Project") {
-              newProjects2.push(d);
-            }
-          } else if (
-            date.getMonth() + 1 === 12 &&
-            +tmonth[1] === 2 &&
-            +tmonth[2] === date.getFullYear() + 1
-          ) {
-            if (d[2] === "NIR") {
-              newNir3.push(d);
-            } else if (d[2] === "Project") {
-              newProjects3.push(d);
             }
           }
         }
       }
     });
+
     setProject(newProjects);
     setProject2(newProjects2);
     setProject3(newProjects3);
@@ -135,6 +138,9 @@ export default function Timeline({ data }) {
 
   const handleChange = (event) => {
     setDepartment(event.target.value);
+    console.log(event.target.value);
+    if (event.target.value === "All Department") handleData(null);
+    else handleData(event.target.value);
   };
 
   useEffect(() => {
@@ -172,27 +178,29 @@ export default function Timeline({ data }) {
               >
                 <MenuItem value={"All Department"}>All Department</MenuItem>
                 <MenuItem value={"Consumer"}>Consumer</MenuItem>
-                <MenuItem value={30}>E-Commerce</MenuItem>
-                <MenuItem value={40}>Corporate</MenuItem>
-                <MenuItem value={50}>Operations</MenuItem>
-                <MenuItem value={60}>Information Technology</MenuItem>
-                <MenuItem value={70}>Company-Wide</MenuItem>
-                <MenuItem value={80}>International</MenuItem>
-                <MenuItem value={90}>Finance</MenuItem>
-                <MenuItem value={100}>Human Resources</MenuItem>
-                <MenuItem value={120}>Yayvo</MenuItem>
-                <MenuItem value={130}>Customer Support</MenuItem>
-                <MenuItem value={140}>ECOM</MenuItem>
-                <MenuItem value={150}>ECOM Sales</MenuItem>
-                <MenuItem value={160}>ECOM (Corporate)</MenuItem>
-                <MenuItem value={170}>Admin</MenuItem>
-                <MenuItem value={180}>Visa & Travel</MenuItem>
-                <MenuItem value={190}>BPR & Invoation</MenuItem>
-                <MenuItem value={200}>Sentiments</MenuItem>
-                <MenuItem value={210}>BPR</MenuItem>
-                <MenuItem value={220}>Corporate Sales</MenuItem>
-                <MenuItem value={230}>Sales/Operations</MenuItem>
-                <MenuItem value={240}>W&D</MenuItem>
+                <MenuItem value={"E-Commerce"}>E-Commerce</MenuItem>
+                <MenuItem value={"Corporate"}>Corporate</MenuItem>
+                <MenuItem value={"Operations"}>Operations</MenuItem>
+                <MenuItem value={"Information Technology"}>
+                  Information Technology
+                </MenuItem>
+                <MenuItem value={"Company-Wide"}>Company-Wide</MenuItem>
+                <MenuItem value={"International"}>International</MenuItem>
+                <MenuItem value={"Finance"}>Finance</MenuItem>
+                <MenuItem value={"Human Resources"}>Human Resources</MenuItem>
+                <MenuItem value={"Yayvo"}>Yayvo</MenuItem>
+                <MenuItem value={"Customer Support"}>Customer Support</MenuItem>
+                <MenuItem value={"ECOM"}>ECOM</MenuItem>
+                <MenuItem value={"ECOM Sales"}>ECOM Sales</MenuItem>
+                <MenuItem value={"ECOM (Corporate)"}>ECOM (Corporate)</MenuItem>
+                <MenuItem value={"Admin"}>Admin</MenuItem>
+                <MenuItem value={"Visa & Travel"}>Visa & Travel</MenuItem>
+                <MenuItem value={"BPR & Invoation"}>BPR & Invoation</MenuItem>
+                <MenuItem value={"Sentiments"}>Sentiments</MenuItem>
+                <MenuItem value={"BPR"}>BPR</MenuItem>
+                <MenuItem value={"Corporate Sales"}>Corporate Sales</MenuItem>
+                <MenuItem value={"Sales/Operations"}>Sales/Operations</MenuItem>
+                <MenuItem value={"W&D"}>W&D</MenuItem>
               </Select>
             </FormControl>
           </div>
@@ -203,7 +211,7 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="">
+              <div className="w-[34rem]">
                 {project.map((n, index) => (
                   <Box
                     key={index}
@@ -216,7 +224,7 @@ export default function Timeline({ data }) {
               </div>
               <div className="line-timeline self-stretch"></div>
               <div className=" flex flex-col">
-                <div className="">
+                <div className="w-[34rem]">
                   {nir.map((n, index) => (
                     <Box
                       key={index}
@@ -240,7 +248,7 @@ export default function Timeline({ data }) {
               </div>
             </Zoom>
             <div className="flex justify-center items-center gap-4">
-              <div className="">
+              <div className="w-[34rem]">
                 {project2.map((n, index) => (
                   <Box
                     key={index}
@@ -253,7 +261,7 @@ export default function Timeline({ data }) {
               </div>
               <div className="line-timeline self-stretch"></div>
               <div className=" flex flex-col">
-                <div className="">
+                <div className="w-[34rem]">
                   {nir2.map((n, index) => (
                     <Box
                       key={index}
@@ -290,7 +298,7 @@ export default function Timeline({ data }) {
               </div>
               <div className="line-timeline self-stretch"></div>
               <div className=" flex flex-col">
-                <div className="">
+                <div className="w-[34rem]">
                   {nir3.map((n, index) => (
                     <Box
                       key={index}
