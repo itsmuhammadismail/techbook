@@ -40,7 +40,7 @@ export default function Timeline() {
                 </div>
                 <div className="flex ">
                   <a
-                    href="/dummy.docx"
+                    href="/resources/EPMO Policy V1.0.pdf"
                     download
                     className="flex flex-col items-center"
                   >
@@ -180,7 +180,7 @@ export default function Timeline() {
               </div>
               <div className="flex flex-wrap gap-[0.5rem] mt-6">
                 <a
-                  href="/dummy.docx"
+                  href="/resources/01-QA Daily Activity Process.pptx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -190,17 +190,17 @@ export default function Timeline() {
                   </p>
                 </a>
                 <a
-                  href="/dummy.docx"
+                  href="/resources/02-QA Resource Sheet - Template.xlsx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
                   <p className="text-[#707070]  mt-2 text-[10px] max-w-[5rem] text-center">
-                    02-QA Resource Sheet - Templat.xlsx
+                    02-QA Resource Sheet - Template.xlsx
                   </p>
                 </a>
                 <a
-                  href="/dummy.docx"
+                  href="/resources/03-Release Note Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -211,7 +211,7 @@ export default function Timeline() {
                 </a>
 
                 <a
-                  href="/dummy.docx"
+                  href="/resources/04-Test case - Template.xlsx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -222,7 +222,7 @@ export default function Timeline() {
                 </a>
 
                 <a
-                  href="/dummy.docx"
+                  href="/resources/Test Case Sign Off - Template.doc"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -233,7 +233,7 @@ export default function Timeline() {
                 </a>
 
                 <a
-                  href="/dummy.docx"
+                  href="/resources/05-Test Plan - Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -342,7 +342,7 @@ export default function Timeline() {
               </div>
               <div className="flex gap-8 mt-6">
                 <a
-                  href="/dummy.docx"
+                  href="/resources/NIR Template - Updated.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
@@ -521,23 +521,23 @@ export default function Timeline() {
             </div>
             <div className="flex gap-8 mt-6">
               <a
-                href="/dummy.docx"
+                href="/resources/01- Techinical Document.docx"
                 download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 561.svg" className="w-[2rem]" />
                 <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                  01- Texhinical Document.docx
+                  01- Techinical Document.docx
                 </p>
               </a>
               <a
-                href="/dummy.docx"
+                href="/resources/02- MIS and BI Team resource Sheet.xlsx"
                 download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 593.svg" className="w-[2rem]" />
                 <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                  02- MIS and BI Team resource Sheet.docx
+                  02- MIS and BI Team resource Sheet.xlsx
                 </p>
               </a>
             </div>
@@ -654,24 +654,28 @@ export default function Timeline() {
             <div className=" ho text-[1.5rem] font-bold mt-8 ">
               Sample Template - Documents
             </div>
-            <a href="/dummy.docx" download className="flex gap-8 mt-6">
-              <div className="flex flex-col items-center flex-wrap">
+            <div className="flex gap-8 mt-6">
+              <a
+                href="/resources/01- Techinical Document.docx"
+                download
+                className="flex flex-col items-center flex-wrap"
+              >
                 <img src="/home/Group 561.svg" className="w-[2rem]" />
                 <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                  01- Texhinical Document.docx
+                  01- Techinical Document.docx
                 </p>
-              </div>
+              </a>
               <a
-                href="/dummy.docx"
+                href="/resources/02- MIS and BI Team resource Sheet.xlsx"
                 download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 593.svg" className="w-[2rem]" />
                 <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
-                  02- MIS and BI Team resource Sheet.docx
+                  02- MIS and BI Team resource Sheet.xlsx
                 </p>
               </a>
-            </a>
+            </div>
           </Resource>
           {/* Network End */}
 
@@ -899,7 +903,6 @@ export default function Timeline() {
                       estimate to Insurance company.
                     </li>
                     <li className="pl-2">
-                      {" "}
                       Coordinate with insurance company surveyor for claims.
                     </li>
                   </ul>

@@ -138,7 +138,7 @@ export default function Timeline({ data }) {
 
   const handleChange = (event) => {
     setDepartment(event.target.value);
-    console.log(event.target.value);
+    
     if (event.target.value === "All Department") handleData(null);
     else handleData(event.target.value);
   };
