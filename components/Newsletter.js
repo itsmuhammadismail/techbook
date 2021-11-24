@@ -34,6 +34,7 @@ const Newsletter = () => {
           <Fade left>
             <div className="">
               <div
+                className="flex justify-center md:justify-start"
                 onMouseMove={({ clientX: x, clientY: y }) =>
                   set({ xy: calc(x, y) })
                 }
@@ -44,19 +45,22 @@ const Newsletter = () => {
                   <img
                     src="/newsletterCircle.svg"
                     alt=""
-                    className="w-[9rem] mb-[1rem]"
+                    className="w-[6rem] sm:w-[9rem] mb-[1rem]"
                   />
                 </animated.div>
               </div>
 
-              <h1 className="heading text-[4.5rem] font-bold leading-[5rem] w-[30rem]">
+              <h1 className="heading font-bold sm:w-[30rem] text-center md:text-left px-8">
                 Subscribe to Newsletter
               </h1>
-              <form className="flex mt-[2.5rem]" onSubmit={handleSubmit}>
+              <form
+                className="flex justify-center md:justify-start mt-[2.5rem]"
+                onSubmit={handleSubmit}
+              >
                 <input
                   type="email"
                   placeholder="Enter your email address"
-                  className="bg-[#E5E5E5] h-[2.5rem] p-5 rounded-l-full w-[18rem] focus:outline-none"
+                  className="bg-[#E5E5E5] h-[2.5rem] p-5 rounded-l-full w-[10rem] sm:w-[18rem] focus:outline-none"
                   ref={email}
                   required
                 />
@@ -70,14 +74,14 @@ const Newsletter = () => {
             </div>
           </Fade>
           <Fade right>
-            <div className="w-[25rem]">
+            <div className="w-[25rem] hidden md:block">
               <MailboxSvg />
             </div>
           </Fade>
         </div>
         <Fade up>
-          <div className="flex mx-auto items-end justify-end max-w-[48rem] mt-[4rem]">
-            <img src="/newsletterBottom.svg" alt="" className="w-[16rem]" />
+          <div className="flex mx-auto items-end justify-end max-w-[48rem] mt-[2.5rem] sm:mt-[4rem]">
+            <img src="/newsletterBottom.svg" alt="" className="w-[8rem] sm:w-[16rem]" />
           </div>
         </Fade>
       </div>

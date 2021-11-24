@@ -34,18 +34,18 @@ const Hero = () => {
 
   return (
     <div className="relative max-w-[75rem] mx-auto">
-      <div className=" left-0  flex flex-col items-center h-[65vh] justify-center">
-        <div className="flex gap-[10rem]">
-          <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
+      <div className=" left-0  flex flex-col items-center h-[50vh] sm:h-[65vh] justify-center">
+        <div className="flex items-center gap-[2rem] sm:gap-[10rem]">
+          <img src="/home/cloud1.svg" alt="" className="h-[70%] sm:h-[100%]" ref={cloud1Ref} />
           <Fade left>
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
               Resources
             </h1>
           </Fade>
-          <img src="/home/cloud2.svg" alt="" className="" ref={cloud2Ref} />
+          <img src="/home/cloud2.svg" alt="" className="h-[70%] sm:h-[100%]" ref={cloud2Ref} />
         </div>
         <Zoom delay={500}>
-          <p className="text-sm text-[#707070] text-center w-[45rem] mt-4 h-[2rem]">
+          <p className="text-sm text-[#707070] text-center px-8 sm:px-0 w-full sm:w-[45rem] mt-4 h-[2rem]">
             Download documents and resources to start your next Project or NIR.
           </p>
         </Zoom>
@@ -59,7 +59,7 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               // className="h-[20rem]"
             >
-              <div className="w-[40rem] ml-[2rem] mt-[2rem]">
+              <div className="w-[90vw] md:w-[40rem] md:ml-[2rem] mt-[2rem]">
                 <img src="/1.svg" alt="" />
               </div>
             </animated.div>

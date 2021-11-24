@@ -11,7 +11,7 @@ const Head = () => {
         </h1>
       </Fade>
       <Zoom delay={500}>
-        <p className="text-sm text-[#707070]  w-[43rem] my-[1rem] text-center mb-8">
+        <p className="text-sm px-8 sm:px-0 text-[#707070]  max-w-[43rem] my-[1rem] text-center mb-8">
           Our Head of Departments report to the Director Technology and are
           responsible for managing key areas in the Software Development and IT
           Support Process. Technology Heads are responsible for the overall

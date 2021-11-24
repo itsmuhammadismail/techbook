@@ -8,11 +8,13 @@ const Footer = () => {
         <div className="">
           <Link href="/#top">
             <a>
-              <img src="/home/logo.svg" alt="" className="h-[2rem]" />
+              <img src="/home/logo.svg" alt="" className="h-[1.5rem] sm:h-[2rem]" />
             </a>
           </Link>
         </div>
-        <Nav />
+        <div className="hidden md:block">
+          <Nav />
+        </div>
       </footer>
     </div>
   );

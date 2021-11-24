@@ -146,6 +146,7 @@ a {
 
 .ho {
   font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
 }
 
 .top-timeline {
@@ -223,7 +224,23 @@ a {
   .heading {
     font-size: 3rem;
   }
+  .heading2 {
+    font-size: 2.5rem;
+  }
   .timeline-box {
     width: 24rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .heading2 {
+    font-size: 1.5rem;
+  }
+  .ho {
+    font-size: 1.5rem;
   }
 }

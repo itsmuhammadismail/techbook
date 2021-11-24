@@ -9,7 +9,7 @@ const Leads = () => {
         <h1 className="heading2 font-bold leading-[5rem] ">Leads</h1>
       </Fade>
       <Zoom delay={800}>
-        <p className="text-sm text-[#707070]  w-[43rem] my-[1rem] text-center mb-8">
+        <p className="text-sm px-8 sm:px-0 text-[#707070]  max-w-[43rem] my-[1rem] text-center mb-8">
           Our team leads manage individual teams in key areas. Each Team lead
           has engineers assigned to them and is responsible for completing
           projects assigned to them.

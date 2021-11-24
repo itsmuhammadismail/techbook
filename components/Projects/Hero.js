@@ -34,19 +34,29 @@ const Hero = () => {
 
   return (
     <div className="relative lg:container mx-auto">
-      <div className=" left-0  flex flex-col justify-center items-center  h-[65vh]">
-        <div className="flex gap-[10rem]">
-          <img src="/home/cloud1.svg" alt="" className="" ref={cloud1Ref} />
+      <div className=" left-0  flex flex-col justify-center items-center h-[50vh] sm:h-[65vh]">
+        <div className="flex items-center gap-[2rem] sm:gap-[10rem]">
+          <img
+            src="/home/cloud1.svg"
+            alt=""
+            className="h-[70%] sm:h-[100%]"
+            ref={cloud1Ref}
+          />
           <Fade left>
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
               Projects
             </h1>
           </Fade>
 
-          <img src="/home/cloud2.svg" alt="" className="" ref={cloud2Ref} />
+          <img
+            src="/home/cloud2.svg"
+            alt=""
+            className="h-[70%] sm:h-[100%]"
+            ref={cloud2Ref}
+          />
         </div>
         <Zoom delay={500}>
-          <p className="text-sm text-[#707070]  text-center max-w-[45rem] mt-4 h-[2rem]">
+          <p className="text-sm text-[#707070] px-8 sm:px-0  text-center max-w-[45rem] mt-4 h-[2rem]">
             View projects we are working. You can filter by projects and NIRs
             and also sort results based on selected columns.
           </p>
@@ -61,7 +71,9 @@ const Hero = () => {
               style={{ transform: props.xy.interpolate(trans1) }}
               // className="h-[30rem]"
             >
-              <img src="/4.svg" alt="" className="w-[40rem] mt-[2rem]" />
+              <div className="w-[90vw] md:w-[40rem] md:ml-[2rem] mt-[4rem] md:mt-[2rem]">
+                <img src="/4.svg" alt="" className="" />
+              </div>
             </animated.div>
           </div>
         </Zoom>

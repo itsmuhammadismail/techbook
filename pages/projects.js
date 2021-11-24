@@ -63,6 +63,8 @@ const Projects = () => {
                 value={value}
                 onChange={handleChange}
                 aria-label="basic tabs example"
+                variant="scrollable"
+                scrollButtons="auto"
                 centered
               >
                 <Tab label="In Progress" {...a11yProps(0)} />
@@ -74,7 +76,7 @@ const Projects = () => {
             <TabPanel value={value} index={0}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[155rem] 2xl:h-[208rem]"
+                  className="pages h-[60rem] sm:h-[110rem] md:h-[155rem] 2xl:h-[208rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
                   frameBorder={0}
                   style={{ border: 0 }}
@@ -85,7 +87,7 @@ const Projects = () => {
             <TabPanel value={value} index={1}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[155rem] 2xl:h-[208rem]"
+                  className="pages h-[60rem] sm:h-[110rem] md:h-[155rem] 2xl:h-[208rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_lqbwj8z4nc"
                   frameBorder={0}
                   style={{ border: 0 }}
@@ -96,7 +98,7 @@ const Projects = () => {
             <TabPanel value={value} index={2}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[155rem] 2xl:h-[208rem]"
+                  className="pages h-[60rem] sm:h-[110rem] md:h-[155rem] 2xl:h-[208rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_omj4uriloc"
                   frameBorder={0}
                   style={{ border: 0 }}
@@ -107,7 +109,7 @@ const Projects = () => {
             <TabPanel value={value} index={3}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[26rem] 2xl:h-[35rem]"
+                  className="pages h-[15rem] sm:h-[20rem] md:h-[26rem] 2xl:h-[35rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_cqvwrsnboc"
                   frameBorder={0}
                   style={{ border: 0 }}

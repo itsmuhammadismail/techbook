@@ -84,35 +84,35 @@ const Hero = () => {
   }, [blink]);
 
   return (
-    <div className="media mx-auto p-[1.5rem] h-[78vh] w-[100vw] flex items-center">
-      <div className="flex items-center justify-between w-full relative">
+    <div className="media mx-auto p-[1.5rem] min-h-[78vh] w-[100vw] flex items-center">
+      <div className="w-full relative">
         <img
           src="/home/dots.svg"
           alt=""
-          className="absolute bottom-4 h-[5rem] pl-[1.5rem]"
+          className="hidden md:block absolute bottom-4 h-[5rem] pl-[1.5rem]"
         />
 
         <img
           src="/home/cloud1.svg"
           alt=""
-          className="absolute top-[2.5rem] left-[3rem]"
+          className="h-[2rem] md:h-[2.8rem] absolute top-[2rem] sm:top-[1rem] md:top-[2.5rem] left-[0.5rem] md:left-[3rem]"
           ref={cloud1Ref}
         />
 
         <img
           src="/home/cloud2.svg"
           alt=""
-          className="absolute top-[6.5rem] left-[43.5rem]"
+          className="h-[2rem] md:h-[2.8rem] absolute top-[2rem] sm:top-[1rem] md:top-[6.5rem] right-[0.5rem] md:left-[28.5rem] 2xl:left-[43.5rem]"
           ref={cloud2Ref}
         />
 
-        <div className="w-full flex justify-between items-center">
-          <div className="ml-[9rem]">
-            <h1 className="heading fw-[27rem] 2xl:w-[37rem] leading-[5rem]">
+        <div className="w-full flex flex-col md:flex-row justify-between items-center">
+          <div className="md:ml-[9rem] flex flex-col justify-center items-center text-center md:justify-start md:text-left">
+            <h1 className="heading max-w-[24rem] 2xl:max-w-[30rem] leading-[5rem] px-8 sm:px-0">
               {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
             </h1>
             <Fade up delay={1000}>
-              <p className="w-[24rem] 2xl:w-[30rem] text-[#9c8b8b] text-xs 2xl:text-sm pt-2">
+              <p className="max-w-[24rem] 2xl:max-w-[30rem] px-8 sm:px-0 text-[#9c8b8b] text-xs 2xl:text-sm pt-2 ">
                 TCS Technology Team is based out of the TCS Head Office in
                 Karachi. Supporting the Company’s widespread network of 900+
                 outlets in 380 cities, 600+ satellite-tracked vehicles, and a
@@ -132,9 +132,13 @@ const Hero = () => {
             >
               <animated.div
                 style={{ transform: props.xy.interpolate(trans1) }}
-                className="h-[17rem]"
+                className="md:h-[17rem]"
               >
-                <img src="/TeamPage.svg" alt="" />
+                <img
+                  src="/TeamPage.svg"
+                  alt=""
+                  className="mt-[2rem] w-[15rem]"
+                />
               </animated.div>
             </div>
           </Fade>

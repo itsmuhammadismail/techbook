@@ -35,7 +35,7 @@ export default function Timeline() {
           >
             <>
               <div className="flex flex-col ">
-                <div className=" ho text-[2.25rem] font-bold mt-6 mb-[-0.2rem]">
+                <div className=" ho text-[2.25rem] text-center sm:text-left font-bold mt-6 mb-[-0.2rem]">
                   SOP
                 </div>
                 <div className="flex ">
@@ -52,7 +52,7 @@ export default function Timeline() {
                 </div>
               </div>
 
-              <div className=" ho text-[1.5rem] font-bold mt-8 ">
+              <div className=" ho text-[1.5rem] text-center sm:text-left font-bold mt-8 ">
                 Sample Template - Documents
               </div>
               <div className="flex flex-wrap gap-[0.5rem] mt-6">
@@ -150,9 +150,9 @@ export default function Timeline() {
           >
             <>
               <div className="flex flex-col">
-                <div className=" ho sop">SOP</div>
+                <div className=" ho sop text-center sm:text-left">SOP</div>
                 <div className="flex">
-                  <p className="tracking-wide text-sm mt-6 max-w-[56rem] text-[#707070] ">
+                  <p className="tracking-wide text-sm mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                     This team describes an integrated system of management
                     activities involving planning, implementation,
                     documentation, assesment, and improvement to ensure the that
@@ -162,7 +162,7 @@ export default function Timeline() {
                     is described below, is used when we develop high integrity
                     software for an Information Texhnology (IT) industry, we use
                     a reasonable subset for all our non-IT Projects.
-                    <ul className="list-disc mt-2 ml-[1.2rem]">
+                    <ul className="list-disc mt-2 ml-[1.2rem] text-left">
                       <li className="pl-2">Requirenment Gathering </li>
                       <li className="pl-2">Planning </li>
                       <li className="pl-2">Design </li>
@@ -175,7 +175,7 @@ export default function Timeline() {
                 </div>
               </div>
 
-              <div className=" ho text-[1.5rem] font-bold mt-8 ">
+              <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
                 Sample Template - Documents
               </div>
               <div className="flex flex-wrap gap-[0.5rem] mt-6">
@@ -258,9 +258,9 @@ export default function Timeline() {
           >
             <>
               <div className="flex flex-col">
-                <div className="ho sop">SOP</div>
+                <div className="ho sop text-center sm:text-left">SOP</div>
                 <div className="flex">
-                  <p className="tracking-wide text-sm mt-6 max-w-[56rem] text-[#707070] ">
+                  <p className="tracking-wide text-sm mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                     The process is an integrated, flexible approach to product
                     development that involves all functional groups at all
                     levels within TCS. It provides direction for successfully
@@ -303,7 +303,7 @@ export default function Timeline() {
                         Production Support team will monitor it on daily basis{" "}
                       </li>
                     </ol>
-                    <h4 className="ho text-[1.5rem] font-bold mt-6 text-black">
+                    <h4 className="ho text-[1.5rem] font-bold mt-6 text-black text-center sm:text-left">
                       If Issues are reported
                     </h4>
                     <ol className="list-decimal mt-2 ml-[1.3rem] ">
@@ -337,7 +337,7 @@ export default function Timeline() {
                 </div>
               </div>
 
-              <div className=" ho text-[1.5rem] font-bold mt-8 ">
+              <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
                 Sample Template - Documents
               </div>
               <div className="flex gap-8 mt-6">
@@ -366,9 +366,9 @@ export default function Timeline() {
           >
             <>
               <div className="flex flex-col">
-                <div className=" ho sop">SOP</div>
+                <div className=" ho sop text-center sm:text-left">SOP</div>
                 <div className="flex">
-                  <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] ">
+                  <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                     This process is an integrated flexible approach to product
                     development that involves all functional groups at all
                     levels within TCS. Tt provides direction for successfully
@@ -394,9 +394,9 @@ export default function Timeline() {
         and support them in database related issues."
           >
             <div className="flex flex-col">
-              <div className=" ho sop ">SOP</div>
+              <div className=" ho sop text-center sm:text-left">SOP</div>
               <div className="flex">
-                <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] ">
+                <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                   Database team will be working in cooperation with PMO and
                   support teams, database team will not interact with business
                   directly.
@@ -463,9 +463,9 @@ export default function Timeline() {
             layer upon the structure."
           >
             <div className="flex flex-col">
-              <div className=" ho sop ">SOP</div>
+              <div className=" ho sop text-center sm:text-left">SOP</div>
               <div className="flex">
-                <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] ">
+                <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                   Team will follow standard NIR process for any new development
                   around the ERP footprints. For any support related issues
                   standard support process should be followed Propose
@@ -516,7 +516,7 @@ export default function Timeline() {
               </div>
             </div>
 
-            <div className=" ho text-[1.5rem] font-bold mt-8 ">
+            <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
               Sample Template - Documents
             </div>
             <div className="flex gap-8 mt-6">
@@ -564,9 +564,9 @@ export default function Timeline() {
           >
             <>
               <div className="flex flex-col">
-                <div className=" ho sop ">SOP</div>
+                <div className=" ho sop text-center sm:text-left">SOP</div>
                 <div className="flex">
-                  <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] ">
+                  <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                     All support level issues will be handled through support
                     portal and its defined procedures. All enhancements or
                     changes will be taking care through PMO team and followed by
@@ -621,9 +621,9 @@ export default function Timeline() {
             desc="The scope of the Network and Infra Team is:"
           >
             <div className="flex flex-col">
-              <div className=" ho sop ">SOP</div>
+              <div className=" ho sop text-center sm:text-left">SOP</div>
               <div className="flex max-w-[56rem]">
-                <ul className="text-sm list-disc mt-4 ml-[1.2rem] text-[#707070] ">
+                <ul className="text-sm list-disc mt-4 ml-[1.2rem] text-[#707070] text-justify sm:text-left">
                   <li className="pl-2">
                     Maintaining several specific core services that are used by
                     infrastructure and around the company.{" "}
@@ -651,7 +651,7 @@ export default function Timeline() {
               </div>
             </div>
 
-            <div className=" ho text-[1.5rem] font-bold mt-8 ">
+            <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
               Sample Template - Documents
             </div>
             <div className="flex gap-8 mt-6">
@@ -694,9 +694,9 @@ export default function Timeline() {
           >
             <>
               <div className="flex flex-col">
-                <div className=" ho sop ">SOP</div>
+                <div className=" ho sop text-center sm:text-left">SOP</div>
                 <div className="flex">
-                  <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] ">
+                  <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                     Team will follow standard NIR process for any new
                     development around the ERP footprints. For any support
                     related issues standard support process should be followed:
@@ -765,9 +765,9 @@ export default function Timeline() {
             hardware and devices.Team will also manage 3rd party support."
           >
             <div className="flex flex-col">
-              <div className=" ho sop ">SOP</div>
+              <div className=" ho sop text-center sm:text-left">SOP</div>
               <div className="flex">
-                <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] ">
+                <p className="text-sm tracking-wide mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                   All support issues will be handled through ServiceDesk (ticket
                   management), portal and its defined procedures. Asset
                   management will be handled through Asset Portal and Oracle
