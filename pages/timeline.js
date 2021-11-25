@@ -185,8 +185,8 @@ export default function Timeline({ data }) {
         />
         <div className="">
           <Hero />
-          <div className="flex justify-center mb-8">
-            <FormControl>
+          <div className="flex justify-center mb-8 text-sm gap-4 items-center">
+            {/* <FormControl>
               <InputLabel id="demo-simple-select-label">Department</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
@@ -203,7 +203,26 @@ export default function Timeline({ data }) {
                   </MenuItem>
                 ))}
               </Select>
-            </FormControl>
+            </FormControl> */}
+            <label htmlFor="departs" className="text-sm text-[#707070]">
+              Department
+            </label>
+            <div className="selectdiv">
+              <select
+                id="departs"
+                name="departs"
+                className="p-4 focus:outline-none rounded-md text-sm text-[#707070]"
+                value={department}
+                onChange={handleChange}
+              >
+                <option value="All Department">All Departments</option>
+                {menu.map((m) => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
           <div className="flex flex-col justify-center items-center mb-[6rem]">
             <Zoom delay={500}>
