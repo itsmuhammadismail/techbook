@@ -20,7 +20,7 @@ const HeadDev = () => {
                 <img src="/Head.svg" alt="" className="h-[100%] " />
               </div>
               <h2 className=" heading2 text-[2.5rem] font-bold leading-[5rem]">
-                Bilal majeed
+                Bilal Majeed
               </h2>
               <p className="text-center text-sm"> Head Of Product & PM</p>
             </div>
@@ -38,7 +38,7 @@ const HeadDev = () => {
             <Zoom delay={1500}>
               <div className="flex flex-col items-center w-[16rem] h-[19rem]   ">
                 <div className="grayImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                  <img src="/Team.svg" alt="" className="h-[100%] " />
+                  <img src="/Team GIrl.svg" alt="" className="h-[100%] " />
                 </div>
                 <h2 className="text-xl mt-4 ">Hiba Tariq</h2>
                 <p className="text-center text-sm">Sr Product Manager</p>
@@ -56,7 +56,7 @@ const HeadDev = () => {
             <Zoom delay={2500}>
               <div className="flex flex-col items-center w-[16rem] h-[19rem]   ">
                 <div className="grayImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                  <img src="/Team.svg" alt="" className="h-[100%] " />
+                  <img src="/Team GIrl.svg" alt="" className="h-[100%] " />
                 </div>
                 <h2 className="text-xl mt-4 ">Warda Tauqir</h2>
                 <p className="text-center text-sm">Business Analyst</p>
@@ -65,7 +65,7 @@ const HeadDev = () => {
             <Zoom delay={3000}>
               <div className="flex flex-col items-center w-[16rem] h-[19rem]   ">
                 <div className="grayImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                  <img src="/Team.svg" alt="" className="h-[100%] " />
+                  <img src="/Team GIrl.svg" alt="" className="h-[100%] " />
                 </div>
                 <h2 className="text-xl mt-4 ">Syeda Monisa Zehra</h2>
                 <p className="text-center text-sm">Business Analyst</p>
@@ -74,7 +74,7 @@ const HeadDev = () => {
             <Zoom delay={3500}>
               <div className="flex flex-col items-center w-[16rem] h-[19rem]   ">
                 <div className="grayImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                  <img src="/Team.svg" alt="" className="h-[100%] " />
+                  <img src="/Team GIrl.svg" alt="" className="h-[100%] " />
                 </div>
                 <h2 className="text-xl mt-4 ">Sapna Kumari</h2>
                 <p className="text-center text-sm">Project Manager</p>
