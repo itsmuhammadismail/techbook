@@ -10,7 +10,7 @@ const Header = () => {
       <div className="">
         <Link href="/">
           <a>
-            <img src="/home/logo.svg" alt="" className="h-[1.5rem] sm:h-[2rem]" />
+            <img src="/home/logo.svg" alt="" className="h-[1.5rem] sm:h-[1.8rem] 2xl:h-[2rem]" />
           </a>
         </Link>
       </div>

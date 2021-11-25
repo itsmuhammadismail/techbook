@@ -38,13 +38,23 @@ const Process = () => {
       /> */}
       <div className=" left-0  flex flex-col justify-center items-center h-[55vh] sm:h-[65vh]">
         <div className="flex items-center gap-[2rem] sm:gap-[10rem]">
-          <img src="/home/cloud1.svg" alt="" className="h-[70%] sm:h-[100%]" ref={cloud1Ref} />
+          <img
+            src="/home/cloud1.svg"
+            alt=""
+            className="h-[70%] 2xl:h-[100%]"
+            ref={cloud1Ref}
+          />
           <Fade left>
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
               Processes
             </h1>
           </Fade>
-          <img src="/home/cloud2.svg" alt="" className="h-[70%] sm:h-[100%]" ref={cloud2Ref} />
+          <img
+            src="/home/cloud2.svg"
+            alt=""
+            className="h-[70%] 2xl:h-[100%]"
+            ref={cloud2Ref}
+          />
         </div>
         <Zoom delay={500}>
           <p className="text-sm text-[#707070]  px-8 sm:px-0 text-center max-w-[45rem] mt-4 ">
@@ -56,8 +66,8 @@ const Process = () => {
           </p>
         </Zoom>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
-        <div className="w-[90vw] md:w-[40rem] md:ml-[2rem] mt-[1rem] md:mt-[2rem]">
-          <img src="/3.svg" alt="" />
+        <div className="w-[90vw] md:w-[50rem] my-[-1rem]">
+          <img src="/Processes.svg" alt="" />
         </div>
       </div>
     </div>

@@ -45,6 +45,25 @@ export default function Timeline({ data }) {
   const [project2, setProject2] = useState([]);
   const [project3, setProject3] = useState([]);
   const [department, setDepartment] = useState("All Department");
+  const [menu, setMenu] = useState([]);
+
+  useEffect(() => {
+    let newMenu = [];
+    if (data) {
+      data.map((d) => {
+        if (
+          !newMenu.includes(d[8]) &&
+          d[8] !== "" &&
+          d[8] !== undefined &&
+          d[8] !== "Department"
+        ) {
+          newMenu.push(d[8]);
+        }
+      });
+    }
+    console.log(newMenu);
+    setMenu(newMenu);
+  }, [data]);
 
   const handleData = (depart) => {
     let newNir = [];
@@ -138,7 +157,7 @@ export default function Timeline({ data }) {
 
   const handleChange = (event) => {
     setDepartment(event.target.value);
-    
+
     if (event.target.value === "All Department") handleData(null);
     else handleData(event.target.value);
   };
@@ -175,32 +194,14 @@ export default function Timeline({ data }) {
                 value={department}
                 label="Department"
                 onChange={handleChange}
+                
               >
-                <MenuItem value={"All Department"}>All Department</MenuItem>
-                <MenuItem value={"Consumer"}>Consumer</MenuItem>
-                <MenuItem value={"E-Commerce"}>E-Commerce</MenuItem>
-                <MenuItem value={"Corporate"}>Corporate</MenuItem>
-                <MenuItem value={"Operations"}>Operations</MenuItem>
-                <MenuItem value={"Information Technology"}>
-                  Information Technology
-                </MenuItem>
-                <MenuItem value={"Company-Wide"}>Company-Wide</MenuItem>
-                <MenuItem value={"International"}>International</MenuItem>
-                <MenuItem value={"Finance"}>Finance</MenuItem>
-                <MenuItem value={"Human Resources"}>Human Resources</MenuItem>
-                <MenuItem value={"Yayvo"}>Yayvo</MenuItem>
-                <MenuItem value={"Customer Support"}>Customer Support</MenuItem>
-                <MenuItem value={"ECOM"}>ECOM</MenuItem>
-                <MenuItem value={"ECOM Sales"}>ECOM Sales</MenuItem>
-                <MenuItem value={"ECOM (Corporate)"}>ECOM (Corporate)</MenuItem>
-                <MenuItem value={"Admin"}>Admin</MenuItem>
-                <MenuItem value={"Visa & Travel"}>Visa & Travel</MenuItem>
-                <MenuItem value={"BPR & Invoation"}>BPR & Invoation</MenuItem>
-                <MenuItem value={"Sentiments"}>Sentiments</MenuItem>
-                <MenuItem value={"BPR"}>BPR</MenuItem>
-                <MenuItem value={"Corporate Sales"}>Corporate Sales</MenuItem>
-                <MenuItem value={"Sales/Operations"}>Sales/Operations</MenuItem>
-                <MenuItem value={"W&D"}>W&D</MenuItem>
+                <MenuItem value={"All Department"} sx={{fontSize: "0.8rem"}}>All Departments</MenuItem>
+                {menu.map((m) => (
+                  <MenuItem key={m} value={m} sx={{fontSize: "0.8rem"}}>
+                    {m}
+                  </MenuItem>
+                ))}
               </Select>
             </FormControl>
           </div>
@@ -212,16 +213,16 @@ export default function Timeline({ data }) {
             </Zoom>
             <div className="flex justify-center items-center gap-4">
               {nir.length === 0 && project.length === 0 ? (
-                <div className="w-[34rem] flex justify-center items-center">
+                <div className="w-[34rem] flex justify-center items-center my-[2rem]">
                   <Box
-                    text={"No Projects and NIRs in this"}
+                    text={"No Projects and NIRs in this month"}
                     color="#E0E0E0"
                     anim="left"
                   />
                 </div>
               ) : (
                 <>
-                  <div className="w-[34rem] flex flex-col items-end">
+                  <div className="w-[34rem] flex flex-col items-end my-[2rem]">
                     {project.map((n, index) => (
                       <Box
                         key={index}
@@ -234,7 +235,7 @@ export default function Timeline({ data }) {
                   </div>
                   <div className="line-timeline self-stretch"></div>
                   <div className=" flex flex-col">
-                    <div className="w-[34rem] flex flex-col items-start">
+                    <div className="w-[34rem] flex flex-col items-start my-[2rem]">
                       {nir.map((n, index) => (
                         <Box
                           key={index}
@@ -261,16 +262,16 @@ export default function Timeline({ data }) {
             </Zoom>
             <div className="flex justify-center items-center gap-4">
               {nir2.length === 0 && project2.length === 0 ? (
-                <div className="w-[34rem] flex justify-center items-center">
+                <div className="w-[34rem] flex justify-center items-center my-[2rem]">
                   <Box
-                    text={"No Projects and NIRs in this"}
+                    text={"No Projects and NIRs in this month"}
                     color="#E0E0E0"
                     anim="left"
                   />
                 </div>
               ) : (
                 <>
-                  <div className="w-[34rem] flex flex-col items-end">
+                  <div className="w-[34rem] flex flex-col items-end my-[2rem]">
                     {project2.map((n, index) => (
                       <Box
                         key={index}
@@ -283,7 +284,7 @@ export default function Timeline({ data }) {
                   </div>
                   <div className="line-timeline self-stretch"></div>
                   <div className=" flex flex-col">
-                    <div className="w-[34rem] flex flex-col items-start">
+                    <div className="w-[34rem] flex flex-col items-start my-[2rem]">
                       {nir2.map((n, index) => (
                         <Box
                           key={index}
@@ -310,16 +311,16 @@ export default function Timeline({ data }) {
             </Zoom>
             <div className="flex justify-center items-center gap-4">
               {nir3.length === 0 && project3.length === 0 ? (
-                <div className="w-[34rem] flex justify-center items-center">
+                <div className="w-[34rem] flex justify-center items-center my-[2rem]">
                   <Box
-                    text={"No Projects and NIRs in this"}
+                    text={"No Projects and NIRs in this month"}
                     color="#E0E0E0"
                     anim="left"
                   />
                 </div>
               ) : (
                 <>
-                  <div className="w-[34rem] flex flex-col items-end">
+                  <div className="w-[34rem] flex flex-col items-end my-[2rem]">
                     {project3.map((n, index) => (
                       <Box
                         key={index}
@@ -332,7 +333,7 @@ export default function Timeline({ data }) {
                   </div>
                   <div className="line-timeline self-stretch"></div>
                   <div className=" flex flex-col">
-                    <div className="w-[34rem] flex flex-col items-start">
+                    <div className="w-[34rem] flex flex-col items-start my-[2rem]">
                       {nir3.map((n, index) => (
                         <Box
                           key={index}

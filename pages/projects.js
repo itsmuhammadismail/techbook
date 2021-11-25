@@ -7,6 +7,16 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { makeStyles } from "@mui/styles";
+
+const useTabStyles = makeStyles({
+  root: {
+    justifyContent: "center",
+  },
+  scroller: {
+    flexGrow: "0",
+  },
+});
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,6 +53,7 @@ function a11yProps(index) {
 
 const Projects = () => {
   const [value, setValue] = useState(0);
+  const classes = useTabStyles();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -60,6 +71,7 @@ const Projects = () => {
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
+                classes={{ root: classes.root, scroller: classes.scroller }}
                 value={value}
                 onChange={handleChange}
                 aria-label="basic tabs example"

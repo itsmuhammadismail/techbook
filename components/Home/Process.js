@@ -23,19 +23,22 @@ const Process = () => {
     });
   }, []);
   return (
-    <div className="relative z-[-10] bg-[#fafafa] overflow-hidden">
-      <img
-        src="/home/processCircleTop.svg"
-        alt=""
-        className="absolute right-0"
-        ref={shape1Ref}
-      />
-      <img
-        src="/home/processCircleBottom.svg"
-        alt=""
-        className="absolute bottom-0"
-        ref={shape2Ref}
-      />
+    <div className="z-[-10] bg-[#fafafa] overflow-hidden">
+      <div className="relative h-full">
+        <img
+          src="/home/processCircleTop.svg"
+          alt=""
+          className="absolute right-0"
+          ref={shape1Ref}
+        />
+        <img
+          src="/home/processCircleBottom.svg"
+          alt=""
+          className="absolute bottom-0"
+          ref={shape2Ref}
+        />
+      </div>
+
       <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
         <Fade left>
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
@@ -53,16 +56,14 @@ const Process = () => {
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
         <Fade>
-          <div className="w-[43rem] ">
-            <ProcessSvg />
+          <div className="w-[55rem] ">
+            <img src="/Processes.svg" alt="" />
           </div>
         </Fade>
         <Link href="/processes">
-          <a>
-            <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
-              View All
-            </button>
-          </a>
+          <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
+            View All
+          </button>
         </Link>
       </div>
     </div>

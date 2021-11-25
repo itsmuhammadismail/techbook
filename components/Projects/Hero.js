@@ -39,7 +39,7 @@ const Hero = () => {
           <img
             src="/home/cloud1.svg"
             alt=""
-            className="h-[70%] sm:h-[100%]"
+            className="h-[70%] 2xl:h-[100%]"
             ref={cloud1Ref}
           />
           <Fade left>
@@ -51,7 +51,7 @@ const Hero = () => {
           <img
             src="/home/cloud2.svg"
             alt=""
-            className="h-[70%] sm:h-[100%]"
+            className="h-[70%] 2xl:h-[100%]"
             ref={cloud2Ref}
           />
         </div>

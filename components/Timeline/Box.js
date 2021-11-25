@@ -8,7 +8,7 @@ const Box = ({ date, text, color, anim }) => {
   return (
     <Fade left={left} right={right}>
       <div
-        className={`flex flex-col timeline-box p-[1rem] min-h-[2rem] my-[0.6rem] rounded-md`}
+        className={`flex flex-col timeline-box p-[0.5rem] text-[#707070] text-sm min-h-[2rem] my-[0.6rem] rounded-md`}
         style={{ backgroundColor: color }}
       >
         <p>{date}</p>

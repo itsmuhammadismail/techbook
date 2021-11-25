@@ -119,7 +119,7 @@ const Hero = () => {
         <img
           src="/home/cloud2.svg"
           alt=""
-          className="absolute top-[13.5rem] left-[43.5rem]"
+          className="absolute top-[13.5rem] sm:top-[1rem] md:top-[13rem] right-[0.5rem] md:left-[32.5rem] 2xl:left-[43.5rem]"
           ref={cloud2Ref}
         />
 

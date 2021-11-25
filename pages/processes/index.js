@@ -16,7 +16,7 @@ export default function Home() {
       <Layout>
         <Process />
         <div className="bg-[#fafafa]">
-          <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center mt-8 pt-8">
+          <div className="max-w-[70rem] mx-auto flex flex-col justify-center items-center mt-2 pt-8">
             <Fade left>
               <h1 className="heading2 font-bold leading-[5rem] ">
                 Process Flow
