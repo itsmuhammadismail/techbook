@@ -6,7 +6,7 @@ const Leads = () => {
   return (
     <div className="media mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem]">
       <Fade left>
-        <h1 className="heading2 font-bold leading-[5rem] ">Leads</h1>
+        <h1 className="heading2 font-bold leading-[5rem] ">Leads & Managers</h1>
       </Fade>
       <Zoom delay={800}>
         <p className="text-sm px-8 sm:px-0 text-[#707070]  max-w-[43rem] my-[1rem] text-center mb-8">
