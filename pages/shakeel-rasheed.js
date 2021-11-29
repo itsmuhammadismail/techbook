@@ -35,7 +35,7 @@ const HeadOracle = () => {
                 <a>
                   <div className="flex flex-col items-center w-[16rem]  h-[19rem]  ">
                     <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                      <img src="/Lead.svg" alt="" className="h-[100%]" />
+                      <img src="/Lead.svg" alt="" className="h-[100%]  mb-[-0.1rem]" />
                     </div>
                     <h2 className="text-xl mt-4 ">Javed A Khan</h2>
                     <p className="text-center text-sm">
@@ -53,7 +53,7 @@ const HeadOracle = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Muhammad Farrukh</h2>
@@ -72,7 +72,7 @@ const HeadOracle = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Anwar Ali</h2>
@@ -89,7 +89,7 @@ const HeadOracle = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Tausif Akbar Jilani</h2>
@@ -108,7 +108,7 @@ const HeadOracle = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Talha Ishaq</h2>

@@ -17,7 +17,7 @@ const HeadDev = () => {
           <Zoom delay={1000}>
             <div className="flex flex-col items-center w-[23rem]  ">
               <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center ">
-                <img src="/Lead.svg" alt="" className="h-[100%] " />
+                <img src="/Lead.svg" alt="" className="h-[100%]  mb-[-0.1rem]" />
               </div>
               <h2 className=" heading2 text-[2.5rem] font-bold leading-[5rem]">
                 Syed Fateh Ali 

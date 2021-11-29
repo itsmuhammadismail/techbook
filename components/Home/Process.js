@@ -23,21 +23,19 @@ const Process = () => {
     });
   }, []);
   return (
-    <div className="z-[-10] bg-[#fafafa] overflow-hidden">
-      <div className="relative h-full">
-        <img
-          src="/home/processCircleTop.svg"
-          alt=""
-          className="absolute right-0"
-          ref={shape1Ref}
-        />
-        <img
-          src="/home/processCircleBottom.svg"
-          alt=""
-          className="absolute bottom-0"
-          ref={shape2Ref}
-        />
-      </div>
+    <div className="relative bg-[#fafafa] overflow-hidden">
+      <img
+        src="/home/processCircleTop.svg"
+        alt=""
+        className="absolute right-0"
+        ref={shape1Ref}
+      />
+      <img
+        src="/home/processCircleBottom.svg"
+        alt=""
+        className="absolute bottom-0"
+        ref={shape2Ref}
+      />
 
       <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
         <Fade left>
@@ -60,11 +58,15 @@ const Process = () => {
             <img src="/Processes.svg" alt="" />
           </div>
         </Fade>
-        <Link href="/processes">
-          <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
-            View All
-          </button>
-        </Link>
+        <div className="relative z-[10000]" style={{ pointerEvents: "all" }}>
+          <Link href="/processes">
+            <a>
+              <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[3rem]">
+                View All
+              </button>
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
   );

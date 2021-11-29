@@ -303,7 +303,7 @@ export default function Timeline() {
                         Production Support team will monitor it on daily basis{" "}
                       </li>
                     </ol>
-                    <h4 className="ho text-[1.5rem] font-bold mt-6 text-black text-center sm:text-left">
+                    <h4 className="ho mb-6 text-[1.5rem] font-bold mt-6 text-black text-center sm:text-left">
                       If Issues are reported
                     </h4>
                     <ol className="list-decimal mt-2 ml-[1.3rem] ">

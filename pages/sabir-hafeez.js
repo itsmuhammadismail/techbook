@@ -35,7 +35,7 @@ const HeadDev = () => {
                 <a>
                   <div className="flex flex-col items-center w-[16rem]  h-[19rem]  ">
                     <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
-                      <img src="/Lead.svg" alt="" className="h-[100%]" />
+                      <img src="/Lead.svg" alt="" className="h-[100%]  mb-[-0.1rem]" />
                     </div>
                     <h2 className="text-xl mt-4 ">Rumman Hussain Siddiqui</h2>
                     <p className="text-center text-sm">
@@ -53,7 +53,7 @@ const HeadDev = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Muhammad Arif Matloob</h2>
@@ -72,7 +72,7 @@ const HeadDev = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Riaz Mehmood</h2>
@@ -91,7 +91,7 @@ const HeadDev = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Rameez Jawaid</h2>
@@ -110,7 +110,7 @@ const HeadDev = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Syed Fateh Ali Shah</h2>
@@ -129,7 +129,7 @@ const HeadDev = () => {
                       <img
                         src="/Lead.svg"
                         alt=""
-                        className="h-[100%] mb-[-0.5rem]"
+                        className="h-[100%]  mb-[-0.1rem]"
                       />
                     </div>
                     <h2 className="text-xl mt-4 ">Shahbaz Ali</h2>
