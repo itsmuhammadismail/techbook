@@ -18,20 +18,7 @@ export default function Timeline() {
           <Resource
             isgray
             heading="PMO Team"
-            desc="The Enterprice Project Management Office (EPMO) helps ensure the
-            success of every project with respect to the quality, time and cost
-            dimensions of the project. Within the IT Department EPMO is
-            responsible for alignment of project and program with the
-            Management's roadmap, establishing and ensuring appropriate
-            enterprise governance, and management of functions to ensure
-            strategy alignment and benefits realization. EPMO is also
-            responsible for providing project Managers/ Business Analysts that
-            perform requirenment assesment including support for data
-            management, coordination of governance and reporting and
-            andministrative activities to support the project or project team.
-            EPMO provides continuous NIR/project status updates to management
-            throughput the organization with weekly portfolio Review and Weekly
-            Project Scorecards."
+            desc="The Enterprise Project Management Office (EPMO) helps ensure the success of every project with respect to the quality, time and cost dimensions of the project. Within the IT Department EPMO is responsible for alignment of project and program with the Management's roadmap, establishing and ensuring appropriate enterprise governance, and management of functions to ensure strategy alignment and benefits realization. EPMO is also responsible for providing project Managers/ Business Analysts that perform requirement assessment including support for data management, coordination of governance and reporting and administrative activities to support the project or project team. EPMO provides continuous NIR/project status updates to management throughput the organization with weekly portfolio Review and Weekly Project Scorecards."
           >
             <>
               <div className="flex flex-col ">
@@ -138,15 +125,7 @@ export default function Timeline() {
 
           <Resource
             heading="SQA Team"
-            desc="The Scope Of SQA is to monitors every phase of the software
-        development process so as to ensure design quality, making sure that
-        the software adheres to the standard set by the development company.
-        Also, make sure that new products work before they are released to
-        the public. Basically SQA, engineer is involved in tasks that
-        include software design, control of source code, configuration
-        management, program testing, integration of software, and release
-        management process. He or She will typically break up the entire
-        prcoess into goals such as verifications, activities, measurements."
+            desc="The Scope Of SQA is to monitors every phase of the software development process so as to ensure design quality, making sure that the software adheres to the standard set by the development company. Also, make sure that new products work before they are released to the public. Basically SQA, engineer is involved in tasks that include software design, control of source code, configuration management, program testing, integration of software, and release management process. He or She will typically break up the entire process into goals such as verifications, activities, measurements."
           >
             <>
               <div className="flex flex-col">
@@ -155,13 +134,14 @@ export default function Timeline() {
                   <p className="tracking-wide text-sm mt-6 max-w-[56rem] text-[#707070] text-justify sm:text-left">
                     This team describes an integrated system of management
                     activities involving planning, implementation,
-                    documentation, assesment, and improvement to ensure the that
-                    a process, or item, is of the type and qualify needed for
-                    the project. quality assurance is one of the key ingredients
-                    of creating good software. While our full QA process, which
-                    is described below, is used when we develop high integrity
-                    software for an Information Texhnology (IT) industry, we use
-                    a reasonable subset for all our non-IT Projects.
+                    documentation, assessment, and improvement to ensure the
+                    that a process, or item, is of the type and qualify needed
+                    for the project. quality assurance is one of the key
+                    ingredients of creating good software. While our full QA
+                    process, which is described below, is used when we develop
+                    high integrity software for an Information Technology (IT)
+                    industry, we use a reasonable subset for all our non-IT
+                    Projects.
                     <ul className="list-disc mt-2 ml-[1.2rem] text-left">
                       <li className="pl-2">Requirenment Gathering </li>
                       <li className="pl-2">Planning </li>
@@ -253,8 +233,7 @@ export default function Timeline() {
           <Resource
             isgray
             heading="WEB/ APP Development"
-            desc="The scope of the development team is to plan, analyze, program, and
-        test throughout the cource of the project."
+            desc="The scope of the development team is to plan, analyze, program, and test throughout the cource of the project."
           >
             <>
               <div className="flex flex-col">
@@ -361,8 +340,7 @@ export default function Timeline() {
 
           <Resource
             heading="Oracle Development Team"
-            desc="The scope of the development team is to plan, analyze, program, and
-        test throughout the cource of the project."
+            desc="The scope of the development team is to plan, analyze, program, and test throughout the course of the project."
           >
             <>
               <div className="flex flex-col">
@@ -451,16 +429,7 @@ export default function Timeline() {
           {/* MIS TEAM START */}
           <Resource
             heading="MIS Team"
-            desc="BI team is responsible to design, develop and maintain Business
-            Intelligence solutions. Team members design and develop SQL queries
-            to extract business required data or subset of data and present it
-            in a meaningful format. The team maintains existing solutions i.e.
-            MIS (developed internally) and OBIEE in all aspects and respond and
-            resolve relevant business users queries related to data/reports
-            requirements. The team will be responsible for all data warehouse
-            management, ETL process and development of Fact tables and
-            Dimensions tables structure and further development of reporting
-            layer upon the structure."
+            desc="BI team is responsible to design, develop and maintain Business Intelligence solutions. Team members design and develop SQL queries to extract business required data or subset of data and present it in a meaningful format. The team maintains existing solutions i.e. MIS (developed internally) and OBIEE in all aspects and respond and resolve relevant business user's queries related to data/reports requirements. The team will be responsible for all data warehouse management, ETL process and development of Fact tables and Dimensions table's structure and further development of reporting layer upon the structure."
           >
             <div className="flex flex-col">
               <div className=" ho sop text-center sm:text-left">SOP</div>
@@ -469,7 +438,7 @@ export default function Timeline() {
                   Team will follow standard NIR process for any new development
                   around the ERP footprints. For any support related issues
                   standard support process should be followed Propose
-                  functional/technical solutions required by the business..
+                  functional/technical solutions required by the business.
                   <ul className="list-disc mt-2 ml-[1.2rem]">
                     <li className="pl-2">
                       Suggest work-around in case solution is not available in
@@ -549,18 +518,7 @@ export default function Timeline() {
           <Resource
             isgray
             heading="Production Support Team"
-            desc="The scope of support team is first level of response in case of any
-            malfunction, error, unavailability of business application, website,
-            or database. The support team is responsible to answer any complaint
-            raised by any business application users spread through entire TCS
-            network. Support team will work in conjunction with development
-            teams of respective tools and database team in case of any issue
-            required modification, enhancement, or any kind of change or it
-            requires specialized knowledge of a particular domain.Support team
-            will be responsible for production assets health check monitoring
-            and to make sure all assets(Servers, software, connectivity, links,
-            websites, APIs) working smoothly and available to relevant TCS
-            users."
+            desc="The scope of support team is first level of response in case of any malfunction, error, unavailability of business application, website, or database. The support team is responsible to answer any complaint raised by any business application users spread through entire TCS network. Support team will work in conjunction with development teams of respective tools and database team in case of any issue required modification, enhancement, or any kind of change or it requires specialized knowledge of a particular domain. Support team will be responsible for production assets health check monitoring and to make sure all assets(Servers, software, connectivity, links, websites, APIs) working smoothly and available to relevant TCS users"
           >
             <>
               <div className="flex flex-col">
@@ -581,18 +539,18 @@ export default function Timeline() {
                       </li>
                       <li className="pl-2">
                         {" "}
-                        Production monitoring (Servers performance, Data
+                        Production monitoring (Server{"'"}s performance, Data
                         transmission, websites monitoring, network links) .
                       </li>
                       <li className="pl-2">
                         Taking initiative to continuously improve production
-                        support team processes..
+                        support team processes.
                       </li>
                       <li className="pl-2">
                         Work hands on with infrastructure and integration teams
-                        and developers to research, diagnose, troubleshoot,
-                        andidentify solutions to resolve issues in our
-                        production systems.
+                        and developers to research, diagnose, troubleshoot, and
+                        identify solutions to resolve issues in our production
+                        systems.
                       </li>
                       <li className="pl-2">
                         Provide support to external customer on COD, and ENVIO
@@ -605,7 +563,7 @@ export default function Timeline() {
                       <li className="pl-2">
                         Provide support to all over Pakistan OMS server
                         performance and other issues such as database sessions
-                        locking.Sample Templates – Documents
+                        locking. Sample Templates – Documents
                       </li>
                     </ul>
                   </p>
@@ -617,7 +575,7 @@ export default function Timeline() {
 
           {/* Network Start */}
           <Resource
-            heading="Network & infra Structure Team"
+            heading="Network & infra-Structure Team"
             desc="The scope of the Network and Infra Team is:"
           >
             <div className="flex flex-col">
@@ -630,7 +588,7 @@ export default function Timeline() {
                   </li>
                   <li className="pl-2">
                     Partnering with key users to support the design and
-                    implementation of our next generation monitoring system..
+                    implementation of our next generation monitoring system.
                   </li>
                   <li className="pl-2">
                     Building a robust infrastructure management system, which
@@ -641,11 +599,12 @@ export default function Timeline() {
                   <li className="pl-2">
                     Ensuring all hardware processes from selection,
                     specification, architecture, bootstrapping and software
-                    maintenanceare as efficient and seamless as possible
+                    maintenance are as efficient and seamless as possible
                   </li>
                   <li className="pl-2">
-                    Improving tooling and efficiencies for other team and
-                    processes within Infrastructure{" "}
+                    Ensuring all hardware processes from selection,
+                    specification, architecture, bootstrapping and software
+                    maintenance are as efficient and seamless as possible
                   </li>
                 </ul>
               </div>
@@ -683,14 +642,7 @@ export default function Timeline() {
           <Resource
             isgray
             heading="EBS Team"
-            desc="EBS ERP(OF) team will be responsible for implementation any
-            enhancement, new business process automation and mapping financials
-            information into ERP modules. Team will support all existing modules
-            functionality and provide all levels of technical assistance to
-            business users. ERP will coordinate with database team for any bug
-            fixing solution implementation or enhancement recommended by vendor.
-            Team will ensure new integrations, enhancements, interfaces, reports
-            are designed are built around application standards."
+            desc="EBS ERP(OF) team will be responsible for implementation any enhancement, new business process automation and mapping financials information into ERP modules. Team will support all existing modules functionality and provide all levels of technical assistance to business users. ERP will coordinate with database team for any bug fixing solution implementation or enhancement recommended by vendor. Team will ensure new integrations, enhancements, interfaces, reports are designed are built around application standards."
           >
             <>
               <div className="flex flex-col">
@@ -702,9 +654,8 @@ export default function Timeline() {
                     related issues standard support process should be followed:
                     <ul className="list-disc mt-2 ml-[1.2rem] ">
                       <li className="pl-2">
-                        {" "}
                         Propose functional/technical solutions required by the
-                        business.{" "}
+                        business.
                       </li>
                       <li className="pl-2">Gap Analysis</li>
                       <li className="pl-2">
@@ -724,11 +675,10 @@ export default function Timeline() {
                       </li>
                       <li className="pl-2">
                         Building integrations and enhancements with core
-                        business applications and modules for smoothtransition
+                        business applications and modules for smooth transition
                         of financial data
                       </li>
                       <li className="pl-2">
-                        {" "}
                         Smooth running of all oracle financials and SCM modules.
                       </li>
                       <li className="pl-2">
@@ -752,17 +702,7 @@ export default function Timeline() {
           {/* Help desk start */}
           <Resource
             heading="Help Desk Support"
-            desc="Database team will be responsible for all database related
-            activities i.e., installations, database management, database
-            creation, database backup and recovery, performances, and
-            optimization. Database team will closely with relevant IT teams and
-            support them in database related issues. The scope of IT service
-            desk is to provide technical support, hardware and software
-            installation and troubleshooting for all kind of devices business
-            users are currently using. Service Desk team will be managing all
-            their activities/incident management through Service Desk portal.
-            Service Desk team will also be responsible for procurement new
-            hardware and devices.Team will also manage 3rd party support."
+            desc="Database team will be responsible for all database related activities i.e., installations, database management, database creation, database backup and recovery, performances, and optimization. Database team will closely with relevant IT teams and support them in database related issues. The scope of IT service desk is to provide technical support, hardware and software installation and troubleshooting for all kind of devices business users are currently using. Service Desk team will be managing all their activities/incident management through Service Desk portal. Service Desk team will also be responsible for procurement new hardware and devices. Team will also manage 3rd party support."
           >
             <div className="flex flex-col">
               <div className=" ho sop text-center sm:text-left">SOP</div>
@@ -772,16 +712,15 @@ export default function Timeline() {
                   management), portal and its defined procedures. Asset
                   management will be handled through Asset Portal and Oracle
                   Financial Software under the Admin and Finance laid down
-                  procurement policies..
+                  procurement policies.
                   <ul className="list-disc mt-2 ml-[1.2rem]">
                     <li className="pl-2">
                       Identify, redirect problems, and escalate urgent
-                      situations to the appropriate resources{" "}
+                      situations to the appropriate resources
                     </li>
                     <li className="pl-2">
-                      {" "}
                       Analysis and investigation all tickets, with a structured
-                      approach to problem solving.{" "}
+                      approach to problem solving.
                     </li>
                     <li className="pl-2">
                       Create monthly reports and dashboard on help desk metrics
@@ -789,15 +728,15 @@ export default function Timeline() {
                     </li>
                     <li className="pl-2">
                       Track and route problems/requests and document
-                      resolutions.{" "}
+                      resolutions.
                     </li>
                     <li className="pl-2">
                       Follow up on outstanding requests and ensure timely
-                      resolution.{" "}
+                      resolution.
                     </li>
                     <li className="pl-2">
                       Requesting feedback and/or monitoring calls and other
-                      methods of correspondence to improve training methods.{" "}
+                      methods of correspondence to improve training methods.
                     </li>
                     <li className="pl-2">
                       Run reports to determine malfunctions that continue to
