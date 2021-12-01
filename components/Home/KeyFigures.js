@@ -22,19 +22,19 @@ const KeyFigures = ({ data }) => {
   }, []);
 
   return (
-    <div className="relative bg-[#fafafa] mt-[5rem]" id="keyFigures">
+    <div className="relative bg-[#fafafa]  mt-[5rem]" id="keyFigures">
       <img
         src="/home/keyFigures.svg"
         alt=""
-        className="absolute top-[5rem] z-[-10] h-[30rem] 2xl:h-[40rem] z-[100]"
+        className="absolute top-[5rem] hidden md:block z-[-10] h-[30rem] 2xl:h-[40rem] z-[100]"
         ref={shapeRef}
       />
-      <div className="media mx-auto px-[5rem] py-[5rem] flex flex-col justify-center items-center  min-h-[100vh] ">
+      <div className="media mx-auto px-[2rem] sm:px-[5rem] py-[5rem] flex flex-col justify-center items-center  min-h-[100vh] ">
         <Fade left>
           <h1 className="heading">Key Figures</h1>
         </Fade>
         <Zoom delay={500}>
-          <p className="text-sm text-[#707070] text-center w-[45rem] mt-4">
+          <p className="text-sm  text-[#707070] text-center max-w-[45rem] mt-4">
             A quick snapshot of our achievements in the last two years.
           </p>
         </Zoom>
@@ -42,7 +42,7 @@ const KeyFigures = ({ data }) => {
           {data &&
             data.map((d, index) => (
               <Zoom key={index} delay={delay}>
-                <div className="flex flex-col justify-center items-center w-[10rem] text-center mt-[2rem]">
+                <div className="flex flex-col justify-center items-center w-[7rem] sm:w-[10rem] text-center mt-[2rem]">
                   <div className="hidden">{(delay += 200)}</div>
                   <img
                     src={`https://drive.google.com/uc?export=view&id=${d[0]}`}

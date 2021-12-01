@@ -21,7 +21,7 @@ const Resources = () => {
           </h1>
         </Fade>
         <Fade left delay={500}>
-          <p className="text-sm text-[#707070]  text-center w-[45rem] mt-4">
+          <p className="text-sm text-[#707070]  text-center px-[2rem] sm:px-[0] max-w-[45rem] mt-4">
             Download documents and resources to start your next Project or NIR.
             Read Responsibilities of and SOPs followed by different teams in the
             Technology Department. While our documents are primarily used for
@@ -36,7 +36,7 @@ const Resources = () => {
             {/* <img src="/resources.svg" alt="" className="w-[40rem] mt-8" /> */}
             <div className="w-[34rem] mt-8">
               {/* <ResourcesSvg /> */}
-              <img src="/resources.svg" alt="" />
+              <img src="/resources.svg" alt="" className="hidden sm:block"/>
             </div>
           </animated.div>
         </div>

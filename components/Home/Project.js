@@ -13,7 +13,7 @@ const Project = () => {
         <h1 className="heading ">Project Dashboard</h1>
       </Fade>
       <Fade left delay={500}>
-        <p className="text-sm text-center text-[#707070]  w-[45rem] mt-4">
+        <p className="text-sm text-center text-[#707070] px-[2rem] sm:px-[0]  max-w-[45rem] mt-4">
           The TCS Tech Team works on a broad portfolio of projects including
           development of new and changes to existing systems. Some of our daily
           operations include the delivery on business requirements, including
@@ -21,7 +21,7 @@ const Project = () => {
           more detailed view take a look at our project dashboard:
         </p>
       </Fade>
-      <div className="w-[50rem] mt-8 relative">
+      <div className="w-[50rem] mt-8 relative hidden sm:block">
         {/* Top Circle */}
         <Fade delay={4000}>
           <div className="absolute top-[-5rem] right-[-5rem] z-10">

@@ -7,11 +7,11 @@ const Teams = () => {
     <div className="">
       <div className="media mx-auto flex justify-between items-center min-h-[100vh] gap-8">
         <Fade left>
-          <div className=" relative">
-            <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
+          <div className=" relative flex flex-col items-center sm:items-start text-center sm:text-left">
+            <h1 className="heading text-[4.5rem] font-bold leading-[5rem] text-center sm:text-left ">
               Teams
             </h1>
-            <p className="text-[#707070] text-sm w-[26rem] my-[1rem]">
+            <p className="text-[#707070] text-sm px-[2rem] sm:px-[0] max-w-[26rem] my-[1rem]">
               TCS Technology Team is based out of the TCS Head Office in Karachi
               and come from all across Pakistan. We’re friendly, knowledgeable,
               and open and we take pride in sharing our expertise, helping TCS
@@ -20,7 +20,7 @@ const Teams = () => {
             </p>
             <Link href="/team">
               <a>
-                <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[2rem]">
+                <button className="bg-[#ED1818] text-white rounded-full h-[2.5rem] w-[12rem] p-5 flex justify-center items-center mt-[1rem] ">
                   View All
                 </button>
               </a>
@@ -28,7 +28,7 @@ const Teams = () => {
           </div>
         </Fade>
         <div className="relative flex justify-center items-center">
-          <img src="/home/teamsBackground.svg" alt="" className="h-[100vh]" />
+          <img src="/home/teamsBackground.svg" alt="" className="h-[100vh] hidden sm:block" />
           <Zoom delay={500}>
             <img
               src="/home/team1.svg"
