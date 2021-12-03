@@ -34,9 +34,9 @@ const Resources = () => {
         >
           <animated.div style={{ transform: props.xy.interpolate(trans1) }}>
             {/* <img src="/resources.svg" alt="" className="w-[40rem] mt-8" /> */}
-            <div className="w-[34rem] mt-8">
+            <div className="w-[14rem] md:w-[34rem] mt-8">
               {/* <ResourcesSvg /> */}
-              <img src="/resources.svg" alt="" className="hidden sm:block"/>
+              <img src="/resources.svg" alt="" className=""/>
             </div>
           </animated.div>
         </div>

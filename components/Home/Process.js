@@ -54,8 +54,8 @@ const Process = () => {
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
         <Fade>
-          <div className="w-[55rem] ">
-            <img src="/Processes.svg" alt="" className="hidden sm:block"/>
+          <div className="w-[19rem] md:w-[55rem] ">
+            <img src="/Processes.svg" alt="" className=""/>
           </div>
         </Fade>
         <div className="relative z-[10000]" style={{ pointerEvents: "all" }}>

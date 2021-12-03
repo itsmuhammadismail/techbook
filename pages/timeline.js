@@ -10,8 +10,56 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { google } from "googleapis";
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box2 from "@mui/material/Box";
+import { makeStyles } from "@mui/styles";
 
 // import { getData } from "../lib/api";
+
+const useTabStyles = makeStyles({
+  root: {
+    justifyContent: "center",
+  },
+  scroller: {
+    flexGrow: "0",
+  },
+});
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      // hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box2 sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box2>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
 
 // Config variables
 const SPREADSHEET_ID = "1SHsVkzhnx5qCPc9UXubvsa7NnFOaazf_Zc_vHdVc61A";
@@ -47,6 +95,14 @@ export default function Timeline({ data }) {
   const [department, setDepartment] = useState("All Department");
   const [menu, setMenu] = useState([]);
 
+  const [value, setValue] = useState(0);
+  const classes = useTabStyles();
+
+  const handleValue = (event, newValue) => {
+    setValue(newValue);
+    console.log(value);
+  };
+
   useEffect(() => {
     let newMenu = [];
     if (data) {
@@ -75,14 +131,19 @@ export default function Timeline({ data }) {
 
     data.map((d) => {
       let tdate = d[13];
+
       let tmonth = "";
       if (tdate !== undefined) tmonth = tdate.split("/");
       if (depart === null || depart === d[8]) {
+        // console.log(+tmonth[2] === date.getFullYear())
+        // if(+tmonth[2] === date.getFullYear()) console.log(+tmonth[2])
+
         if (
           typeof tmonth !== "string" &&
           +tmonth[1] === date.getMonth() + 1 &&
           +tmonth[2] === date.getFullYear()
         ) {
+          console.log("d2", d[2]);
           if (d[2] === "NIR") {
             console.log(d[8]);
             newNir.push(d);
@@ -150,6 +211,7 @@ export default function Timeline({ data }) {
     setProject(newProjects);
     setProject2(newProjects2);
     setProject3(newProjects3);
+
     setNir(newNir);
     setNir2(newNir2);
     setNir3(newNir3);
@@ -179,7 +241,7 @@ export default function Timeline({ data }) {
           src="/home/keyFigures.svg"
         /> */}
         <img
-          className="absolute right-0  w-32 mt-[60rem]"
+          className="absolute right-0  w-32 mt-[30rem] hidden sm:block"
           src="/home/keyFigures.svg"
           style={{ transform: "scaleX(-1)" }}
         />
@@ -224,7 +286,7 @@ export default function Timeline({ data }) {
               </select>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center mb-[6rem]">
+          <div className="flex-col justify-center items-center mb-[6rem] hidden sm:flex">
             <Zoom delay={500}>
               <div className="top-timeline">
                 {months[date.getMonth()]} {date.getFullYear()}
@@ -322,8 +384,12 @@ export default function Timeline({ data }) {
               <div className="top-timeline">
                 {date.getMonth() + 1 === 11
                   ? months[0]
+                  : date.getMonth() + 1 === 12
+                  ? months[1]
                   : months[date.getMonth() + 2]}{" "}
                 {date.getMonth() + 1 === 11
+                  ? date.getFullYear() + 1
+                  : date.getMonth() + 1 === 12
                   ? date.getFullYear() + 1
                   : date.getFullYear()}
               </div>
@@ -368,6 +434,146 @@ export default function Timeline({ data }) {
               )}
             </div>
           </div>
+        </div>
+        <div className="media mx-auto flex items-center">
+          <Box2 sx={{ width: "100%" }}>
+            <Box2 sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                classes={{ root: classes.root, scroller: classes.scroller }}
+                indicatorColor="primary"
+                textColor="primary"
+                variant={"scrollable"}
+                scrollButtons={"on"}
+                // classes={{ root: classes.root, scroller: classes.scroller }}
+                value={value}
+                onChange={handleValue}
+                aria-label="basic tabs example"
+                // variant="scrollable"
+                // scrollButtons="auto"
+                // centered
+              >
+                <Tab label="NIR" {...a11yProps(0)} />
+                <Tab label="Projects" {...a11yProps(1)} />
+              </Tabs>
+            </Box2>
+            <TabPanel value={value} index={0}>
+              <>
+               
+                <div className="flex flex-col justify-center items-center mb-[6rem]">
+                  <Zoom delay={500}>
+                    <div className="top-timeline">
+                      {months[date.getMonth()]} {date.getFullYear()}
+                    </div>
+                  </Zoom>
+                  <div className="flex justify-center items-center gap-4">
+                    {nir.length === 0 && project.length === 0 ? (
+                      <div className="w-full flex justify-center items-center my-[2rem]">
+                        <Box
+                          text={"No Projects and NIRs in this month"}
+                          color="#E0E0E0"
+                          anim="left"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-full flex justify-center items-center my-[2rem] flex-col">
+                          {project.map((n, index) => (
+                            <Box
+                              key={index}
+                              text={n[5]}
+                              date={`${n[13]} (${n[4]})`}
+                              color="#E0E0E0"
+                              anim="left"
+                            />
+                          ))}
+                        </div>
+                  
+                      </>
+                    )}
+                  </div>
+                  <Zoom delay={500}>
+                    <div className="top-timeline">
+                      {date.getMonth() === 11
+                        ? months[0]
+                        : months[date.getMonth() + 1]}{" "}
+                      {date.getMonth() === 11
+                        ? date.getFullYear() + 1
+                        : date.getFullYear()}
+                    </div>
+                  </Zoom>
+                  <div className="flex justify-center items-center gap-4">
+                    {nir2.length === 0 && project2.length === 0 ? (
+                      <div className="w-full flex justify-center items-center my-[2rem]">
+                        <Box
+                          text={"No Projects and NIRs in this month"}
+                          color="#E0E0E0"
+                          anim="left"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-full flex justify-center items-center my-[2rem] flex-col">
+                          {project2.map((n, index) => (
+                            <Box
+                              key={index}
+                              text={n[5]}
+                              date={`${n[13]} (${n[4]})`}
+                              color="#E0E0E0"
+                              anim="left"
+                            />
+                          ))}
+                        </div>
+                        
+                      </>
+                    )}
+                  </div>
+                  <Zoom delay={500}>
+                    <div className="top-timeline">
+                      {date.getMonth() + 1 === 11
+                        ? months[0]
+                        : date.getMonth() + 1 === 12
+                        ? months[1]
+                        : months[date.getMonth() + 2]}{" "}
+                      {date.getMonth() + 1 === 11
+                        ? date.getFullYear() + 1
+                        : date.getMonth() + 1 === 12
+                        ? date.getFullYear() + 1
+                        : date.getFullYear()}
+                    </div>
+                  </Zoom>
+                  <div className="flex justify-center items-center gap-4">
+                    {nir3.length === 0 && project3.length === 0 ? (
+                      <div className="w-full flex justify-center items-center my-[2rem]">
+                        <Box
+                          text={"No Projects and NIRs in this month"}
+                          color="#E0E0E0"
+                          anim="left"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-full flex justify-center items-center my-[2rem]">
+                          {project3.map((n, index) => (
+                            <Box
+                              key={index}
+                              text={n[5]}
+                              date={`${n[13]} (${n[4]})`}
+                              color="#E0E0E0"
+                              anim="left"
+                            />
+                          ))}
+                        </div>
+                      
+                      </>
+                    )}
+                  </div>
+                </div>
+              </>
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              <h1>Xyz</h1>
+            </TabPanel>
+          </Box2>
         </div>
       </Layout>
     </div>

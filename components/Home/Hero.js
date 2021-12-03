@@ -101,35 +101,35 @@ const Hero = () => {
   }, [blink]);
 
   return (
-    <div className="media mx-auto p-[1.5rem] h-[78vh]  flex items-center">
+    <div className="media mx-auto p-[1.5rem] min-h-[78vh]  flex items-center">
       <div className="flex items-center justify-between w-full relative">
         <img
           src="/home/dots.svg"
           alt=""
-          className="absolute bottom-[7.5rem] h-[5rem] pl-[1.5rem] "
+          className="hidden md:block absolute bottom-4 h-[5rem] pl-[1.5rem] "
         />
 
         <img
           src="/home/cloud1.svg"
           alt=""
-          className="absolute top-[8.5rem] left-[3rem]"
+          className="h-[2rem] md:h-[2.8rem] absolute top-[1rem]  left-[0rem] md:left-[3rem]"
           ref={cloud1Ref}
         />
 
         <img
           src="/home/cloud2.svg"
           alt=""
-          className="absolute top-[13.5rem] sm:top-[1rem] md:top-[13rem] right-[0.5rem] md:left-[32.5rem] 2xl:left-[43.5rem]"
+          className="h-[2rem] md:h-[2.8rem] absolute top-[13.5rem] top-[1rem] md:top-[6.5rem] right-[0rem] md:left-[32.5rem] 2xl:left-[43.5rem]"
           ref={cloud2Ref}
         />
 
-        <div className="w-full flex justify-between items-center">
-          <div className="ml-[9rem]">
-            <h1 className="heading w-[27rem] 2xl:w-[37rem] ">
+        <div className="w-full flex flex-col md:flex-row justify-between items-center ">
+          <div className="md:ml-[9rem] flex flex-col justify-center items-center text-center md:justify-start md:text-left">
+            <h1 className="heading max-w-[27rem] 2xl:max-w-[37rem]  px-8 sm:px-0">
               {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
             </h1>
             <Fade up delay={1000}>
-              <p className="w-[24rem] 2xl:w-[30rem] text-[#9c8b8b] text-xs 2xl:text-sm pt-2">
+              <p className="max-w-[24rem] 2xl:max-w-[30rem] px-8 sm:px-0 text-[#9c8b8b] text-xs 2xl:text-sm pt-2">
                 Welcome to TCS Techbook. Your single point reference for
                 everything related to the TCS Technology (IT). This website
                 describes IT functions, teams and department structure and
@@ -148,7 +148,7 @@ const Hero = () => {
             >
               <animated.div
                 style={{ transform: props.xy.interpolate(trans1) }}
-                className="h-[30rem]"
+                className="w-full md:max-h-[30rem]"
               >
                 <svg
                   id="Old"
