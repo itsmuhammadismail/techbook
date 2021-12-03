@@ -435,7 +435,7 @@ export default function Timeline({ data }) {
             </div>
           </div>
         </div>
-        <div className="media mx-auto flex items-center">
+        <div className="media mx-auto flex items-center sm:hidden">
           <Box2 sx={{ width: "100%" }}>
             <Box2 sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
@@ -571,7 +571,115 @@ export default function Timeline({ data }) {
               </>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <h1>Xyz</h1>
+            <div className="flex flex-col justify-center items-center mb-[6rem] ">
+                  <Zoom delay={500}>
+                    <div className="top-timeline">
+                      {months[date.getMonth()]} {date.getFullYear()}
+                    </div>
+                  </Zoom>
+                  <div className="flex justify-center items-center gap-4">
+                    {nir.length === 0 && project.length === 0 ? (
+                      <div className="w-full flex justify-center items-center my-[2rem]">
+                        <Box
+                          text={"No Projects and NIRs in this month"}
+                          color="#B2EBF2"
+                          anim="left"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-full flex justify-center items-center my-[2rem] flex-col">
+                          {nir.map((n, index) => (
+                            <Box
+                              key={index}
+                              text={n[5]}
+                              date={`${n[13]} (${n[4]})`}
+                              color="#B2EBF2"
+                              anim="left"
+                            />
+                          ))}
+                        </div>
+                  
+                      </>
+                    )}
+                  </div>
+                  <Zoom delay={500}>
+                    <div className="top-timeline">
+                      {date.getMonth() === 11
+                        ? months[0]
+                        : months[date.getMonth() + 1]}{" "}
+                      {date.getMonth() === 11
+                        ? date.getFullYear() + 1
+                        : date.getFullYear()}
+                    </div>
+                  </Zoom>
+                  <div className="flex justify-center items-center gap-4">
+                    {nir2.length === 0 && project2.length === 0 ? (
+                      <div className="w-full flex justify-center items-center my-[2rem]">
+                        <Box
+                          text={"No Projects and NIRs in this month"}
+                          color="#B2EBF2"
+                          anim="left"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-full flex justify-center items-center my-[2rem] flex-col">
+                          {nir2.map((n, index) => (
+                            <Box
+                              key={index}
+                              text={n[5]}
+                              date={`${n[13]} (${n[4]})`}
+                              color="#B2EBF2"
+                              anim="left"
+                            />
+                          ))}
+                        </div>
+                        
+                      </>
+                    )}
+                  </div>
+                  <Zoom delay={500}>
+                    <div className="top-timeline">
+                      {date.getMonth() + 1 === 11
+                        ? months[0]
+                        : date.getMonth() + 1 === 12
+                        ? months[1]
+                        : months[date.getMonth() + 2]}{" "}
+                      {date.getMonth() + 1 === 11
+                        ? date.getFullYear() + 1
+                        : date.getMonth() + 1 === 12
+                        ? date.getFullYear() + 1
+                        : date.getFullYear()}
+                    </div>
+                  </Zoom>
+                  <div className="flex justify-center items-center gap-4">
+                    {nir3.length === 0 && project3.length === 0 ? (
+                      <div className="w-full flex justify-center items-center my-[2rem]">
+                        <Box
+                          text={"No Projects and NIRs in this month"}
+                          color="#B2EBF2"
+                          anim="left"
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-full flex justify-center items-center my-[2rem]">
+                          {nir3.map((n, index) => (
+                            <Box
+                              key={index}
+                              text={n[5]}
+                              date={`${n[13]} (${n[4]})`}
+                              color="#B2EBF2"
+                              anim="left"
+                            />
+                          ))}
+                        </div>
+                      
+                      </>
+                    )}
+                  </div>
+                </div>
             </TabPanel>
           </Box2>
         </div>
