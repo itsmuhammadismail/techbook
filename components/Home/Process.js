@@ -27,24 +27,24 @@ const Process = () => {
       <img
         src="/home/processCircleTop.svg"
         alt=""
-        className="absolute right-0"
+        className="absolute right-0 hidden sm:block"
         ref={shape1Ref}
       />
       <img
         src="/home/processCircleBottom.svg"
         alt=""
-        className="absolute bottom-0"
+        className="absolute bottom-0 hidden sm:block"
         ref={shape2Ref}
       />
 
-      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
+      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh] ">
         <Fade left>
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
             Process
           </h1>
         </Fade>
         <Fade left delay={500}>
-          <p className="text-sm text-[#707070] text-center w-[45rem] mt-4">
+          <p className="text-sm text-[#707070] text-center px-[2rem] sm:px-[0] max-w-[45rem] mt-4 ">
             Refined over many years, TCS Tech uses a process that delivers
             results. Working through five development phases, we collaborate
             continuously with our customer and stakeholders, regularly checking
@@ -55,7 +55,7 @@ const Process = () => {
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
         <Fade>
           <div className="w-[55rem] ">
-            <img src="/Processes.svg" alt="" />
+            <img src="/Processes.svg" alt="" className="hidden sm:block"/>
           </div>
         </Fade>
         <div className="relative z-[10000]" style={{ pointerEvents: "all" }}>

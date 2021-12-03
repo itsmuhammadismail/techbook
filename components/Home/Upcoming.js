@@ -27,37 +27,37 @@ const Upcoming = ({ data }) => {
       <img
         src="/home/upcomingCircle.svg"
         alt=""
-        className="absolute right-0 bottom-[3rem] h-[30rem]"
+        className="absolute right-0 bottom-[3rem] h-[30rem] hidden sm:block"
         ref={imgRef}
       />
-      <div className="media mx-auto flex flex-col justify-center  py-[5rem] min-h-[100vh]">
+      <div className="media mx-auto flex flex-col justify-center items-center sm:items-start py-[5rem] min-h-[100vh]">
         <div className="flex items-center">
           <Zoom delay={1000}>
             <img
               src="/home/upcoming.svg"
               alt=""
-              className="h-[7rem] mt-6 mr-6"
+              className="h-[7rem] mt-6 mr-6 hidden sm:block"
               ref={upRef}
             />
           </Zoom>
-          <div className="">
+          <div className="text-center sm:text-left">
             <Fade left>
               <h1 className="heading">Upcoming Deadlines</h1>
             </Fade>
             <Fade left delay={500}>
-              <p className="text-sm text-[#707070] w-[40rem] mt-4 ml-2">
+              <p className="text-sm text-[#707070]  px-[2rem] sm:px-[0] max-w-[40rem] mt-4 ml-2">
                 View upcoming delivery and go live dates for the technology
                 portfolio:
               </p>
             </Fade>
           </div>
         </div>
-        <div className="flex gap-4 mt-[4rem]">
+        <div className="flex flex-col sm:flex-row  gap-4 sm:mt-[4rem]">
           {/* Card */}
           <Zoom delay={1000}>
-            <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
+            <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem] flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
-                <img src="/home/cls.svg" alt="" />
+                <img src="/home/cls.svg" alt="" className="" />
                 <h2 className="ho font-bold text-[2.5rem]">
                   {data && data[0][0]}
                 </h2>
@@ -77,7 +77,7 @@ const Upcoming = ({ data }) => {
           </Zoom>
           {/* Card */}
           <Zoom delay={1200}>
-            <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] mt-[4rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
+            <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] sm:mt-[4rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/crm.svg" alt="" />
                 <h2 className="ho font-bold text-[2.5rem]">
@@ -99,7 +99,7 @@ const Upcoming = ({ data }) => {
           </Zoom>
           {/* Card */}
           <Zoom delay={1400}>
-            <div className="bg-white p-6 mt-[8rem] w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
+            <div className="bg-white p-6 sm:mt-[8rem] w-[20rem] 2xl:w-[22rem] h-[17rem]  flex flex-col rounded-lg card-shadow">
               <div className="flex items-center">
                 <img src="/home/gwms.svg" alt="" />
                 <h2 className="ho font-bold text-[2.5rem]">
