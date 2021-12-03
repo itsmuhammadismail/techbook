@@ -248,7 +248,7 @@ a {
 .selectdiv {
   position: relative;
   /*Don't really need this just for demo styling*/
-  
+
   float: left;
   min-width: 200px;
   /* margin: 50px 33%; */
@@ -256,11 +256,11 @@ a {
 
 /*To remove button from IE11, thank you Matt */
 select::-ms-expand {
-     display: none;
+  display: none;
 }
 
 .selectdiv:after {
-  content: '>';
+  content: ">";
   font: 17px "Consolas", monospace;
   color: rgb(224, 224, 224);
   -webkit-transform: rotate(90deg);
@@ -269,12 +269,12 @@ select::-ms-expand {
   transform: rotate(90deg);
   right: 11px;
   /*Adjust for position however you want*/
-  
+
   top: 14px;
   padding: 0 0 2px;
   /* border-bottom: 1px solid #999; */
   /*left line */
-  
+
   position: absolute;
   pointer-events: none;
 }
@@ -284,7 +284,7 @@ select::-ms-expand {
   -moz-appearance: none;
   appearance: none;
   /* Add some styling */
-  
+
   display: block;
   width: 100%;
   max-width: 320px;
@@ -292,7 +292,7 @@ select::-ms-expand {
   float: right;
   margin: 5px 0px;
   padding: 0px 24px;
-  
+
   color: #333;
   background-color: #ffffff;
   background-image: none;
@@ -302,4 +302,8 @@ select::-ms-expand {
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #707070;
+}
+
+.MuiTabs-flexContainer {
+  justify-content: center;
 }

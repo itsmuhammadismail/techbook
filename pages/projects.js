@@ -72,12 +72,17 @@ const Projects = () => {
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 classes={{ root: classes.root, scroller: classes.scroller }}
+                indicatorColor="primary"
+                textColor="primary"
+                variant={"scrollable"}
+                scrollButtons={"on"}
+                // classes={{ root: classes.root, scroller: classes.scroller }}
                 value={value}
                 onChange={handleChange}
                 aria-label="basic tabs example"
-                variant="scrollable"
-                scrollButtons="auto"
-                centered
+                // variant="scrollable"
+                // scrollButtons="auto"
+                // centered
               >
                 <Tab label="In Progress" {...a11yProps(0)} />
                 <Tab label="Complete" {...a11yProps(1)} />
