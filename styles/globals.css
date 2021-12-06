@@ -235,13 +235,15 @@ a {
 @media (max-width: 640px) {
   .heading {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2rem;
   }
   .heading2 {
     font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .ho {
     font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .timeline-box {
     width: 18rem;
