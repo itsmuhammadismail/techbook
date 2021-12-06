@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Project = () => {
   return (
-    <div className="bg-[#fafafa] mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
+    <div className="bg-[#fafafa] mx-auto flex flex-col justify-center items-center py-[5rem] sm:min-h-[100vh]">
       <Fade left>
         <h1 className="heading ">Project Dashboard</h1>
       </Fade>
@@ -21,10 +21,10 @@ const Project = () => {
           more detailed view take a look at our project dashboard:
         </p>
       </Fade>
-      <div className="w-[50rem] mt-8 relative hidden sm:block">
+      <div className="w-[70%] md:w-[50rem] mt-8 relative ">
         {/* Top Circle */}
         <Fade delay={4000}>
-          <div className="absolute top-[-5rem] right-[-5rem] z-10">
+          <div className="absolute top-[-5rem] right-[-5rem] z-10 hidden sm:block">
             <TopCircleSvg />
           </div>
         </Fade>
@@ -33,7 +33,7 @@ const Project = () => {
         </Zoom>
         {/* Bottom Circle */}
         <Fade delay={4000}>
-          <div className="absolute bottom-[-5rem] left-[-5rem]">
+          <div className="absolute bottom-[-5rem] left-[-5rem] hidden sm:block">
             <BottomCircleSvg />
           </div>
         </Fade>

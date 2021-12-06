@@ -5,7 +5,7 @@ import Link from "next/link";
 const Teams = () => {
   return (
     <div className="">
-      <div className="media mx-auto flex flex-col sm:flex-row justify-between items-center min-h-[100vh] gap-8">
+      <div className="media mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center min-h-[100vh] gap-8">
         <Fade left>
           <div className=" relative flex flex-col items-center sm:items-start text-center sm:text-left">
             <h1 className="heading text-[4.5rem] font-bold leading-[5rem] text-center sm:text-left ">

@@ -25,14 +25,14 @@ export default function Timeline() {
                 <div className=" ho text-[2.25rem] text-center sm:text-left font-bold mt-6 mb-[-0.2rem]">
                   SOP
                 </div>
-                <div className="flex ">
+                <div className="flex justify-center">
                   <a
                     href="/resources/EPMO Policy V1.0.pdf"
                     download
                     className="flex flex-col items-center"
                   >
                     <img className="w-[2rem] mt-4" src="/home/Group 555.svg" />
-                    <p className=" text-[10px] text-sm text-[#707070] mt-2">
+                    <p className=" text-[10px] leading-[10px]  text-sm text-[#707070] mt-2">
                       EPMO policy v1.0 pdf
                     </p>
                   </a>
@@ -42,14 +42,14 @@ export default function Timeline() {
               <div className=" ho text-[1.5rem] text-center sm:text-left font-bold mt-8 ">
                 Sample Template - Documents
               </div>
-              <div className="flex flex-wrap gap-[0.5rem] mt-6">
+              <div className="flex flex-wrap gap-[0.5rem] mt-6 justify-center">
                 <a
                   href="/resources/01 - RFC Template.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px] max-w-[5rem] text-center text-[#707070] ">
                     01- RFC Template.docx
                   </p>
                 </a>
@@ -59,7 +59,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="text-[#707070]  mt-2 text-[10px] max-w-[5rem] text-center">
+                  <p className="text-[#707070]  mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center">
                     02- Project Charter Template.docx
                   </p>
                 </a>
@@ -69,7 +69,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     03- FSD Template.docx
                   </p>
                 </a>
@@ -80,7 +80,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     04- Metting Minutes Template.docx
                   </p>
                 </a>
@@ -91,7 +91,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 593.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     Weekly Project Status Template.docx
                   </p>
                 </a>
@@ -102,7 +102,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     05- Project Closure Report Template.docx
                   </p>
                 </a>
@@ -112,7 +112,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     06- NIR Template.docx
                   </p>
                 </a>
@@ -158,14 +158,14 @@ export default function Timeline() {
               <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
                 Sample Template - Documents
               </div>
-              <div className="flex flex-wrap gap-[0.5rem] mt-6">
+              <div className="flex flex-wrap gap-[0.5rem] mt-6 justify-center">
                 <a
                   href="/resources/01-QA Daily Activity Process.pptx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     01-QA Daily Activity Process.pptx
                   </p>
                 </a>
@@ -175,7 +175,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="text-[#707070]  mt-2 text-[10px] max-w-[5rem] text-center">
+                  <p className="text-[#707070]  mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center">
                     02-QA Resource Sheet - Template.xlsx
                   </p>
                 </a>
@@ -185,7 +185,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     03-Release Note Template.docx
                   </p>
                 </a>
@@ -196,7 +196,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     04-Test case - Template.xlsx
                   </p>
                 </a>
@@ -207,7 +207,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 593.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     Test Case Sign Off - Template.doc
                   </p>
                 </a>
@@ -218,7 +218,7 @@ export default function Timeline() {
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     05-Test Plan - Template.docx
                   </p>
                 </a>
@@ -319,14 +319,14 @@ export default function Timeline() {
               <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
                 Sample Template - Documents
               </div>
-              <div className="flex gap-8 mt-6">
+              <div className="flex gap-8 mt-6 justify-center">
                 <a
                   href="/resources/NIR Template - Updated.docx"
                   download
                   className="flex flex-col items-center flex-wrap"
                 >
                   <img src="/home/Group 561.svg" className="w-[2rem]" />
-                  <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                  <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                     Technical Documentation
                   </p>
                 </a>
@@ -488,14 +488,14 @@ export default function Timeline() {
             <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
               Sample Template - Documents
             </div>
-            <div className="flex gap-8 mt-6">
+            <div className="flex gap-8 mt-6 justify-center">
               <a
                 href="/resources/01- Techinical Document.docx"
                 download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 561.svg" className="w-[2rem]" />
-                <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                   01- Techinical Document.docx
                 </p>
               </a>
@@ -505,7 +505,7 @@ export default function Timeline() {
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 593.svg" className="w-[2rem]" />
-                <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                   02- MIS and BI Team resource Sheet.xlsx
                 </p>
               </a>
@@ -613,14 +613,14 @@ export default function Timeline() {
             <div className=" ho text-[1.5rem] font-bold mt-8 text-center sm:text-left">
               Sample Template - Documents
             </div>
-            <div className="flex gap-8 mt-6">
+            <div className="flex gap-8 mt-6 justify-center">
               <a
                 href="/resources/01- Techinical Document.docx"
                 download
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 561.svg" className="w-[2rem]" />
-                <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                   01- Techinical Document.docx
                 </p>
               </a>
@@ -630,7 +630,7 @@ export default function Timeline() {
                 className="flex flex-col items-center flex-wrap"
               >
                 <img src="/home/Group 593.svg" className="w-[2rem]" />
-                <p className="mt-2 text-[10px] max-w-[5rem] text-center text-[#707070] ">
+                <p className="mt-2 text-[10px] leading-[10px]  max-w-[5rem] text-center text-[#707070] ">
                   02- MIS and BI Team resource Sheet.xlsx
                 </p>
               </a>

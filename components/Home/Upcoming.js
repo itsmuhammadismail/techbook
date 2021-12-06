@@ -52,7 +52,7 @@ const Upcoming = ({ data }) => {
             </Fade>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row  gap-4 sm:mt-[4rem]">
+        <div className="flex flex-col sm:flex-row gap-4 mt-[2rem] sm:mt-[4rem]">
           {/* Card */}
           <Zoom delay={1000}>
             <div className="bg-white p-6 w-[20rem] 2xl:w-[22rem] h-[17rem] flex flex-col rounded-lg card-shadow">

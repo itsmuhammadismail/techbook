@@ -37,7 +37,7 @@ const Process = () => {
         ref={shape2Ref}
       />
 
-      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh] ">
+      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] sm:min-h-[100vh] ">
         <Fade left>
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
             Process
@@ -54,7 +54,7 @@ const Process = () => {
         </Fade>
         {/* <img src="/home/process.svg" alt="" className="w-[50rem] ml-[-5rem]" /> */}
         <Fade>
-          <div className="w-[19rem] md:w-[55rem] ">
+          <div className="w-[24rem] md:w-[55rem] ">
             <img src="/Processes.svg" alt="" className=""/>
           </div>
         </Fade>

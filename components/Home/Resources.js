@@ -14,7 +14,7 @@ const Resources = () => {
 
   return (
     <div className="">
-      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] min-h-[100vh]">
+      <div className="media mx-auto flex flex-col justify-center items-center py-[5rem] sm:min-h-[100vh]">
         <Fade left>
           <h1 className="heading text-[4.5rem] font-bold leading-[5rem] ">
             Resources
