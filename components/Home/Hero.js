@@ -95,7 +95,6 @@ const Hero = () => {
     const timeout2 = setTimeout(() => {
       if (words[0].length > subIndex) setBlink((prev) => !prev);
       else setBlink(false);
-      console.log(subIndex);
     }, 500);
     return () => clearTimeout(timeout2);
   }, [blink]);
@@ -124,7 +123,7 @@ const Hero = () => {
         />
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center ">
-          <div className="md:ml-[9rem] flex flex-col justify-center items-center text-center md:justify-start md:text-left">
+          <div className="md:ml-[9rem] flex flex-col justify-center text-center md:justify-start md:text-left">
             <h1 className="heading max-w-[27rem] 2xl:max-w-[37rem]  px-8 sm:px-0">
               {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
             </h1>
