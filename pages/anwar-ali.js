@@ -15,7 +15,7 @@ const HeadDev = () => {
       <Layout>
         <div className="media mx-auto flex flex-col justify-center items-center min-h-[100vh] py-[4rem] gap-12">
           <Zoom delay={1000}>
-            <div className="flex flex-col items-center w-[25rem]  ">
+            <div className="flex flex-col items-center w-[18rem] sm:w-[25rem] ">
               <div className="blueImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center ">
                 <img src="/Lead.svg" alt="" className="h-[100%]  mb-[-0.1rem]" />
               </div>

@@ -19,12 +19,12 @@ const Head = () => {
         </p>
       </Zoom>
 
-      <div className="flex flex-wrap justify-center items-center gap-8">
+      <div className="flex flex-wrap justify-center  items-center gap-8">
         <Zoom delay={3500}>
           <Link href="/bilal-majeed">
             <a>
-              <div className="flex flex-col items-center w-[16rem]  h-[19rem] ">
-                <div className="redImage rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem] flex justify-center items-center">
+              <div className="flex flex-col items-center  w-[16rem]  h-[19rem] ">
+                <div className="redImage  rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem]  flex justify-center items-center">
                   <img src="/Head.svg" alt="" className="h-[100%] " />
                 </div>
                 <h2 className="text-xl mt-4 ">Bilal Majeed</h2>

@@ -12,7 +12,7 @@ const SQA = () => {
       </Head>
       <Layout>
         <div className="">
-          <div className="media mx-auto flex flex-col justify-center items-center">
+          <div className="media mx-auto flex flex-col px-[1.5rem] sm:px-[0] justify-center items-center">
             <Fade left>
               <h1 className="heading text-[4.5rem] font-bold leading-[5rem] my-[4rem] text-center">
                 Software Quality Assurance<br/>(Manual Process)
