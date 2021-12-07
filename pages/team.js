@@ -4,6 +4,7 @@ import Hero from "../components/Team/Hero";
 import Heads from "../components/Team/Head";
 import Leads from "../components/Team/Leads";
 import Teams from "../components/Team/Teams";
+import Director from "../components/Team/Director";
 
 const Team = () => {
   return (
@@ -16,9 +17,10 @@ const Team = () => {
       <Layout>
         <div className="">
         <Hero />
+        <Director />
         <Heads />
         <Leads />
-        <Teams />
+        {/* <Teams /> */}
         </div>
       </Layout>
     </div>
