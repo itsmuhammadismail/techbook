@@ -93,7 +93,7 @@ const Projects = () => {
             <TabPanel value={value} index={0}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[60rem] sm:h-[110rem] md:h-[155rem] 2xl:h-[208rem]"
+                  className="pages h-[55rem] sm:h-[110rem] md:h-[132rem] 2xl:h-[170rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/1Ap9B"
                   frameBorder={0}
                   style={{ border: 0 }}
@@ -104,7 +104,7 @@ const Projects = () => {
             <TabPanel value={value} index={1}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[60rem] sm:h-[110rem] md:h-[155rem] 2xl:h-[208rem]"
+                  className="pages h-[55rem] sm:h-[110rem] md:h-[132rem] 2xl:h-[170rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_lqbwj8z4nc"
                   frameBorder={0}
                   style={{ border: 0 }}
@@ -115,7 +115,7 @@ const Projects = () => {
             <TabPanel value={value} index={2}>
               <div className="flex justify-center items-center">
                 <iframe
-                  className="pages h-[60rem] sm:h-[110rem] md:h-[155rem] 2xl:h-[208rem]"
+                  className="pages h-[55rem] sm:h-[110rem] md:h-[132rem] 2xl:h-[170rem]"
                   src="https://datastudio.google.com/embed/reporting/fb73a15a-afaa-476a-96b2-04dda3e3c484/page/p_omj4uriloc"
                   frameBorder={0}
                   style={{ border: 0 }}

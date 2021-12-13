@@ -25,7 +25,7 @@ const Director = () => {
             <a>
               <div className="flex flex-col items-center  w-[16rem]  h-[19rem] ">
                 <div className="redImage  rounded-lg w-full h-[13rem] hover:w-[110%] hover:h-[14rem] pt-[2rem]  flex justify-center items-center">
-                  <img src="/Head.svg" alt="" className="h-[100%] " />
+                  <img src="/Head.svg" alt="" className="h-[100%]" />
                 </div>
                 <h2 className="text-xl mt-4 ">Asif Hanif</h2>
                 <p className="text-center text-sm">
